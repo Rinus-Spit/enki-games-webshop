@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Gameshop</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -21,6 +21,16 @@
         </style>
     </head>
 
+
+ <a href="home"><div class="table">
+    Home
+</div>
+</a>
+
+<div style="width: 50%, height: auto">
     <img src="images/gamemania.png" alt="">
-    </body>
+
+</div>
+
+</body>
 </html>
