@@ -102,7 +102,7 @@
                                             About Us
                                         </a>
                                         </li>
-                            </div>
+                                   </div>
                                 <br>
                         </li>
                     </ul>
@@ -111,7 +111,7 @@
                 <div class="card"  style="margin-top: 35px">
                     <div class="card-header">Add a new product</div>
                     <div class="card-body">
-                    <form action="http://e-commerce.build/admin/products/store" method="post" enctype="multipart/form-data">
+                    <form action="#" method="post" enctype="multipart/form-data">
                             <input type="hidden" name="_token" value="XT1HwjFEyEoi7F2VUQKZydPI18hC7ul3U1HnMGot">
 
                             <div class="form-group">

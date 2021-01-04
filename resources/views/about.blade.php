@@ -12,7 +12,8 @@
                             <div class="card-header">About Us</div>
                                 <div class="card-body">
                                     <div class="text-center">
-                            <div><img src="images/LOGO.png" alt="" style="max-width: 600px; max-height:auto"></div>
+                            <div><img src="images/LOGO.png" alt=""
+                                style="max-width: 600px; max-height:auto; margin-top:35px"></div>
                             <div class="card-body">
                             Deze website is bedoeld voor trainingsdoeleinden.
                                         <br>
