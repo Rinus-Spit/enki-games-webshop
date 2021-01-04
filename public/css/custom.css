@@ -1,0 +1,93 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+.midcontent{
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    justify-items: stretch;
+    background-color: brown;
+    height: min-content;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.midcontent > div{
+    grid-column: 2;
+}
+
+.productbar{
+    height: 45px;
+    background-color: purple;
+    margin-bottom: 20px;
+}
+
+.featured{
+    background-color: lightpink;
+
+    display: grid;
+    grid-template-columns: 1fr 56% 1fr 28% 1fr;
+    grid-template-rows: 20px 146px 20px 146px 20px 146px 20px;
+    justify-items: stretch;
+    align-items: stretch;
+}
+
+.featured_options_a{
+    grid-column: 4;
+    grid-row: 2;
+    background-color: lightseagreen;
+}
+
+.featured_options_b{
+    grid-column: 4;
+    grid-row: 4;
+    background-color: lightseagreen;
+}
+
+.featured_options_c{
+    grid-column: 4;
+    grid-row: 6;
+    background-color: lightseagreen;
+}
+
+.featured_window{
+    grid-column: 2;
+    grid-row: 2/ span 5;
+    background-color: purple;
+}
+
+.bestof{
+    height: 150px;
+    background-color: coral;
+    border-bottom: 2px solid gray;
+}
+
+.searchpathlinks{
+    height:400px;
+    background-color: green;
+}
+
+
+.slider > .slidecontent{
+    display: block;
+    width: 90%;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+
+.slider> .slidecontent > ul{
+    min-width: max-content;
+    max-height: min-content;
+    white-space: nowrap;
+}
+
+.slidecontent > ul > li{
+    float: left;
+    width: 100px;
+    height: 80px;
+    background-color: black;
+    margin: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
