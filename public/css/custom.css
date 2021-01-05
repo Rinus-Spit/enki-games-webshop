@@ -165,7 +165,7 @@ body{
 
 .slider > .slidecontent{
     display: block;
-    width: 90%;
+    width: 80%;
     overflow-x: scroll;
     scroll-behavior: smooth;
 }
@@ -175,16 +175,57 @@ body{
     max-height: min-content;
     white-space: nowrap;
     margin: 0px;
+    padding:0px;
 }
 
 .slidecontent > ul > li{
+    list-style: none;
     float: left;
     width: 100px;
     height: 80px;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.253);
     margin: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 250px;
+    width: 160px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+figure{
+    height: 250px;
+    width: 160px;
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 1fr min-content 1fr;
+    /* background-color: lightgrey; */
+}
+
+figure img{
+    grid-column: 2;
+    height: 160px;
+    width: auto;
+    margin-top: 10px;
+}
+
+figcaption{
+    grid-column: 1/ span 3;
+    height: 90px;
+    width: 100%;
+}
+
+figcaption h1{
+    font-size: 20px;
+    color: white;
+    margin: 0px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+figcaption h4{
+    font-size: 12px;
+    color: red;
+    margin: 0px;
 }
 
 .vis{
@@ -196,18 +237,26 @@ body{
 }
 
 .next_arrow{
-    height:30px;
-    width: 30px;
+    height:70px;
+    width: 70px;
     background-color: blue;
-    margin-left: 20px;
+    background-image: url("/images/arrow_right.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90%;
+    margin-left: 10px;
     margin-right: 5%;
 }
 
 .prev_arrow{
-    height:30px;
-    width: 30px;
+    height:70px;
+    width: 70px;
     background-color: blue;
+    background-image: url("/images/arrow_left.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90%;
     margin-left: 5%;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 

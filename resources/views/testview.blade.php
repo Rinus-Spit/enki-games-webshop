@@ -47,7 +47,15 @@
             <div class="prev_arrow"></div>
             <div class="slidecontent">
                 <ul>
-                    <li></li>
+                    <li>
+                        <figure>
+                            <img src="images/pandemic.jpg" alt="Girl in a jacket">
+                            <figcaption>
+                                <h1>Pandemic Original</h1>
+                                <h4>$30,00</h4>
+                            </figcaption>
+                        </figure>
+                    </li>
                     <li></li>
                     <li></li>
                     <li></li>
@@ -160,17 +168,29 @@ var scrollposition;
 
 prevArrowA.addEventListener("click", function(){scrollLeft(scrollContainerA)});
 prevArrowB.addEventListener("click", function(){scrollLeft(scrollContainerB)});
+nextArrowA.addEventListener("click", function(){scrollRight(scrollContainerA)});
+nextArrowB.addEventListener("click", function(){scrollRight(scrollContainerB)});
 
 function scrollLeft(myScrollContainer){
     scrollposition = myScrollContainer.scrollLeft;
     if(scrollposition === 0){
         return;
     }
-    if(scrollposition % 40 === 0){
-        myScrollContainer.scrollLeft -= 40
+    if(scrollposition % 200 === 0){
+        myScrollContainer.scrollLeft -= 200
     }
     else{
-        myScrollContainer.scrollLeft -= (scrollposition % 40)
+        myScrollContainer.scrollLeft -= (scrollposition % 200)
+    }
+}
+
+function scrollRight(myScrollContainer){ // need to fix end behaviour
+    scrollposition = myScrollContainer.scrollLeft;
+    if(scrollposition % 200 === 0){
+        myScrollContainer.scrollLeft += 200
+    }
+    else{
+        myScrollContainer.scrollLeft -= 200 - (scrollposition % 200)
     }
 }
 </script>
