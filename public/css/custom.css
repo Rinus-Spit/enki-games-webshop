@@ -1,0 +1,262 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+.midcontent{
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    justify-items: stretch;
+    background-color: brown;
+    height: min-content;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.midcontent > div{
+    grid-column: 2;
+}
+
+.productbar{
+    height: 45px;
+    background-color: purple;
+    margin-bottom: 20px;
+}
+
+.bar_product{
+    float: left;
+    display: flex;
+    position: relative;
+    height: 100%;
+    width: max-content;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+}
+
+.productbar .bar_product:nth-child(1){
+    margin-left: 5%;
+}
+
+.bar_product:hover{
+    background-color: orange;
+}
+
+.drop_menu{
+    display: none;
+    position: absolute;
+    top: 45px;
+    left: 0px;
+    width: 300px;
+    height: 300px;
+    background-color: orange;
+}
+
+.bar_product:hover .drop_menu{
+    display: block;
+}
+
+.bar_product_title{
+    display: flex;
+}
+
+.bar_product h3{
+    align-self: center;
+    margin: 0px;
+}
+
+.featured{
+    background-color: lightpink;
+    border-bottom: 1px solid grey;
+
+    display: grid;
+    grid-template-columns: 1fr 62% 1fr 23% 1fr;
+    grid-template-rows: 40px 146px 20px 146px 20px 146px 40px;
+    justify-items: stretch;
+    align-items: stretch;
+}
+
+.featured_options_a{
+    grid-column: 4;
+    grid-row: 2;
+    background-color: lightseagreen;
+}
+
+.featured_options_b{
+    grid-column: 4;
+    grid-row: 4;
+    background-color: lightseagreen;
+}
+
+.featured_options_c{
+    grid-column: 4;
+    grid-row: 6;
+    background-color: lightseagreen;
+}
+
+.featured_window{
+    grid-column: 2;
+    grid-row: 2/ span 5;
+    background-color: purple;
+}
+
+.bestof{
+    background-color: coral;
+    background-color: lightpink;
+    border-bottom: 2px solid gray;
+
+}
+
+.searchpathlinks{
+    height:400px;
+    background-color: green;
+    background-color: lightpink;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+.searchpathlinks h1{
+    text-align: center;
+    justify-content: center;
+}
+
+.linktab{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+.linktab > button{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.linkoptions > div{
+    background-color: lightseagreen;
+}
+
+.linkoptions{
+
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-auto-rows: 150px;
+    column-gap: 20px;
+    row-gap: 20px;
+    justify-items: stretch;
+    align-items: stretch;
+
+}
+
+.slider{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+
+.bestof h2{
+    font-size: 40px;
+    margin-left: 5%;
+    margin-bottom: 20px;
+}
+
+.slider > .slidecontent{
+    display: block;
+    width: 80%;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+
+.slider> .slidecontent > ul{
+    min-width: max-content;
+    max-height: min-content;
+    white-space: nowrap;
+    margin: 0px;
+    padding:0px;
+}
+
+.slidecontent > ul > li{
+    list-style: none;
+    float: left;
+    width: 100px;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.253);
+    margin: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 250px;
+    width: 160px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+figure{
+    height: 250px;
+    width: 160px;
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 1fr min-content 1fr;
+    /* background-color: lightgrey; */
+}
+
+figure img{
+    grid-column: 2;
+    height: 160px;
+    width: auto;
+    margin-top: 10px;
+}
+
+figcaption{
+    grid-column: 1/ span 3;
+    height: 90px;
+    width: 100%;
+}
+
+figcaption h1{
+    font-size: 20px;
+    color: white;
+    margin: 0px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+figcaption h4{
+    font-size: 12px;
+    color: red;
+    margin: 0px;
+}
+
+.vis{
+    display: grid;
+}
+
+.nvis{
+    display: none;
+}
+
+.next_arrow{
+    height:70px;
+    width: 70px;
+    background-color: blue;
+    background-image: url("/images/arrow_right.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90%;
+    margin-left: 10px;
+    margin-right: 5%;
+}
+
+.prev_arrow{
+    height:70px;
+    width: 70px;
+    background-color: blue;
+    background-image: url("/images/arrow_left.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90%;
+    margin-left: 5%;
+    margin-right: 10px;
+}
+
