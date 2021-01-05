@@ -23,11 +23,54 @@ body{
     margin-bottom: 20px;
 }
 
+.bar_product{
+    float: left;
+    display: flex;
+    position: relative;
+    height: 100%;
+    width: max-content;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+}
+
+.productbar .bar_product:nth-child(1){
+    margin-left: 5%;
+}
+
+.bar_product:hover{
+    background-color: orange;
+}
+
+.drop_menu{
+    display: none;
+    position: absolute;
+    top: 45px;
+    left: 0px;
+    width: 300px;
+    height: 300px;
+    background-color: orange;
+}
+
+.bar_product:hover .drop_menu{
+    display: block;
+}
+
+.bar_product_title{
+    display: flex;
+}
+
+.bar_product h3{
+    align-self: center;
+    margin: 0px;
+}
+
 .featured{
     background-color: lightpink;
+    border-bottom: 1px solid grey;
 
     display: grid;
-    grid-template-columns: 1fr 56% 1fr 28% 1fr;
+    grid-template-columns: 1fr 62% 1fr 23% 1fr;
     grid-template-rows: 40px 146px 20px 146px 20px 146px 40px;
     justify-items: stretch;
     align-items: stretch;
@@ -58,19 +101,18 @@ body{
 }
 
 .bestof{
-    height: 150px;
     background-color: coral;
+    background-color: lightpink;
     border-bottom: 2px solid gray;
 
-    padding-top: 20px; /*tijdelijk*/
-    padding-bottom: 20px; /*tijdelijk*/
 }
 
 .searchpathlinks{
     height:400px;
     background-color: green;
-    padding-right: 40px;
-    padding-left: 40px;
+    background-color: lightpink;
+    padding-right: 5%;
+    padding-left: 5%;
 }
 
 .searchpathlinks h1{
@@ -84,6 +126,12 @@ body{
     align-items: center;
     width: 100%;
     height: 30px;
+    margin-bottom: 20px;
+}
+
+.linktab > button{
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .linkoptions > div{
@@ -105,7 +153,14 @@ body{
 .slider{
     display: flex;
     align-items: center;
-    margin-top: 17px; /*Zou tijdelijk moeten zijn omdat ik vaste maten heb gebruikt*/
+    margin-bottom: 20px;
+
+}
+
+.bestof h2{
+    font-size: 40px;
+    margin-left: 5%;
+    margin-bottom: 20px;
 }
 
 .slider > .slidecontent{
@@ -119,6 +174,7 @@ body{
     min-width: max-content;
     max-height: min-content;
     white-space: nowrap;
+    margin: 0px;
 }
 
 .slidecontent > ul > li{
@@ -144,14 +200,14 @@ body{
     width: 30px;
     background-color: blue;
     margin-left: 20px;
-    margin-right: 20px;
+    margin-right: 5%;
 }
 
 .prev_arrow{
     height:30px;
     width: 30px;
     background-color: blue;
-    margin-left: 20px;
+    margin-left: 5%;
     margin-right: 20px;
 }
 
