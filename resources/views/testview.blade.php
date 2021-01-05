@@ -11,7 +11,30 @@
 
 @section('content')
 <div class="midcontent">
-    <div class="productbar"></div>
+    <div class="productbar">
+        <div class="bar_product">
+            <div class="bar_product_title">
+                <h3>Type 1</h3>
+            </div>    
+            <div class="drop_menu">
+                <h4></h4>
+                <a></a>
+                <a></a>
+            </div>
+        </div>
+        <div class="bar_product">
+        <div class="bar_product_title">
+                <h3>Type 2</h3>
+            </div>    
+            <div class="drop_menu">
+                <h4></h4>
+                <a></a>
+                <a></a>
+            </div>
+        </div>
+        <div class="bar_product"><h3>Type 3</h3></div>
+        <div class="bar_product"><h3>Type 4</h3></div>
+    </div>
     <div class="featured">
         <div class="featured_window"></div>
         <div class="featured_options_a"></div>
@@ -19,6 +42,7 @@
         <div class="featured_options_c"></div>
     </div>
     <div class="bestof">
+        <h2>Best verkocht</h2>
         <div id="slider_a" class="slider">
             <div class="prev_arrow"></div>
             <div class="slidecontent">
@@ -46,7 +70,8 @@
         </div>
     </div>
     <div class="bestof">
-    <div id="slider_a" class="slider">
+    <h2>Nieuwe spellen</h2>
+        <div id="slider_b" class="slider">
             <div class="prev_arrow"></div>
             <div class="slidecontent">
                 <ul>
@@ -126,8 +151,15 @@ function showCategories(CategoryID){
 var scrollContainerA = document.getElementById("slider_a");
 var scrollContainerB = document.getElementById("slider_b");
 var scrollContainerA = document.querySelector("#slider_a .slidecontent");
+var nextArrowA = document.querySelector("#slider_a .next_arrow");
+var prevArrowA = document.querySelector("#slider_a .prev_arrow");
 var scrollContainerB = document.querySelector("#slider_b .slidecontent");
+var nextArrowB = document.querySelector("#slider_b .next_arrow");
+var prevArrowB = document.querySelector("#slider_b .prev_arrow");
 var scrollposition;
+
+prevArrowA.addEventListener("click", function(){scrollLeft(scrollContainerA)});
+prevArrowB.addEventListener("click", function(){scrollLeft(scrollContainerB)});
 
 function scrollLeft(myScrollContainer){
     scrollposition = myScrollContainer.scrollLeft;
