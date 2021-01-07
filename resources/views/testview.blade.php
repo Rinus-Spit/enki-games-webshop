@@ -15,7 +15,7 @@
         <div class="bar_product">
             <div class="bar_product_title">
                 <h3>Type 1</h3>
-            </div>    
+            </div>
             <div class="drop_menu">
                 <h4></h4>
                 <a></a>
@@ -25,7 +25,7 @@
         <div class="bar_product">
         <div class="bar_product_title">
                 <h3>Type 2</h3>
-            </div>    
+            </div>
             <div class="drop_menu">
                 <h4></h4>
                 <a></a>
@@ -66,11 +66,11 @@
                     <li></li>
                     <li></li>
                     <!-- include list of products -->
-                    <!-- <li> 
+                    <!-- <li>
                         <figure>
                             <img>
                             <figcaption></figcaption>
-                        </figure> 
+                        </figure>
                     </li> -->
                 </ul>
             </div>
@@ -94,11 +94,11 @@
                     <li></li>
                     <li></li>
                     <!-- include list of products -->
-                    <!-- <li> 
+                    <!-- <li>
                         <figure>
                             <img>
                             <figcaption></figcaption>
-                        </figure> 
+                        </figure>
                     </li> -->
                 </ul>
             </div>
@@ -117,8 +117,9 @@
                                     Create a table with links. So you can create linkoptions divs coupled to a linktab button with corresponding id's and functionparameters. -->
 
         <div id="category_a" class="linkoptions nvis">
-        <p>Dit is categoryA</p>
-        <div></div>
+
+
+            <div></div>
         <div></div>
         <div></div>
         <div></div>
