@@ -88,6 +88,7 @@ body{
     background-color: #f0f0f0;
     border-bottom: 2px solid grey;
     border-right: 2px solid grey;
+    border-top: 3px solid hsl(25, 95%, 40%);
 
     display: grid;
     grid-template-columns: 1fr 62% 1fr 23% 1fr;
