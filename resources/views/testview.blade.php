@@ -149,10 +149,10 @@
 
         <h1>Assortiment</h1>
         <div class="linktab">
-            <button id="button_a" type="button">Uitgever</button>
-            <button id="button_b" type="button">Genre</button>
-            <button id="button_c" type="button">Spelsoort</button>
-            <button id="button_d" type="button">category_d</button>
+            <button id="button_a" class="nact" type="button">Uitgever</button>
+            <button id="button_b" class="act" type="button">Genre</button>
+            <button id="button_c" class="nact" type="button">Spelsoort</button>
+            <button id="button_d" class="nact" type="button">category_d</button>
         </div><!-- contains buttons with a function to set the corresponding linkoptions to vis.
                                     Create a table with links. So you can create linkoptions divs coupled to a linktab button with corresponding id's and functionparameters. -->
 
@@ -174,16 +174,17 @@
 <script>
 
 var CategoryArray = document.querySelectorAll(".linkoptions");
+var buttonArray = document.querySelectorAll(".linktab button");
 // automate the button part.
 var buttonA = document.getElementById("button_a");
 var buttonB = document.getElementById("button_b");
 var buttonC = document.getElementById("button_c");
 var buttonD = document.getElementById("button_d");
 
-buttonA.addEventListener("click", function(){showCategories("category_a")});
-buttonB.addEventListener("click", function(){showCategories("category_b")});
-buttonC.addEventListener("click", function(){showCategories("category_c")});
-buttonD.addEventListener("click", function(){showCategories("category_d")});
+buttonA.addEventListener("click", function(){showCategories("category_a"); setActive("button_a");});
+buttonB.addEventListener("click", function(){showCategories("category_b"); setActive("button_b");});
+buttonC.addEventListener("click", function(){showCategories("category_c"); setActive("button_c");});
+buttonD.addEventListener("click", function(){showCategories("category_d"); setActive("button_d");});
 
 function showCategories(CategoryID){
     console.log("aangevraagd");
@@ -194,6 +195,14 @@ function showCategories(CategoryID){
     document.getElementById(CategoryID).classList.replace("nvis", "vis");
 }
 
+function setActive(CategoryID){
+    console.log("aangevraagd");
+    for(i=0; i<buttonArray.length; i++){
+        buttonArray[i].classList.replace("act", "nact");
+    }
+
+    document.getElementById(CategoryID).classList.replace("nact", "act");
+}
 
 
 var scrollContainerA = document.getElementById("slider_a");
