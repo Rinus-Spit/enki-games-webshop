@@ -56,11 +56,51 @@
                             </figcaption>
                         </figure>
                     </li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>
+                    <figure>
+                            <img src="images/game_b.jpg" alt="Girl in a jacket">
+                            <figcaption>
+                                <h1>Betrayal of</h1>
+                                <h4>$30,00</h4>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                    <figure>
+                            <img src="images/game_c.jpg" alt="Girl in a jacket">
+                            <figcaption>
+                                <h1>A game</h1>
+                                <h4>$20,00</h4>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                    <figure>
+                            <img src="images/game_d.jpg" alt="Girl in a jacket">
+                            <figcaption>
+                                <h1>Nog een game</h1>
+                                <h4>$10,00</h4>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                    <figure>
+                            <img src="images/pandemic.jpg" alt="Girl in a jacket">
+                            <figcaption>
+                                <h1>Pandemic Original</h1>
+                                <h4>$30,00</h4>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                    <figure>
+                            <img src="images/pandemic.jpg" alt="Girl in a jacket">
+                            <figcaption>
+                                <h1>Pandemic Original</h1>
+                                <h4>$30,00</h4>
+                            </figcaption>
+                        </figure>
+                    </li>
                     <li></li>
                     <li></li>
                     <li></li>
@@ -107,21 +147,21 @@
     </div>
     <div class="searchpathlinks">
 
-        <h1>Title</h1>
+        <h1>Assortiment</h1>
         <div class="linktab">
-            <button id="button_a" type="button">category_a</button>
-            <button id="button_b" type="button">category_b</button>
-            <button id="button_c" type="button">category_c</button>
+            <button id="button_a" type="button">Uitgever</button>
+            <button id="button_b" type="button">Genre</button>
+            <button id="button_c" type="button">Spelsoort</button>
             <button id="button_d" type="button">category_d</button>
         </div><!-- contains buttons with a function to set the corresponding linkoptions to vis.
                                     Create a table with links. So you can create linkoptions divs coupled to a linktab button with corresponding id's and functionparameters. -->
 
         <div id="category_a" class="linkoptions nvis">
         <p>Dit is categoryA</p>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div><img src="/images/background_dow.png"></div>
+        <div><img src="/images/background_999.jpg"></div>
+        <div><img src="/images/background_wgg.jpg"></div>
+        <div><img src="/images/background_wgg.jpg"></div>
         </div> <!-- nvis: not visible, vis: visible. To create an interactive menu -->
         <div id="category_b" class="linkoptions vis"><p>Dit is categoryB</p></div>
         <div id="category_c" class="linkoptions nvis"><p>Dit is categoryC</p></div>
