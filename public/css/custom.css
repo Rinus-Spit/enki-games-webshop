@@ -363,3 +363,18 @@ background-image: url("/images/right_blue.svg");
 .prev_arrow:hover{
     background-image: url("/images/left_blue.svg");
 }
+
+
+
+.searchsection{
+    display: grid;
+    grid-template-columns: 30% 10% 60%;
+}
+
+.searchresultspace{
+    grid-column: 2;
+}
+
+.searchfilterspace{
+    grid-column: 1;
+}
