@@ -15,8 +15,8 @@
                             class="input @error('name') alert-danger @enderror" 
                             type="text" 
                             name="description" 
-                            id="product_description"
-                            value="{{ $product->description }}">
+                            id="age_category_description"
+                            value="{{ $age_category->description }}">
                     @error('description')
                         <p class="help alert-danger">{{ $errors->first('description') }}</p>
                     @enderror
