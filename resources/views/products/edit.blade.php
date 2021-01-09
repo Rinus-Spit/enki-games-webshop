@@ -24,7 +24,7 @@
                     @enderror
                     </div>
                 </div>
-
+<br>
                 <div class="field">
                     <label class="label" for="excerpt">Samenvatting</label>
                     <div class="control">
@@ -39,7 +39,7 @@
                     @enderror
                     </div>
                 </div>
-
+                <br>
                 <div class="field">
                     <label class="label" for="body">Beschrijving</label>
                     <div class="control">
@@ -53,9 +53,9 @@
                     @enderror
                     </div>
                 </div>
-
+                <br>
                 <div class="field">
-                    <label class="label" for="image">Plaatje</label>
+                    <label class="label" for="image">Afbeelding</label>
                     <div class="control">
                         <input  class="form-control"
                             class="input @error('image') alert-danger @enderror"
@@ -68,7 +68,7 @@
                     @enderror
                     </div>
                 </div>
-
+                <br>
                 <div class="field">
                     <label class="label" for="price">Prijs</label>
                     <div class="control">
@@ -83,7 +83,7 @@
                     @enderror
                     </div>
                 </div>
-
+                <br>
                 <div class="field">
                     <label class="label" for="stock">Voorraad</label>
                     <div class="control">
@@ -98,7 +98,7 @@
                     @enderror
                     </div>
                 </div>
-
+                <br>
                 <div class="field">
                     <label class="label" for="min_players">Minimum spelers</label>
                     <div class="control">
@@ -113,7 +113,7 @@
                     @enderror
                     </div>
                 </div>
-
+                <br>
                 <div class="field">
                     <label class="label" for="max_players">Maximum spelers</label>
                     <div class="control">
@@ -128,12 +128,12 @@
                     @enderror
                     </div>
                 </div>
-
+                <br>
                 <div class="row">
                     <div class="col-xs-12 form-group">
 
-                        <label class="control-label" for="age_category_id">Leeftijds categorie</label>
-                        <select id="age_category_id" name="age_category_id"  class="form-control">
+                        <label class="control-label" for="age_category_id" style="margin-left:20px">Leeftijds categorie</label>
+                        <select id="age_category_id" name="age_category_id" class="form-control" style="margin-left: 16px">
                             @foreach ($age_categories as $age_category)
                             <option value="{{ $age_category->id }}" {{ ($product->age_category_id == $age_category->id) ? 'selected' : '' }}>{{ $age_category->description }}</option>
                             @endforeach
@@ -147,7 +147,7 @@
                         @endif
                     </div>
                 </div>
-
+                <br>
                 <div class="field is-grouped">
                     <div class="control">
                         <button class="btn btn-success is-link" type="submit">Pas product aan</button>
@@ -158,7 +158,8 @@
 
             <br>
             <div class="footer">
-                <a href="{{ route('admin') }}">Terug naar admin</a>
+                <a href="{{ route('admin') }}">
+                    <i class="fas fa-arrow-left"></i>  Terug naar admin</a>
             </div>
 
 @endsection
