@@ -10,7 +10,7 @@
             <div class="column col-md-6" >
                 <a href="{{ route('products.index') }}" style="text-decoration: none">
                 <div class="card card-body" style="margin-top: 35px">
-                    <div class="card-header text-center" style="border: 1px solid gray">Producten
+                    <div class="card-header text-center" style="border: 1px  solid rgb(202, 202, 202)">Producten
                         <i class="fas fa-box-open"></i>
                     </div>
                 </a>
@@ -20,7 +20,7 @@
             <div class="column col-md-6">
                 <a href="{{ route('products.create') }}" style="text-decoration: none">
                 <div class="card card-body" style="margin-top: 35px">
-                    <div class="card-header text-center" style="border: 1px solid gray">Product Toevoegen
+                    <div class="card-header text-center" style="border: 1px  solid rgb(202, 202, 202)">Product Toevoegen
                         <i class="fas fa-plus"></i>
                     </div>
                 </a>
@@ -30,7 +30,7 @@
             <div class="column col-md-6">
                 <a href="{{ route('age_categories.index') }}" style="text-decoration: none">
                 <div class="card card-body" style="margin-top: 35px">
-                    <div class="card-header text-center" style="border: 1px solid gray">Leeftijdscategoriën
+                    <div class="card-header text-center" style="border: 1px solid rgb(202, 202, 202)">Leeftijdscategoriën
                         <i class="fas fa-bolt"></i>
                     </div>
                 </a>
@@ -40,7 +40,7 @@
             <div class="column col-md-6">
                 <a href="{{ route('age_categories.create') }}" style="text-decoration: none">
                 <div class="card card-body" style="margin-top: 35px">
-                    <div class="card-header text-center" style="border: 1px solid gray">Leeftijdscategorie Toevoegen
+                    <div class="card-header text-center" style="border: 1px solid rgb(202, 202, 202)">Leeftijdscategorie Toevoegen
                         <i class="fas fa-user-plus"></i>
                     </div>
                 </a>
