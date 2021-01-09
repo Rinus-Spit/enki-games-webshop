@@ -42,31 +42,29 @@
 
         <div class="card p-3 mt-3 mb-3">
             <div class="row">
+                <a href="{{ route('products.show', $product) }}"  style="text-decoration:none">
+
                 <div class="col-md-4 col-sm-4">
                     <img src=" {{ $product->image}}" style="width:100%" >
+                </a>
                 </div>
                 <div class="col-md-8 col-sm-8" style="margin-top: -25px">
-                    {{-- <a href="{{ route('products.show', $product) }}"  style="text-decoration:none"> naam product: {{ $product->name }} --}}
-
-                    {{-- <h3><a href="{{ $product->body}}"> {{ $product->title}}</a></h3> --}}
-                    {{-- <small>Naam product: {{$product->name}} </small> --}}
                     <br>
-                    <a href="{{ route('products.show', $product) }}"  style="text-decoration:none"> naam product: {{ $product->name }} </a>
-
+                    <p> {{ $product->name }} </p>
+                    <p>Toegevoegd op: {{$product->created_at}} </small>
+                    <p>Prijs: € {{$product->price}},- </small>
+                    <p>Voorraad: {{$product->stock}} </small>
                     <br>
-                    <small>Toegevoegd op: {{$product->created_at}} </small>
                     <br>
-                    <small>Prijs: € {{$product->price}},- </small>
+                    <form class="inline" method="get" action="{{ route('products.edit',$product->id,false) }}">
+                    <button class="btn btn-secondary" type="submit">Edit <i class="fas fa-edit"></i></button>
+                    </form>
                     <br>
-                    <small>Voorraad: {{$product->stock}} </small>
-                    <br>
-
-                    <a href="{{ route('products.edit', $product) }}"  style="text-decoration:none; margin-top:35px">Edit: <i class="fas fa-edit" style="margin-left: 15px"></i></a>
                     <br>
                     <form class="inline" method="post" action="{{ route('products.destroy',$product->id,false) }}">
                     @csrf
                     @method('DELETE')
-                     <button class="btn" type="submit" style="margin-left: -15px">Delete: <i class="fas fa-trash-alt"></i></button>
+                     <button class="btn btn-danger" type="submit">Delete <i class="fas fa-trash-alt"></i></button>
                     </form>
                 </h3>
                 </div>

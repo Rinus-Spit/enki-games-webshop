@@ -100,7 +100,7 @@
                 </div>
                 <br>
                 <div class="field">
-                    <label class="label" for="min_players">Minimum spelers</label>
+                    <label class="label" for="min_players">Minimum aantal spelers</label>
                     <div class="control">
                         <input class="form-control"
                             class="input @error('min_players') alert-danger @enderror"
@@ -115,7 +115,7 @@
                 </div>
                 <br>
                 <div class="field">
-                    <label class="label" for="max_players">Maximum spelers</label>
+                    <label class="label" for="max_players">Maximum aantal spelers</label>
                     <div class="control">
                         <input class="form-control"
                             class="input @error('max_players') alert-danger @enderror"
@@ -158,8 +158,8 @@
 
             <br>
             <div class="footer">
-                <a href="{{ route('admin') }}">
-                    <i class="fas fa-arrow-left"></i>  Terug naar admin</a>
+                <a href="{{ route('products.index') }}">
+                    <i class="fas fa-arrow-left"></i>  Terug naar producten</a>
             </div>
 
 @endsection

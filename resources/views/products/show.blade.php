@@ -13,8 +13,8 @@
                     <div class="col-md-4 col-sm-4" style="text-center">
                         <img src=" {{ $product->image}}" style="width:100%" >
                     </div>
-
                     @endif
+                    <br><br>
                     <div class="excerpt">
                         {{ $product->excerpt }}
                     </div>
