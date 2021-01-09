@@ -33,7 +33,7 @@
         </div>
                     <br>
      <div class="footer" style="margin-left: 35px"><a href="{{ route('admin') }}">
-        <i class="fas fa-arrow-left"></i>Terug naar admin</a>
+        <i class="fas fa-arrow-left"></i> Terug naar admin</a>
         <br>
         <br>
 </tbody>
