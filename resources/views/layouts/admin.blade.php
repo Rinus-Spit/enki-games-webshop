@@ -19,16 +19,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
 <body>
-
-
     <div id="page" class="container">
         <div class="content">
         @yield('content')
         </div>
     </div>
 
-    {{-- <div class="footer">
-        <a href="{{ route('admin') }}">Terug naar admin</a>
-        </div> --}}
 </body>
 </html>
