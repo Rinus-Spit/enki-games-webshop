@@ -17,7 +17,9 @@
 
                     <br><br>
 
-                    <div class="excerpt">{{ $product->excerpt }}</div>
+                    <div class="excerpt"><h4>
+                        {{ $product->excerpt }}
+                    </h4></div>
 
                     <div class="description">{{ $product->body }}</div>
 
