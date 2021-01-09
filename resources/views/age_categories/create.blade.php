@@ -34,7 +34,7 @@
             </form>
             <br>
             <div class="footer">
-                <a href="{{ route('admin') }}">
+                <a href="{{ route('admin') }}" style="text-decoration: none">
                     <i class="fas fa-arrow-left"></i>
                     Terug naar admin</a>
             </div>

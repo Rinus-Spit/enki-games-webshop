@@ -158,7 +158,7 @@
 
             <br>
             <div class="footer">
-                <a href="{{ route('products.index') }}">
+                <a href="{{ route('products.index') }}" style="text-decoration: none">
                     <i class="fas fa-arrow-left"></i>  Terug naar producten</a>
             </div>
 
