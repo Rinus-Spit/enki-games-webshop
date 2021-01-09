@@ -8,22 +8,22 @@
             <table class="table table-hover">
                 <thead>
                     <th>Leeftijdscategorie</th>
-                    <th>Delete</th>
                     <th></th>
-
+                    <th>Delete</th>
                     <tbody class="table table-hover">
 
                     @foreach ($age_categories as $age_category)
                         <tr>
                             <td><a href="{{ route('age_categories.show', $age_categories) }}" style="text-decoration: none"> {{ $age_category->description }}</a></td>
-
+{{--
+                            <td><a href="{{ route('age_categories.edit', $age_categories) }}"><i class="fas fa-edit" style="margin-top:10px"></i></a></td> --}}
+                            <td></td>
                             <td><form class="inline" method="post" action="{{ route('age_categories.destroy',$age_category->id,false) }}">
                             @csrf
                             @method('DELETE')
                             <button class="btn" type="submit" style="margin-left:-10px"><i class="fas fa-trash-alt" style="color:rgb(230, 54, 54)"></i></button>
                             </form>
                             </td>
-                            <td></td>
                         </tr>
                     @endforeach
 
