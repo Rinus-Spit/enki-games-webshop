@@ -50,7 +50,7 @@
                          <button class="btn btn-danger" type="submit">Delete &nbsp;<i class="fas fa-trash-alt"></i></button>
                         </form>
 
-                    <br>
+                    <br><br>
                     <a href="{{ route('products.index') }}" style="text-decoration: none">
                         <i class="fas fa-arrow-left"></i> Terug naar producten
                     </a>
