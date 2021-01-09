@@ -45,7 +45,7 @@
                 Terug naar admin</a>
         </div>
         <div class="text-right" style="margin-top:-22px">
-            <a href="{{ route('admin') }}" style="text-decoration: none">
+            <a href="{{ route('products.create') }}" style="text-decoration: none">
                  Voeg producten toe <i class="fas fa-arrow-right"></i></a>
                 </div>
     </div>
