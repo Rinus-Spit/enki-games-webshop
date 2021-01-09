@@ -56,7 +56,7 @@
                     <br>
                     <small>Toegevoegd op: {{$product->created_at}} </small>
                     <br>
-                    <small>Price: € {{$product->price}},- </small>
+                    <small>Prijs: € {{$product->price}},- </small>
                     <br>
                     <small>Voorraad: {{$product->stock}} </small>
                     <br>
@@ -76,8 +76,14 @@
         @endforeach
         {{$products->links()}}
         @else
-            <p>No produc found</p>
+            <p>Geen producten gevonden</p>
         @endif
 
+        <br>
+        <div class="footer">
+            <a href="{{ route('admin') }}">
+                <i class="fas fa-arrow-left"></i>
+                Terug naar admin</a>
+        </div>
 
 @endsection

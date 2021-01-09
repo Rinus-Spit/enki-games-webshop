@@ -5,18 +5,18 @@
 
 <div class="card" style="margin-top: 55px">
 
-    <div class="card-header">Nieuw Product </div>
-    <div class="card-body">
+    <div class="card-header">Nieuw Product</div>
 
+    <div class="card-body">
             <h1>Nieuw product</h1>
+
 
             <form method="post" action="{{ route('products.store') }}">
                 @csrf
 
-                <div class="field">
-                    <label class="label" for="name">Naam</label>
+                <div class="field">Naam
                     <div class="control">
-                        <input
+                    <input class="form-control"
                             class="input @error('name') alert-danger @enderror"
                             type="text"
                             name="name"
@@ -27,11 +27,11 @@
                     @enderror
                     </div>
                 </div>
+<br>
 
-                <div class="field">
-                    <label class="label" for="excerpt">Samenvatting</label>
+                <div class="field">Samenvatting
                     <div class="control">
-                        <input
+                        <input class="form-control"
                             class="input @error('excerpt') alert-danger @enderror"
                             type="text"
                             name="excerpt"
@@ -42,11 +42,10 @@
                     @enderror
                     </div>
                 </div>
-
-                <div class="field">
-                    <label class="label" for="body">Beschrijving</label>
+<br>
+                <div class="field">Beschrijving
                     <div class="control">
-                        <textarea
+                        <textarea class="form-control"
                             class="input @error('body') alert-danger @enderror"
                             type="text"
                             name="body"
@@ -56,11 +55,10 @@
                     @enderror
                     </div>
                 </div>
-
-                <div class="field">
-                    <label class="label" for="image">Plaatje</label>
+<br>
+                <div class="field">Afbeelding
                     <div class="control">
-                        <input
+                        <input class="form-control"
                             class="input @error('image') alert-danger @enderror"
                             type="text"
                             name="image"
@@ -71,11 +69,11 @@
                     @enderror
                     </div>
                 </div>
+<br>
 
-                <div class="field">
-                    <label class="label" for="price">Prijs</label>
+                <div class="field">Prijs
                     <div class="control">
-                        <input
+                        <input class="form-control"
                             class="input @error('price') alert-danger @enderror"
                             type="text"
                             name="price"
@@ -86,11 +84,10 @@
                     @enderror
                     </div>
                 </div>
-
-                <div class="field">
-                    <label class="label" for="stock">Voorraad</label>
+<br>
+                <div class="field">Voorraad
                     <div class="control">
-                        <input
+                        <input class="form-control"
                             class="input @error('stock') alert-danger @enderror"
                             type="text"
                             name="stock"
@@ -101,11 +98,10 @@
                     @enderror
                     </div>
                 </div>
-
-                <div class="field">
-                    <label class="label" for="min_players">Minimum spelers</label>
+<br>
+                <div class="field">Minimum aantal spelers
                     <div class="control">
-                        <input
+                        <input class="form-control"
                             class="input @error('min_players') alert-danger @enderror"
                             type="text"
                             name="min_players"
@@ -116,11 +112,10 @@
                     @enderror
                     </div>
                 </div>
-
-                <div class="field">
-                    <label class="label" for="max_players">Maximum spelers</label>
+<br>
+                <div class="field">Maximum aantal spelers
                     <div class="control">
-                        <input
+                        <input class="form-control"
                             class="input @error('max_players') alert-danger @enderror"
                             type="text"
                             name="max_players"
@@ -131,17 +126,14 @@
                     @enderror
                     </div>
                 </div>
-
-                <div class="row">
-                    <div class="col-xs-12 form-group">
-
-                        <label class="control-label" for="age_category_id">Leeftijds categorie</label>
-                        <select id="age_category_id" name="age_category_id">
+<br>
+                <div class="row" style="padding-left:15px">Leeftijdscategorie
+                    <div class="control" style="margin-left: 15px">
+                        <select id="age_category_id" name="age_category_id" class="form-control">
                             @foreach ($age_categories as $age_category)
                             <option value="{{ $age_category->id }}" >{{ $age_category->description }}</option>
                             @endforeach
                         </select>
-
                         <p class="help-block"></p>
                         @if($errors->has('age_category_id'))
                             <p class="help-block">
@@ -153,9 +145,15 @@
 
                 <div class="field is-grouped">
                     <div class="control">
-                        <button class="button is-link" type="submit">Voeg product toe</button>
+                        <button class="btn btn-success is-link" type="submit">Voeg product toe</button>
                     </div>
                 </div>
             </form>
+            <br>
+            <div class="footer">
+                <a href="{{ route('admin') }}">
+                    <i class="fas fa-arrow-left"></i>
+                    Terug naar admin</a>
+            </div>
 
 @endsection

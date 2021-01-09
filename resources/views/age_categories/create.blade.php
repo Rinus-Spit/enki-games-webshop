@@ -4,7 +4,7 @@
 
     <div class="card" style="margin-top: 55px">
 
-        <div class="card-header"> Nieuwe leeftijdscategorie: </div>
+        <div class="card-header"> Voeg leeftijdscategorie toe: </div>
         <div class="card-body">
             <form method="post" action="{{ route('age_categories.store') }}">
                 @csrf
@@ -12,7 +12,7 @@
                 <div class="field">
                     <label for="description">Beschrijving</label>
                     <div class="control">
-                        <input
+                        <input class="form-control"
                             class="input @error('name') alert-danger @enderror"
                             type="text"
                             name="description"
@@ -27,11 +27,17 @@
                 <div class="field is-grouped">
                     <div class="control">
 <br>
-                        <button class="button btn-primary" type="submit">Voeg leeftijds categorie toe</button>
+                        <button class="btn btn-primary" type="submit">Voeg leeftijds categorie toe</button>
 
                     </div>
                 </div>
             </form>
+            <br>
+            <div class="footer">
+                <a href="{{ route('admin') }}">
+                    <i class="fas fa-arrow-left"></i>
+                    Terug naar admin</a>
+            </div>
         </div>
 
     </div>

@@ -7,67 +7,51 @@
     <div class="card-body">
 
         <div class="row">
-            <div class="column col-md-4" >
-                <div class="card card-info" style="margin-top: 35px">
+            <div class="column col-md-6" >
+                <a href="{{ route('products.index') }}" style="text-decoration: none">
+                <div class="card card-body" style="margin-top: 35px">
                     <div class="card-header text-center"
-                    style="background-color: rgb(131, 129, 238); color: white">Producten</div>
-                    <div class="card-body">
-                        <img src="/images/products.png" alt="" style="width: 150px">
-
+                        style="background-color: rgb(61, 149, 155); color: white">Producten
+                        <i class="fas fa-box-open"></i>
                     </div>
-                </div>
+                </a>
             </div>
-
-            <div class="column col-md-4">
-                <div class="card card-danger" style="margin-top: 35px">
-                    <div class="card-header text-center"
-                    style="background-color: rgb(253, 122, 122); color: white">Product Toevegen</div>
-                    <div class="card-body">
-                        <img src="/images/add_product.png" alt="" style="width: 150px">
-                    </div>
-                </div>
-            </div>
-
-            <div class="column col-md-4">
-                <div class="card card-success" style="margin-top: 35px">
-                    <div class="card-header text-center"
-                    style="background-color: rgb(238, 129, 238); color: white">Leeftijdscategoriën</div>
-                    <div class="card-body">
-                    <h1 class="text-center">3</h1>
-                    </div>
-                </div>
-            </div>
-
-            <div class="column col-md-4">
-                <div class="card card-info" style="margin-top: 35px">
-                    <div class="card-header text-center"
-                    style="background-color: rgb(129, 238, 129); color: white">Categories</div>
-                    <div class="card-body">
-                    <h1 class="text-center">8</h1>
-                    </div>
-                </div>
-            </div>
-
         </div>
 
-        <ul>
-        <li>
-            <a href="{{ route('products.index') }}">Producten</a>
-        </li>
-        <li>
-            <a href="{{ route('products.create') }}">Nieuw product</a>
-        </li>
-        <li>
-            <a href="{{ route('age_categories.index') }}">Leeftijds categorieen</a>
-        </li>
-        <li>
-            <a href="{{ route('age_categories.create') }}">Nieuwe leeftijds categorie</a>
-        </li>
-    </ul>
-    <br>
-
-        <div class="footer">
-            <a href="{{ route('admin') }}">Terug naar admin</a>
+            <div class="column col-md-6">
+                <a href="{{ route('products.create') }}" style="text-decoration: none">
+                <div class="card card-body" style="margin-top: 35px">
+                    <div class="card-header text-center"
+                        style="background-color: rgb(152, 165, 69); color: white">Product Toevoegen
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </a>
+            </div>
         </div>
+
+            <div class="column col-md-6">
+                <a href="{{ route('age_categories.index') }}" style="text-decoration: none">
+                <div class="card card-body" style="margin-top: 35px">
+                    <div class="card-header text-center"
+                        style="background-color: rgb(124, 65, 124); color: white">Leeftijdscategoriën
+                        <i class="fas fa-plus-circle"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+            <div class="column col-md-6">
+                <a href="{{ route('age_categories.create') }}" style="text-decoration: none">
+                <div class="card card-body" style="margin-top: 35px">
+                    <div class="card-header text-center"
+                        style="background-color: rgb(62, 145, 62); color: white">Leeftijdscategorie Toevoegen
+                        <i class="fas fa-user-plus"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+<br>
+
     @endsection
 
