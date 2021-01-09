@@ -32,14 +32,22 @@
         @endforeach
         {{$products->links()}}
         @else
-            <p>Geen producten gevonden</p>
-        @endif
+        <br>
+        <br>
+        <div class="text-center">
+            <p>Geen producten gevonden.</p>
+        </div>
+             @endif
         <br>
         <div class="footer">
             <a href="{{ route('admin') }}" style="text-decoration: none">
                 <i class="fas fa-arrow-left"></i>
                 Terug naar admin</a>
         </div>
+        <div class="text-right" style="margin-top:-22px">
+            <a href="{{ route('admin') }}" style="text-decoration: none">
+                 Voeg producten toe <i class="fas fa-arrow-right"></i></a>
+                </div>
     </div>
 </div>
 
