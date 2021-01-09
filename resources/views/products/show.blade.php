@@ -37,7 +37,7 @@
                     </div>
                     <br>
                     <form class="inline" method="get" action="{{ route('products.edit',$product->id,false) }}">
-                        <button class="btn btn-secondary" type="submit">Edit <i class="fas fa-edit"></i></button>
+                        <button class="btn btn-secondary" type="submit">Edit &nbsp;&nbsp; &nbsp;<i class="fas fa-edit"></i></button>
                         </form>
 
                         <br>
