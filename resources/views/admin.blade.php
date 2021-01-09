@@ -34,7 +34,7 @@
                 <div class="card card-body" style="margin-top: 35px">
                     <div class="card-header text-center"
                         style="background-color: rgb(124, 65, 124); color: white">Leeftijdscategoriën
-                        <i class="fas fa-plus-circle"></i>
+                        <i class="fas fa-bolt"></i>
                     </div>
                 </a>
             </div>

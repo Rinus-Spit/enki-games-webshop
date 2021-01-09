@@ -13,7 +13,7 @@
                 <div class="field">
                     <label class="label" for="name">Naam</label>
                     <div class="control">
-                        <input
+                        <input class="form-control"
                             class="input @error('name') alert-danger @enderror"
                             type="text"
                             name="name"
@@ -28,7 +28,7 @@
                 <div class="field">
                     <label class="label" for="excerpt">Samenvatting</label>
                     <div class="control">
-                        <input
+                        <input  class="form-control"
                             class="input @error('excerpt') alert-danger @enderror"
                             type="text"
                             name="excerpt"
@@ -43,7 +43,7 @@
                 <div class="field">
                     <label class="label" for="body">Beschrijving</label>
                     <div class="control">
-                        <textarea
+                        <textarea  class="form-control"
                             class="input @error('body') alert-danger @enderror"
                             type="text"
                             name="body"
@@ -57,7 +57,7 @@
                 <div class="field">
                     <label class="label" for="image">Plaatje</label>
                     <div class="control">
-                        <input
+                        <input  class="form-control"
                             class="input @error('image') alert-danger @enderror"
                             type="text"
                             name="image"
@@ -72,7 +72,7 @@
                 <div class="field">
                     <label class="label" for="price">Prijs</label>
                     <div class="control">
-                        <input
+                        <input class="form-control"
                             class="input @error('price') alert-danger @enderror"
                             type="text"
                             name="price"
@@ -87,7 +87,7 @@
                 <div class="field">
                     <label class="label" for="stock">Voorraad</label>
                     <div class="control">
-                        <input
+                        <input class="form-control"
                             class="input @error('stock') alert-danger @enderror"
                             type="text"
                             name="stock"
@@ -102,7 +102,7 @@
                 <div class="field">
                     <label class="label" for="min_players">Minimum spelers</label>
                     <div class="control">
-                        <input
+                        <input class="form-control"
                             class="input @error('min_players') alert-danger @enderror"
                             type="text"
                             name="min_players"
@@ -117,7 +117,7 @@
                 <div class="field">
                     <label class="label" for="max_players">Maximum spelers</label>
                     <div class="control">
-                        <input
+                        <input class="form-control"
                             class="input @error('max_players') alert-danger @enderror"
                             type="text"
                             name="max_players"
@@ -133,7 +133,7 @@
                     <div class="col-xs-12 form-group">
 
                         <label class="control-label" for="age_category_id">Leeftijds categorie</label>
-                        <select id="age_category_id" name="age_category_id">
+                        <select id="age_category_id" name="age_category_id"  class="form-control">
                             @foreach ($age_categories as $age_category)
                             <option value="{{ $age_category->id }}" {{ ($product->age_category_id == $age_category->id) ? 'selected' : '' }}>{{ $age_category->description }}</option>
                             @endforeach

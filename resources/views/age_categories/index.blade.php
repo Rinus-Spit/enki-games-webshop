@@ -2,7 +2,8 @@
 
 @section ('content')
 
-            <div class="card card-default" style="margin-top: 55px">
+            <div class="card card-hover" style="margin-top: 55px">
+                <div class="card-header">Leeftijdscategoriën</div>
                 <table class="table table-hover">
                     <thead>
                         <th>Leeftijdscategorie</th>
@@ -36,6 +37,4 @@
 </tbody>
 
 @endsection
-<div><a href="{{ route('admin') }}"><i class="fas fa-arrow-left"></i>
-    Terug naar admin</a></div>
 
