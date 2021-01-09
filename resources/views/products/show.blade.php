@@ -36,12 +36,15 @@
                         Voorraad: {{ $product->stock }} stuks
                     </div>
                     <br>
-                    <form class="inline" method="get" action="{{ route('products.edit',$product->id,false) }}">
+                    <form class="inline" method="get" action="{{ route('products.edit',$product->id,false) }}"
+                        style="margin-bottom: -65px">
                         <button class="btn btn-secondary" type="submit">Edit &nbsp;&nbsp; &nbsp;<i class="fas fa-edit"></i></button>
                         </form>
 
                         <br>
-                        <form class="inline" method="post" action="{{ route('products.destroy',$product->id,false) }}">
+
+                        <form class="inline" method="post" action="{{ route('products.destroy',$product->id,false) }}"
+                            style="margin-left: 90%">
                         @csrf
                         @method('DELETE')
                          <button class="btn btn-danger" type="submit">Delete <i class="fas fa-trash-alt"></i></button>
