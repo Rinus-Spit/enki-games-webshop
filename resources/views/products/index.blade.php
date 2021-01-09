@@ -51,22 +51,11 @@
                 <div class="col-md-8 col-sm-8" style="margin-top: -25px">
                     <br>
                     <p> {{ $product->name }} </p>
-                    <p>Toegevoegd op: {{$product->created_at}} </small>
+                    <p> {{$product->excerpt }} </small>
                     <p>Prijs: € {{$product->price}},- </small>
                     <p>Voorraad: {{$product->stock}} </small>
-                    <br>
-                    <br>
-                    <form class="inline" method="get" action="{{ route('products.edit',$product->id,false) }}">
-                    <button class="btn btn-secondary" type="submit">Edit <i class="fas fa-edit"></i></button>
-                    </form>
-                    <br>
-                    <br>
-                    <form class="inline" method="post" action="{{ route('products.destroy',$product->id,false) }}">
-                    @csrf
-                    @method('DELETE')
-                     <button class="btn btn-danger" type="submit">Delete <i class="fas fa-trash-alt"></i></button>
-                    </form>
-                </h3>
+                    <p>Toegevoegd: {{$product->created_at}} </small>
+
                 </div>
             </div>
         </div>

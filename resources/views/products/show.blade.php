@@ -37,6 +37,17 @@
                     <div class="stock">
                         Voorraad: {{ $product->stock }} stuks
                     </div>
+                    <br>
+                    <form class="inline" method="get" action="{{ route('products.edit',$product->id,false) }}">
+                        <button class="btn btn-secondary" type="submit">Edit <i class="fas fa-edit"></i></button>
+                        </form>
+
+                        <br>
+                        <form class="inline" method="post" action="{{ route('products.destroy',$product->id,false) }}">
+                        @csrf
+                        @method('DELETE')
+                         <button class="btn btn-danger" type="submit">Delete <i class="fas fa-trash-alt"></i></button>
+                        </form>
 
                     <br>
                     <a href="{{ route('products.index') }}" style="text-decoration: none">
