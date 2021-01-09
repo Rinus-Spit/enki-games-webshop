@@ -30,7 +30,7 @@
                     </div>
 
                     <div class="price">
-                        Prijs: {!! '&euro;' !!}{{ number_format($product->price,2,",",".") }}
+                        Prijs: {!! '&euro;&nbsp;'  !!}{{ number_format($product->price,2,",",".") }}
                     </div>
                     <div class="stock">
                         Voorraad: {{ $product->stock }} stuks
