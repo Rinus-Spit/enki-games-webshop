@@ -22,11 +22,11 @@
                     <div class="description">{{ $product->body }}</div>
 
                     <div class="description">
-                        Minimaal aantal spelers: {{ $product->min_players }}
+                        Min. aantal spelers: {{ $product->min_players }}
                     </div>
 
                     <div class="description">
-                        Maximaal aantal spelers: {{ $product->max_players }}
+                        Max. aantal spelers: {{ $product->max_players }}
                     </div>
 
                     <div class="price">
