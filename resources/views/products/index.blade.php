@@ -19,7 +19,7 @@
                 </div>
                 <div class="col-md-8 col-sm-8" style="margin-top: -25px">
                     <br>
-                    <p> {{ $product->name }} </p>
+                    <h4> {{ $product->name }} </h4>
                     <p> {{$product->excerpt }} </small>
                     <p>Prijs: € {{$product->price}},- </small>
                     <p>Voorraad: {{$product->stock}} </small>
