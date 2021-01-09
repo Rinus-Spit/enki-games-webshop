@@ -31,7 +31,7 @@
                 <a href="{{ route('age_categories.index') }}" style="text-decoration: none">
                 <div class="card card-body" style="margin-top: 35px">
                     <div class="card-header text-center" style="border: 1px solid rgb(202, 202, 202)">Leeftijdscategoriën
-                        <i class="fas fa-bolt"></i>
+                        <i class="fas fa-sort-amount-up"></i>
                     </div>
                 </a>
             </div>
@@ -41,7 +41,7 @@
                 <a href="{{ route('age_categories.create') }}" style="text-decoration: none">
                 <div class="card card-body" style="margin-top: 35px">
                     <div class="card-header text-center" style="border: 1px solid rgb(202, 202, 202)">Leeftijdscategorie Toevoegen
-                        <i class="fas fa-user-plus"></i>
+                        <i class="fas fa-plus-circle"></i>
                     </div>
                 </a>
             </div>
