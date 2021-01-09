@@ -126,7 +126,7 @@
                     @enderror
                     </div>
                 </div>
-<br>
+                <br>
                 <div class="row" style="padding-left:15px">Leeftijdscategorie
                     <div class="control" style="margin-left: 15px">
                         <select id="age_category_id" name="age_category_id" class="form-control">
@@ -142,7 +142,7 @@
                         @endif
                     </div>
                 </div>
-
+                <br>
                 <div class="field is-grouped">
                     <div class="control">
                         <button class="btn btn-success is-link" type="submit">Voeg product toe</button>
@@ -150,10 +150,16 @@
                 </div>
             </form>
             <br>
+            <br>
             <div class="footer">
                 <a href="{{ route('admin') }}">
                     <i class="fas fa-arrow-left"></i>
                     Terug naar admin</a>
-            </div>
-
+                </div>
+            <br>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
 @endsection

@@ -2,7 +2,7 @@
 
 @section ('content')
 
-<div class="card" style="margin-top: 55px">
+<div class="card" style="margin-top: 55px; margin-bottom: 55px">
 
     <div class="card-header">
         <h3>{{ $product->name }} </h3>
