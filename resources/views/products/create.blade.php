@@ -145,7 +145,7 @@
                 <br>
                 <div class="field is-grouped">
                     <div class="control">
-                        <button class="btn btn-success is-link" type="submit">Voeg product toe</button>
+                        <button class="btn btn-success is-link" type="submit">Voeg product toe&nbsp;</button>
                     </div>
                 </div>
             </form>
