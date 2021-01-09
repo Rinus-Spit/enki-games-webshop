@@ -21,7 +21,7 @@
                             <td><form class="inline" method="post" action="{{ route('age_categories.destroy',$age_category->id,false) }}">
                             @csrf
                             @method('DELETE')
-                            <button class="btn" type="submit"><i class="fas fa-trash-alt" style="color:red"></i></button>
+                            <button class="btn" type="submit" style="margin-left:-10px"><i class="fas fa-trash-alt" style="color:red"></i></button>
                             </form>
                             </td>
                         </tr>
