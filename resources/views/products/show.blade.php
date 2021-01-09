@@ -38,7 +38,7 @@
                     <br>
                     <form class="inline" method="get" action="{{ route('products.edit',$product->id,false) }}"
                         style="margin-bottom: -65px">
-                        <button class="btn btn-secondary" type="submit">Edit &nbsp;&nbsp; &nbsp;<i class="fas fa-edit"></i></button>
+                        <button class="btn btn-secondary" type="submit">Edit  &nbsp;<i class="fas fa-edit"></i></button>
                         </form>
 
                         <br>
@@ -47,7 +47,7 @@
                             style="margin-left: 90%">
                         @csrf
                         @method('DELETE')
-                         <button class="btn btn-danger" type="submit">Delete <i class="fas fa-trash-alt"></i></button>
+                         <button class="btn btn-danger" type="submit">Delete &nbsp;<i class="fas fa-trash-alt"></i></button>
                         </form>
 
                     <br>
