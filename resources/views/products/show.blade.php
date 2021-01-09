@@ -46,7 +46,7 @@
                         <br>
 
                         <form class="inline" method="post" action="{{ route('products.destroy',$product->id,false) }}"
-                            style="margin-left: 25%">
+                            style="margin-left: 85%">
                         @csrf
                         @method('DELETE')
                          <button class="btn btn-danger" type="submit" style="min-width:100px">Delete <i class="fas fa-trash-alt"></i></button>
