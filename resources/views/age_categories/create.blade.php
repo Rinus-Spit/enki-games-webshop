@@ -2,18 +2,20 @@
 
 @section ('content')
 
-            <h1>Nieuwe leeftijds categorie</h1>
+    <div class="card" style="margin-top: 55px">
 
+        <div class="card-header"> Nieuwe leeftijdscategorie: </div>
+        <div class="card-body">
             <form method="post" action="{{ route('age_categories.store') }}">
                 @csrf
 
                 <div class="field">
-                    <label class="label" for="description">Beschrijving</label>
+                    <label for="description">Beschrijving</label>
                     <div class="control">
-                        <input 
-                            class="input @error('name') alert-danger @enderror" 
-                            type="text" 
-                            name="description" 
+                        <input
+                            class="input @error('name') alert-danger @enderror"
+                            type="text"
+                            name="description"
                             id="product_description"
                             value="{{ old('description') }}">
                     @error('description')
@@ -24,9 +26,13 @@
 
                 <div class="field is-grouped">
                     <div class="control">
-                        <button class="button is-link" type="submit">Voeg leeftijds categorie toe</button>
+<br>
+                        <button class="button btn-primary" type="submit">Voeg leeftijds categorie toe</button>
+
                     </div>
                 </div>
             </form>
+        </div>
 
+    </div>
 @endsection

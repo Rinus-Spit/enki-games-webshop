@@ -20,14 +20,15 @@
 </head>
 <body>
 
+
     <div id="page" class="container">
         <div class="content">
         @yield('content')
         </div>
-
-        <div class="footer">
-        <a href="{{ route('admin') }}">Terug naar admin</a>
-        </div>
     </div>
+
+    {{-- <div class="footer">
+        <a href="{{ route('admin') }}">Terug naar admin</a>
+        </div> --}}
 </body>
 </html>

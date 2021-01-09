@@ -2,6 +2,12 @@
 
 @section ('content')
 
+
+<div class="card" style="margin-top: 55px">
+
+    <div class="card-header">Nieuw Product </div>
+    <div class="card-body">
+
             <h1>Nieuw product</h1>
 
             <form method="post" action="{{ route('products.store') }}">
@@ -10,10 +16,10 @@
                 <div class="field">
                     <label class="label" for="name">Naam</label>
                     <div class="control">
-                        <input 
-                            class="input @error('name') alert-danger @enderror" 
-                            type="text" 
-                            name="name" 
+                        <input
+                            class="input @error('name') alert-danger @enderror"
+                            type="text"
+                            name="name"
                             id="product_name"
                             value="{{ old('name') }}">
                     @error('name')
@@ -25,10 +31,10 @@
                 <div class="field">
                     <label class="label" for="excerpt">Samenvatting</label>
                     <div class="control">
-                        <input 
-                            class="input @error('excerpt') alert-danger @enderror" 
-                            type="text" 
-                            name="excerpt" 
+                        <input
+                            class="input @error('excerpt') alert-danger @enderror"
+                            type="text"
+                            name="excerpt"
                             id="product_excerpt"
                             value="{{ old('excerpt') }}">
                     @error('excerpt')
@@ -40,10 +46,10 @@
                 <div class="field">
                     <label class="label" for="body">Beschrijving</label>
                     <div class="control">
-                        <textarea 
-                            class="input @error('body') alert-danger @enderror" 
-                            type="text" 
-                            name="body" 
+                        <textarea
+                            class="input @error('body') alert-danger @enderror"
+                            type="text"
+                            name="body"
                             id="product_body">{{ old('body') }}</textarea>
                     @error('body')
                         <p class="help alert-danger">{{ $errors->first('body') }}</p>
@@ -54,10 +60,10 @@
                 <div class="field">
                     <label class="label" for="image">Plaatje</label>
                     <div class="control">
-                        <input 
-                            class="input @error('image') alert-danger @enderror" 
-                            type="text" 
-                            name="image" 
+                        <input
+                            class="input @error('image') alert-danger @enderror"
+                            type="text"
+                            name="image"
                             id="product_image"
                             value="{{ old('image') }}">
                     @error('image')
@@ -69,10 +75,10 @@
                 <div class="field">
                     <label class="label" for="price">Prijs</label>
                     <div class="control">
-                        <input 
-                            class="input @error('price') alert-danger @enderror" 
-                            type="text" 
-                            name="price" 
+                        <input
+                            class="input @error('price') alert-danger @enderror"
+                            type="text"
+                            name="price"
                             id="product_price"
                             value="{{ old('price') }}">
                     @error('price')
@@ -84,10 +90,10 @@
                 <div class="field">
                     <label class="label" for="stock">Voorraad</label>
                     <div class="control">
-                        <input 
-                            class="input @error('stock') alert-danger @enderror" 
-                            type="text" 
-                            name="stock" 
+                        <input
+                            class="input @error('stock') alert-danger @enderror"
+                            type="text"
+                            name="stock"
                             id="product_stock"
                             value="{{ old('stock') }}">
                     @error('stock')
@@ -99,10 +105,10 @@
                 <div class="field">
                     <label class="label" for="min_players">Minimum spelers</label>
                     <div class="control">
-                        <input 
-                            class="input @error('min_players') alert-danger @enderror" 
-                            type="text" 
-                            name="min_players" 
+                        <input
+                            class="input @error('min_players') alert-danger @enderror"
+                            type="text"
+                            name="min_players"
                             id="product_min_players"
                             value="{{ old('min_players') }}">
                     @error('min_players')
@@ -114,10 +120,10 @@
                 <div class="field">
                     <label class="label" for="max_players">Maximum spelers</label>
                     <div class="control">
-                        <input 
-                            class="input @error('max_players') alert-danger @enderror" 
-                            type="text" 
-                            name="max_players" 
+                        <input
+                            class="input @error('max_players') alert-danger @enderror"
+                            type="text"
+                            name="max_players"
                             id="product_max_players"
                             value="{{ old('max_players') }}">
                     @error('max_players')
@@ -128,7 +134,7 @@
 
                 <div class="row">
                     <div class="col-xs-12 form-group">
-                    
+
                         <label class="control-label" for="age_category_id">Leeftijds categorie</label>
                         <select id="age_category_id" name="age_category_id">
                             @foreach ($age_categories as $age_category)
