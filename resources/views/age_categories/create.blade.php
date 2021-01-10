@@ -27,7 +27,7 @@
                 <div class="field is-grouped">
                     <div class="control">
 <br>
-                        <button class="btn btn-primary" type="submit">Voeg leeftijds categorie toe</button>
+                        <button class="btn btn-primary" type="submit">Voeg leeftijdscategorie toe</button>
 
                     </div>
                 </div>
