@@ -2,7 +2,7 @@
 
 @section ('content')
 
-<div class="card card-default" style="margin-top: 35px">
+<div class="card card-default" style="margin-top: 55px">
     <div class="card-header">Leeftijdscategoriën</div>
         <div class="card-body">
             <table class="table table-hover">

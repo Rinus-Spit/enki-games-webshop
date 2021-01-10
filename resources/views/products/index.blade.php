@@ -2,7 +2,7 @@
 
 @section ('content')
 
-<div class="card card-default"  style="margin-top: 35px; margin-bottom:55px">
+<div class="card card-default"  style="margin-top: 55px; margin-bottom:55px">
     <div class="card-body">
         <table class="table table-hover">
         <h1>Producten</h1>
