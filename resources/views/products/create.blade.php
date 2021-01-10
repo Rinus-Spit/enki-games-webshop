@@ -8,7 +8,7 @@
     <div class="card-header">Nieuw Product</div>
 
     <div class="card-body">
-            <h1>Nieuw product</h1>
+            {{-- <h1>Nieuw product</h1> --}}
 
 
             <form method="post" action="{{ route('products.store') }}">

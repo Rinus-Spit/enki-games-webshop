@@ -31,11 +31,16 @@
                 </thead>
             </table>
         </div>
-                    <br>
+       <br>
      <div class="footer" style="margin-left: 35px">
         <a href="{{ route('admin') }}" style="text-decoration: none">
         <i class="fas fa-arrow-left"></i> Terug naar admin</a>
-        <br>
+
+        <div class="text-right" style="margin-top:-22px; margin-right: 25px">
+            <a href="{{ route('age_categories.create') }}" style="text-decoration: none">
+                 Leeftijdscategoriën toevoegen <i class="fas fa-arrow-right"></i></a>
+                </div>
+            <br>
         <br>
 </tbody>
 

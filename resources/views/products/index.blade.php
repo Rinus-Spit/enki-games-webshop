@@ -20,10 +20,11 @@
                 <div class="col-md-8 col-sm-8" style="margin-top: -25px">
                     <br>
                     <h4> {{ $product->name }} </h4>
-                    <p> {{$product->excerpt }} </small>
-                    <p>Prijs: € {{$product->price}},- </small>
-                    <p>Voorraad: {{$product->stock}} </small>
-                    <p>Toegevoegd: {{$product->created_at}} </small>
+                    <p> {{$product->excerpt }} </p>
+                    <p>Prijs: € {{$product->price}},- </p>
+                    <p>Voorraad: {{$product->stock}} </p>
+                    <p>Toegevoegd: {{$product->created_at}} </p>
+                   {{-- <p>Leeftijdscategorie: {{ $product->age_category_id }}</p> --}}
 
                 </div>
             </div>
@@ -46,7 +47,7 @@
         </div>
         <div class="text-right" style="margin-top:-22px">
             <a href="{{ route('products.create') }}" style="text-decoration: none">
-                 Voeg producten toe <i class="fas fa-arrow-right"></i></a>
+                 Producten toevoegen <i class="fas fa-arrow-right"></i></a>
                 </div>
     </div>
 </div>
