@@ -7,7 +7,7 @@
     <div class="card-header">
         <h3>{{ $product->name }} </h3>
              </div>
-                 <div class="card-body">
+                 <div class="card-body" style="overflow: hidden">
 
                     @if ( $product->image )
                     <div class="col-md-4 col-sm-4" style="text-center"></div>
