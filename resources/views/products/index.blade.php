@@ -2,9 +2,6 @@
 
 @section ('content')
 
-
-
-
 <div class="card card-default" id="create">
     <div class="card-body">
         <table class="table table-hover">
