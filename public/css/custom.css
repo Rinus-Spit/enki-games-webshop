@@ -368,13 +368,202 @@ background-image: url("/images/right_blue.svg");
 
 .searchsection{
     display: grid;
-    grid-template-columns: 30% 10% 60%;
+    grid-template-columns: 32% 4% 64%;
+    justify-items: stretch;
 }
 
 .searchresultspace{
-    grid-column: 2;
+    grid-column: 3;
+    height: 1000px;
+    background-color: green;
 }
 
-.searchfilterspace{
+.resulttab{
+    display: grid;
+    grid-template-columns: 30px 200px 20px 1fr 20px;
+    height: 60px;
+    justify-items: stretch;
+    margin-top: 20px;
+}
+
+.resulttab > .optionsfield{
+    grid-column: 2;
+    background-color: black;
+}
+
+.resulttab > .resultpages{
+    grid-column: 4;
+    background-color: black;
+}
+
+.resulttab > .resultpages > a{
+    display: block;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 12px;
+    margin-left: 5px;
+    margin-top: 13px;
+    float: left;
+    background-color: white;
+}
+
+.resulttab > .resultpages > p{
+    float: right;
+    color: white;
+    margin-right: 20px;
+}
+
+.filterspace{
     grid-column: 1;
+    background-color: purple;
+}
+
+.resultblock{
+    min-height: 200px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 200px 20px 1fr;
+
+}
+
+.resultblock img{
+    grid-column: 1;
+    height: 180px;
+    width: 180px;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.resultblock .resultdescription{
+    grid-column: 3;
+    justify-self: stretch;
+}
+
+.resultblock h1{
+    font-size: 30px;
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+
+.resultblock h2{
+    margin-top: 0px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: red;
+}
+
+.searchresultspace > .resultblock:nth-child(2){
+    margin-top: 80px;
+}
+
+/*////////////////////////////////////////////////////////////////*/
+
+.sliderbox {
+	position: relative;
+	width: 70%;
+    max-width: 500px;
+    margin-left: 15%;
+    margin-bottom: 85px;
+    margin-top: 55px;
+}
+
+.slider {
+	position: relative;
+	z-index: 1;
+	height: 10px;
+	margin: 0 15px;
+}
+.slider > .track {
+	position: absolute;
+	z-index: 1;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	border-radius: 5px;
+	background-color: #c6aee7;
+}
+.slider > .range {
+	position: absolute;
+	z-index: 2;
+	left: 25%;
+	right: 25%;
+	top: 0;
+	bottom: 0;
+	border-radius: 5px;
+	background-color: #6200ee;
+}
+.slider > .thumb {
+	position: absolute;
+	z-index: 3;
+	width: 30px;
+	height: 30px;
+	background-color: #6200ee;
+	border-radius: 50%;
+	box-shadow: 0 0 0 0 rgba(98,0,238,.1);
+	transition: box-shadow .3s ease-in-out;
+}
+.slider > .thumb.left {
+	left: 25%;
+	transform: translate(-15px, 0px);
+}
+.slider > .thumb.right {
+	right: 25%;
+	transform: translate(15px, 0px);
+}
+.slider > .thumb.hover {
+	box-shadow: 0 0 0 20px rgba(98,0,238,.1);
+}
+.slider > .thumb.active {
+	box-shadow: 0 0 0 40px rgba(98,0,238,.2);
+}
+
+input[type=range] {
+	position: absolute;
+	pointer-events: none;
+	-webkit-appearance: none;
+	z-index: 2;
+	height: 10px;
+	width: 100%;
+	opacity: 0;
+}
+input[type=range]::-webkit-slider-thumb {
+	pointer-events: all;
+	width: 30px;
+	height: 30px;
+	border-radius: 0;
+	border: 0 none;
+	background-color: red;
+	-webkit-appearance: none;
+}
+
+#minval{
+    display: block;
+    width: 30%;
+    height: 30px;
+    background-color: white;
+    float: left;
+    margin-top: 20px;
+}
+#maxval{
+    display: block;
+    width: 30%;
+    height: 30px;
+    background-color: white;
+    float: right;
+    margin-top: 20px;
+}
+
+#minvaltext, #maxvaltext{
+    font-size: 20px;
+    color: red;
+    justify-content: center;
+    text-align: center;
+    margin: 0px;
+    margin-top: 3.5px
 }
