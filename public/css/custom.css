@@ -415,7 +415,7 @@ background-image: url("/images/right_blue.svg");
 
 .filterspace{
     grid-column: 1;
-    background-color: purple;
+    background-color: #e0e0e0;
 }
 
 .resultblock{
