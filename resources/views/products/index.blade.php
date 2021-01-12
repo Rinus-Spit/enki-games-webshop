@@ -25,6 +25,17 @@
                     <p>Prijs: € {{$product->price}},- </p>
                     <p>Voorraad: {{$product->stock}} </p>
                     <p>Toegevoegd: {{$product->created_at}} </p>
+                    <form class="inline" method="get" action="{{ route('products.edit',$product->id,false) }}">
+                        <button class="btn btn-secondary" type="submit">Edit  &nbsp;<i class="fas fa-edit"></i></button>
+                    </form>
+
+                    <form class="inline" method="post" id="destroy2" action="{{ route('products.destroy',$product->id,false) }}">
+                        @csrf
+                        @method('DELETE')
+                        <button class="btn btn-danger" type="submit" id="destroy">Delete <i class="fas fa-trash-alt"></i></button>
+                    </form>
+
+
                 </div>
             </div>
         </div>
