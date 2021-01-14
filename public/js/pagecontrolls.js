@@ -1,40 +1,67 @@
-var CategoryArray = document.querySelectorAll(".linkoptions");
+// Tab Control
 
-function showCategories(CategoryID){
-    for(i=0; i<CategoryArray.length; i++){
-        CategoryArray[i].classList.replace("vis", "nvis");
-    }
+var categoryArray = document.querySelectorAll(".linkoptions");
+var buttonArray = document.querySelectorAll(".linktab button");
 
-    document.getElementById(CategoryID).classList.replace("nvis, vis");
+for(let i=0; i<buttonArray.length; i++){
+    buttonArray[i].addEventListener("click", function(){showCategoriesIndex(i); setActiveIndex(i);});
 }
 
-// Hoe maak ik een carrousel?
-// Ik begin met het idee dat ik een container heb.
-// In die container zitten blokken van een bepaalde grootte.
-// Die blokken passen niet allemaal in de container dus je hebt een overflow.
-// Deze overflow wil ik eigenlijk op de x-as hebben dus ik wil dat de document richting in een row oneindig doorgaat.
-// elk onderdeel moet een snappunt hebben waarop we met de pijltjes kunnen bewegen.
-// De functie moet bijhouden hoever er is gescrolld, welk punt daarbij hoort en wat het volgende punt is om naartoe te scrollen.
-// Daarnaast moet de functie ervoor zorgen dat de bookmark wordt uitgevoerd voor het eerstvolgende element op de carrousel.
-//
-//Extra:
-//
-// Mischien moet er een terugloop komen naar het begin waarbij we de scrollinfo tijdelijk een timeout geven.
-// Zo zorg je ervoor dat je niet met een lichte beweging direct teruggaat naar het begin. dat is irritant.
+function showCategoriesIndex(myIndex){
+    console.log("aangevraagd");
+    for(j=0; j<categoryArray.length; j++){
+        categoryArray[j].classList.replace("vis", "nvis");
+    }
+    console.log(categoryArray[myIndex]);
+    categoryArray[myIndex].classList.replace("nvis", "vis");
+}
 
 
-var scrollContainerA = document.getElementById("slider_a");
-var scrollContainerB = document.getElementById("slider_b");
+function setActiveIndex(myIndex){
+    console.log("aangevraagd");
+    for(i=0; i<buttonArray.length; i++){
+        buttonArray[i].classList.replace("act", "nact");
+    }
+
+    buttonArray[myIndex].classList.replace("nact", "act");
+}
+
+// Slider Control
+
+var scrollContainerArray = document.querySelectorAll(".slidecontent");
+var nextArrowArray = document.querySelectorAll(".next_arrow");
+var prevArrowArray = document.querySelectorAll(".prev_arrow");
+var scrollposition;
+
+for(let i=0; i<nextArrowArray.length; i++){
+    nextArrowArray[i].addEventListener("click", function(){scrollRight(scrollContainerArray[i])});
+}
+
+for(let j=0; j<prevArrowArray.length; j++){
+    prevArrowArray[j].addEventListener("click", function(){scrollLeft(scrollContainerArray[j])});
+}
+
+
 
 function scrollLeft(myScrollContainer){
-    var scrollposition = myScrollContainer.scrollLeft;
+    scrollposition = myScrollContainer.scrollLeft;
     if(scrollposition === 0){
         return;
     }
-    if(scrollposition % 20 === 0){
-        scrollposition -= 20
+    if(scrollposition % 200 === 0){
+        myScrollContainer.scrollLeft -= 200
     }
     else{
-        scrollposition -= (scrollposition % 20)
+        myScrollContainer.scrollLeft -= (scrollposition % 200)
+    }
+}
+
+function scrollRight(myScrollContainer){ // need to fix end behaviour
+    scrollposition = myScrollContainer.scrollLeft;
+    if(scrollposition % 200 === 0){
+        myScrollContainer.scrollLeft += 200
+    }
+    else{
+        myScrollContainer.scrollLeft -= 200 - (scrollposition % 200)
     }
 }
