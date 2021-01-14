@@ -5,35 +5,22 @@
     /*uitgelicht section*/
     /*best verkocht en nieuw*/
     /*product thema's */ -->
-
+@php
+    $list = [["hello", "#link1"],["hello 2", "#link2"],["hello 3", "#link3"]];
+    $listTwo = [["Game", "55,10", "game_b.jpg"],["Haunted house", "22,99", "game_b.jpg"],["Pandemic", "30", "pandemic.jpg"],["Catan", "40", "game_c.jpg"],["Weird game", "10", "game_d.jpg"],["Title", "price", "game_b.jpg"],["Title", "price", "game_b.jpg"]];
+    $listThree =["Pandemic", "30", "pandemic.jpg"];
+    $slider = ["slider_a","slider_b","slider_c","slider_d"];
+@endphp
 
 @extends('layouts.temp')
 
 @section('content')
 <div class="midcontent">
     <div class="productbar">
-        <div class="bar_product">
-            <div class="bar_product_title">
-                <h3>Type 1</h3>
-            </div>    
-            <div class="drop_menu">
-                <h4></h4>
-                <a></a>
-                <a></a>
-            </div>
-        </div>
-        <div class="bar_product">
-        <div class="bar_product_title">
-                <h3>Type 2</h3>
-            </div>    
-            <div class="drop_menu">
-                <h4></h4>
-                <a></a>
-                <a></a>
-            </div>
-        </div>
-        <div class="bar_product"><h3>Type 3</h3></div>
-        <div class="bar_product"><h3>Type 4</h3></div>
+        <x-barproduct :list="$list"> Test 1 </x-barproduct>
+        <x-barproduct :list="$list"> Test 2 </x-barproduct>
+        <x-barproduct :list="$list"> Test 3 </x-barproduct>
+        <x-barproduct :list="$list"> Test 4 </x-barproduct>
     </div>
     <div class="featured">
         <div class="featured_window"></div>
@@ -47,6 +34,7 @@
             <div class="prev_arrow"></div>
             <div class="slidecontent">
                 <ul>
+                <li><x-sliderfigure :list="$listThree"></x-sliderfigure></li>
                     <li>
                         <figure>
                             <img src="images/pandemic.jpg" alt="Girl in a jacket">
@@ -117,34 +105,9 @@
             <div class=next_arrow></div>
         </div>
     </div>
-    <div class="bestof">
-    <h2>Nieuwe spellen</h2>
-        <div id="slider_b" class="slider">
-            <div class="prev_arrow"></div>
-            <div class="slidecontent">
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <!-- include list of products -->
-                    <!-- <li> 
-                        <figure>
-                            <img>
-                            <figcaption></figcaption>
-                        </figure> 
-                    </li> -->
-                </ul>
-            </div>
-            <div class=next_arrow></div>
-        </div>
-    </div>
+
+    <x-slider :list="$listTwo" :slider="$slider">Test verkocht</x-slider>
+    
     <div class="searchpathlinks">
 
         <h1>Assortiment</h1>
