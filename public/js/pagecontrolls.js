@@ -32,6 +32,7 @@ var scrollContainerArray = document.querySelectorAll(".slidecontent");
 var nextArrowArray = document.querySelectorAll(".next_arrow");
 var prevArrowArray = document.querySelectorAll(".prev_arrow");
 var scrollposition;
+var scrollOpen = true;
 
 for(let i=0; i<nextArrowArray.length; i++){
     nextArrowArray[i].addEventListener("click", function(){scrollRight(scrollContainerArray[i])});
@@ -44,24 +45,39 @@ for(let j=0; j<prevArrowArray.length; j++){
 
 
 function scrollLeft(myScrollContainer){
-    scrollposition = myScrollContainer.scrollLeft;
-    if(scrollposition === 0){
-        return;
-    }
-    if(scrollposition % 200 === 0){
-        myScrollContainer.scrollLeft -= 200
-    }
-    else{
-        myScrollContainer.scrollLeft -= (scrollposition % 200)
+    if (scrollOpen === true){
+        scrollOpen = false;
+        scrollposition = myScrollContainer.scrollLeft;
+        if(scrollposition === 0){
+            scrollOpen=true;
+            return;
+        }
+        if(scrollposition % 200 === 0){
+            for (i=0; i<19; i++){
+                setTimeout(function(){myScrollContainer.scrollLeft -= 10;}, (i*10))
+            }
+            setTimeout(function(){myScrollContainer.scrollLeft -= 10; scrollOpen=true;}, 210);
+        }
+        else{
+            myScrollContainer.scrollLeft -= (scrollposition % 200);
+            scrollOpen=true;
+        }
     }
 }
 
-function scrollRight(myScrollContainer){ // need to fix end behaviour
-    scrollposition = myScrollContainer.scrollLeft;
-    if(scrollposition % 200 === 0){
-        myScrollContainer.scrollLeft += 200
-    }
-    else{
-        myScrollContainer.scrollLeft -= 200 - (scrollposition % 200)
-    }
+function scrollRight(myScrollContainer){
+    if (scrollOpen === true){
+        scrollOpen = false;
+        scrollposition = myScrollContainer.scrollLeft;
+        if(scrollposition % 200 === 0){
+            for (i=0; i<19; i++){
+                setTimeout(function(){myScrollContainer.scrollLeft += 10;}, (i*10))
+            }
+            setTimeout(function(){myScrollContainer.scrollLeft += 10; scrollOpen=true;}, 210);
+        }
+        else{
+            myScrollContainer.scrollLeft += 200 - (scrollposition % 200);
+            scrollOpen=true;
+        }
+    }    
 }

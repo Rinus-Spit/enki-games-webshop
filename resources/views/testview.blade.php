@@ -38,18 +38,15 @@
 
         <h1>Assortiment</h1>
         <x-linktab :list="$listFour"></x-linktab> <!-- List needs to correspond to the size of the category list (under construction)-->
-
-        <div id="category_a" class="linkoptions nvis">
-            <p>Dit is categoryA</p>
+        <x-linkoptions :list="$listFour">
+            <!-- Dit slot deel vervangen met info uit database. Deze functionaliteit moet in de linkoptions component komen -->
+            <!-- Slot Begin -->
             <div><img src="/images/background_dow.png"></div>
             <div><img src="/images/background_999.jpg"></div>
             <div><img src="/images/background_wgg.jpg"></div>
             <div><img src="/images/background_wgg.jpg"></div>
-        </div> <!-- nvis: not visible, vis: visible. To create an interactive menu -->
-
-        <div id="category_b" class="linkoptions vis"><p>Dit is categoryB</p></div>
-        <div id="category_c" class="linkoptions nvis"><p>Dit is categoryC</p></div>
-        <div id="category_d" class="linkoptions nvis"><p>Dit is categoryD</p></div>
+            <!-- Slot Einde -->
+        </x-linkoptions>
     </div>
 </div>
 

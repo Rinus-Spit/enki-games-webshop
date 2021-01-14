@@ -1,7 +1,7 @@
     
 <div class="bestof">
     <h2>{{$slot}}</h2>
-    <div class="slider"> <!-- Slider[1] needs to change to a database depending variable. Just like all other variables honestly-->
+    <div class="slider">
         <div class="prev_arrow"></div>    
         <div class="slidecontent">
             <ul>
