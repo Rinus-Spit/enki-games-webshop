@@ -6,12 +6,11 @@
     /*best verkocht en nieuw*/
     /*product thema's */ -->
 @php
-    $list = [["hello", "#link1"],["hello 2", "#link2"],["hello 3", "#link3"]];
-    $listTwo = [["Game", "55,10", "game_b.jpg"],["Haunted house", "22,99", "game_b.jpg"],["Pandemic", "30", "pandemic.jpg"],["Catan", "40", "game_c.jpg"],["Weird game", "10", "game_d.jpg"],["Title", "price", "game_b.jpg"],["Title", "price", "game_b.jpg"]];
-    $listThree =["Pandemic", "30", "pandemic.jpg"];
-    $listFour = ["Uitgever", "Genre", "Spelsoort", "Random"];
-    $slider = ["slider_a","slider_b","slider_c","slider_d"];
-    $indexToID = ["a","b","c","d","e","f","g","h","i","j","k","l"];
+    $list = $landingContent->list;
+    $listTwo = $landingContent->listTwo;
+    $listThree =$landingContent->listThree;
+    $listFour = $landingContent->listFour;
+    $listFive = $landingContent->listFive;
 @endphp
 
 @extends('layouts.temp')
@@ -35,18 +34,9 @@
     <x-slider :list="$listTwo">Best verkocht</x-slider>
     
     <div class="searchpathlinks">
-
         <h1>Assortiment</h1>
         <x-linktab :list="$listFour"></x-linktab> <!-- List needs to correspond to the size of the category list (under construction)-->
-        <x-linkoptions :list="$listFour">
-            <!-- Dit slot deel vervangen met info uit database. Deze functionaliteit moet in de linkoptions component komen -->
-            <!-- Slot Begin -->
-            <div><img src="/images/background_dow.png"></div>
-            <div><img src="/images/background_999.jpg"></div>
-            <div><img src="/images/background_wgg.jpg"></div>
-            <div><img src="/images/background_wgg.jpg"></div>
-            <!-- Slot Einde -->
-        </x-linkoptions>
+        <x-linkoptions :list="$listFour" :cards="$listFive"></x-linkoptions>
     </div>
 </div>
 

@@ -214,28 +214,38 @@ body{
     background-color: rgb(0, 161, 247);
 }
 
-.linkoptions > div{
+.linkoptions > figure{
     border-radius: 10px;
     overflow: hidden;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.linkoptions > div > img{
+.linkoptions > figure > figcaption > h1{
+    color: black;
+    font-size: 20px;
+    margin: 0px;
+    margin-top: 10px;
+}
+
+.linkoptions > figure > img{
     /* object-position: center; */
-    height: 100%;
-    width: 100%;
+    height: 150px;
+    width: 150px;
     overflow: hidden;
     object-fit: cover;
     object-position: center;
+    border-radius: 20px;
     
 }
 
-.linkoptions > div:hover > img{
+.linkoptions > figure:hover > img{
     /* object-position: center; */
-    height: 80%;
-    width: 80%;
-    margin-left: 10%;
-    margin-top: 10%;
-    border-radius: 10px;
+    height: 130px;
+    width: 130px;
+    border-radius: 20px;
     
 }
 
@@ -243,7 +253,7 @@ body{
 
     align-items: center;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    grid-auto-rows: 150px;
+    grid-auto-rows: 200px;
     column-gap: 20px;
     row-gap: 20px;
     justify-items: stretch;
@@ -295,7 +305,7 @@ body{
     padding-right: 10px;
 }
 
-figure{
+.slidecontent > ul > li > figure{
     height: 250px;
     width: 160px;
     margin: 0px;
@@ -304,27 +314,27 @@ figure{
     /* background-color: lightgrey; */
 }
 
-figure img{
+.slidecontent > ul > li > figure > img{
     grid-column: 2;
     height: 160px;
     width: auto;
     margin-top: 10px;
 }
 
-figcaption{
+.slidecontent > ul > li > figure > figcaption{
     grid-column: 1/ span 3;
     height: 90px;
     width: 100%;
 }
 
-figcaption h1{
+.slidecontent > ul > li > figure > figcaption h1{
     font-size: 20px;
     color: black;
     margin: 0px;
     margin-top: 25px;
     margin-bottom: 10px;
 }
-figcaption h4{
+.slidecontent > ul > li > figure > figcaption h4{
     font-size: 18px;
     color: red;
     margin: 0px;

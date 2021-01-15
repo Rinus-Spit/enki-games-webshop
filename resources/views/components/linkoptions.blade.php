@@ -1,6 +1,8 @@
 @foreach($list as $linkoption)
     <div class="linkoptions nvis">
         <p>{{$linkoption}}</p>
-        {{$slot}}
+        @foreach($cards as $card)
+            <x-catcard :catcard="$card"></x-catcard>
+        @endforeach
     </div>
 @endforeach
