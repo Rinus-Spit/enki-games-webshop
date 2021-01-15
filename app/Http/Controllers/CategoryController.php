@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Category;
+use App\Models\Poperty;
 use Illuminate\Http\Request;
 
 class CategoryController extends Controller
@@ -14,7 +15,10 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        //
+        $categories = Category::latest()->paginate(8);
+        $properties = Property::all();
+
+        return view('categories.index', ['categories' => $categories,'properties' => $property]);
     }
 
     /**
@@ -24,7 +28,8 @@ class CategoryController extends Controller
      */
     public function create()
     {
-        //
+        $properties = Property::all();
+        return view('categories.create',['properties' => $property]);
     }
 
     /**
@@ -35,7 +40,9 @@ class CategoryController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $category = Category::create($this->validateAgeCategory());
+
+        return redirect(route('categories.index'));
     }
 
     /**
@@ -46,7 +53,8 @@ class CategoryController extends Controller
      */
     public function show(Category $category)
     {
-        //
+        $properties = Property::all();
+        return view('categories.show', ['category' => $category,'properties' => $property]);
     }
 
     /**
@@ -57,7 +65,8 @@ class CategoryController extends Controller
      */
     public function edit(Category $category)
     {
-        //
+        $properties = Property::all();
+        return view('categories.edit', ['category' => $category,'properties' => $property]);
     }
 
     /**
@@ -69,7 +78,9 @@ class CategoryController extends Controller
      */
     public function update(Request $request, Category $category)
     {
-        //
+        $category->update($this->validateCategory());
+
+        return redirect(route('categories.index'));
     }
 
     /**
@@ -80,6 +91,17 @@ class CategoryController extends Controller
      */
     public function destroy(Category $category)
     {
-        //
+        $category->delete($category);
+
+        return redirect(route('categories.index'));
     }
+
+    protected function validateCategory()
+    {
+        return request()->validate([
+            'name' => 'required',
+            'property_id' => 'required'
+        ]);
+    }
+
 }

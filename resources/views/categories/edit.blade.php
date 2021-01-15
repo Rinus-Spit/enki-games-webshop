@@ -2,9 +2,9 @@
 
 @section ('content')
 
-            <h1>Pas eigenschap aan</h1>
+            <h1>Pas categorie aan</h1>
 
-            <form method="post" action="{{ route('properties.update', ['property' => $property->id]) }}">
+            <form method="post" action="{{ route('categories.update', ['category' => $category->id]) }}">
                 @csrf
                 @method('PUT')
 
@@ -15,8 +15,8 @@
                             class="input @error('name') alert-danger @enderror" 
                             type="text" 
                             name="name" 
-                            id="property_name"
-                            value="{{ $property->name }}">
+                            id="category_name"
+                            value="{{ $category->name }}">
                     @error('description')
                         <p class="help alert-danger">{{ $errors->first('name') }}</p>
                     @enderror
@@ -25,7 +25,7 @@
 
                 <div class="field is-grouped">
                     <div class="control">
-                        <button class="btn btn-success is-link" type="submit">Pas eigenschap aan</button>
+                        <button class="btn btn-success is-link" type="submit">Pas categorie aan</button>
                     </div>
                 </div>
 
