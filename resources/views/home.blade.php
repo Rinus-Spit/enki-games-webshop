@@ -1,14 +1,15 @@
+@extends ('layouts.admin')
 
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+@section ('content')
 
-    <!-- CSRF Token -->
-    <meta name="csrf-token" content="XT1HwjFEyEoi7F2VUQKZydPI18hC7ul3U1HnMGot">
+<style>
+    #link {
+        text-decoration: none;
+    }
 
-    <title>Gameshop</title>
+    #card-create {
+        margin-top: 35px;
+    }
 
     <!-- Scripts -->
     <script src="http://e-commerce.build/js/app.js" defer></script>
