@@ -62,6 +62,24 @@
                 </a>
             </div>
         </div>
+
+        <div class="column col-md-6">
+                <a href="{{ route('properties.index') }}" id="link">
+                <div class="card card-body" id="card-create">
+                    <div class="card-header text-center" id="card-border">Eigenschappen                        {{-- <i class="fas fa-sort-amount-up"></i> --}}
+                    </div>
+                </a>
+            </div>
+        </div>
+
+            <div class="column col-md-6">
+                <a href="{{ route('properties.create') }}" id="link">
+                <div class="card card-body" id="card-create">
+                    <div class="card-header text-center" id="card-border">Eigenschap Toevoegen
+                    </div>
+                </a>
+            </div>
+        </div>
     </div>
 <br>
 

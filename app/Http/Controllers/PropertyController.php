@@ -14,7 +14,9 @@ class PropertyController extends Controller
      */
     public function index()
     {
-        //
+        $properties = Property::latest()->paginate(8);
+
+        return view('properties.index', ['properties' => $properties]);
     }
 
     /**
@@ -24,7 +26,7 @@ class PropertyController extends Controller
      */
     public function create()
     {
-        //
+        return view('properties.create');
     }
 
     /**
@@ -35,7 +37,9 @@ class PropertyController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $property = Property::create($this->validateProperty());
+
+        return redirect(route('properties.index'));
     }
 
     /**
@@ -46,7 +50,7 @@ class PropertyController extends Controller
      */
     public function show(Property $property)
     {
-        //
+        return view('properties.show', ['property' => $property]);
     }
 
     /**
@@ -57,7 +61,7 @@ class PropertyController extends Controller
      */
     public function edit(Property $property)
     {
-        //
+        return view('properties.edit', ['property' => $property]);
     }
 
     /**
@@ -69,7 +73,9 @@ class PropertyController extends Controller
      */
     public function update(Request $request, Property $property)
     {
-        //
+        $property->update($this->validateProperty());
+
+        return redirect(route('properties.index'));
     }
 
     /**
@@ -80,6 +86,16 @@ class PropertyController extends Controller
      */
     public function destroy(Property $property)
     {
-        //
+        $property->delete($property);
+
+        return redirect(route('properties.index'));
     }
+
+    protected function validateProperty()
+    {
+        return request()->validate([
+            'name' => 'required'
+        ]);
+    }
+
 }

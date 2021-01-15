@@ -17,7 +17,7 @@ class CreatePropertiesTable extends Migration
             $table->id();
             $table->timestamps();
             $table->string('name')->unique();
-            $table->boolean('multiple');
+            $table->boolean('multiple')->default(0);
         });
     }
 
