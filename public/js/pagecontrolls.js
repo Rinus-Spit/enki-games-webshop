@@ -26,6 +26,9 @@ function setActiveIndex(myIndex){
     buttonArray[myIndex].classList.replace("nact", "act");
 }
 
+categoryArray[0].classList.replace("nvis", "vis");
+buttonArray[0].classList.replace("nact", "act");
+
 // Slider Control
 
 var scrollContainerArray = document.querySelectorAll(".slidecontent");
