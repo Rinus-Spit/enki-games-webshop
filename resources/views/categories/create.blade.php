@@ -16,14 +16,14 @@
                             class="input @error('name') alert-danger @enderror"
                             type="text"
                             name="name"
-                            id="property_name"
+                            id="category_name"
                             value="{{ old('name') }}">
                         @error('description')
                         <p class="help alert-danger">{{ $errors->first('name') }}</p>
                         @enderror
                     </div>
                 </div>
-
+                <br>
                 <div class="row" id="property">Eigenschap
                     <div class="control" id="control">
                         <select id="property_id" name="property_id" class="form-control">

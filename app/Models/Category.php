@@ -12,4 +12,10 @@ class Category extends Model
     protected $fillable = [
         'name', 'property_id'
     ];
+
+    public function property()
+    {
+        return $this->belongsTo(Property::class);
+    }
+    
 }

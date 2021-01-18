@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Category;
-use App\Models\Poperty;
+use App\Models\Property;
 use Illuminate\Http\Request;
 
 class CategoryController extends Controller
@@ -15,10 +15,10 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        $categories = Category::latest()->paginate(8);
+        $categories = Category::orderBy('property_id')->paginate(8);
         $properties = Property::all();
 
-        return view('categories.index', ['categories' => $categories,'properties' => $property]);
+        return view('categories.index', ['categories' => $categories,'properties' => $properties]);
     }
 
     /**
@@ -29,7 +29,7 @@ class CategoryController extends Controller
     public function create()
     {
         $properties = Property::all();
-        return view('categories.create',['properties' => $property]);
+        return view('categories.create',['properties' => $properties]);
     }
 
     /**
@@ -40,7 +40,7 @@ class CategoryController extends Controller
      */
     public function store(Request $request)
     {
-        $category = Category::create($this->validateAgeCategory());
+        $category = Category::create($this->validateCategory());
 
         return redirect(route('categories.index'));
     }
@@ -54,7 +54,7 @@ class CategoryController extends Controller
     public function show(Category $category)
     {
         $properties = Property::all();
-        return view('categories.show', ['category' => $category,'properties' => $property]);
+        return view('categories.show', ['category' => $category,'properties' => $properties]);
     }
 
     /**
@@ -66,7 +66,7 @@ class CategoryController extends Controller
     public function edit(Category $category)
     {
         $properties = Property::all();
-        return view('categories.edit', ['category' => $category,'properties' => $property]);
+        return view('categories.edit', ['category' => $category,'properties' => $properties]);
     }
 
     /**

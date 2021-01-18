@@ -80,6 +80,24 @@
                 </a>
             </div>
         </div>
+
+        <div class="column col-md-6">
+                <a href="{{ route('categories.index') }}" id="link">
+                <div class="card card-body" id="card-create">
+                    <div class="card-header text-center" id="card-border">Categorieën                        {{-- <i class="fas fa-sort-amount-up"></i> --}}
+                    </div>
+                </a>
+            </div>
+        </div>
+
+            <div class="column col-md-6">
+                <a href="{{ route('categories.create') }}" id="link">
+                <div class="card card-body" id="card-create">
+                    <div class="card-header text-center" id="card-border">Categorie Toevoegen
+                    </div>
+                </a>
+            </div>
+        </div>
     </div>
 <br>
 

@@ -13,4 +13,9 @@ class Product extends Model
         'name', 'excerpt', 'body', 'price', 'stock', 'image', 'min_players', 'max_players', 'age_category_id'
     ];
 
+    public function categories()
+    {
+        return $this->belongsToMany(Category::class, 'category_product');
+    }
+    
 }

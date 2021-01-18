@@ -7,17 +7,21 @@
         <div class="card-body">
             <table class="table table-hover">
                 <thead>
+                <tr>
+                    <th>Eigenschap</th>
                     <th>Categorie</th>
-                    <th></th>
                     <th>Delete</th>
+                    </tr>
                     <tbody class="table table-hover">
 
-                        @foreach ($properties as $property)
+                        @foreach ($categories as $category)
                             <tr>
-                                <td><a href="{{ route('properties.show', $property) }}" id="link"> {{ $property->name }}</a></td>
+                            <td>{{ $category->property->name }}</td>
+                                <td><a href="{{ route('categories.show', $category) }}" id="link"> {{ $category->name }}</a>
+                                <a href="{{ route('categories.edit', $category) }}"><i class="fas fa-edit"></i></a>
+                                </td>
 
-                                <td></td>
-                                <td><form class="inline" method="post" action="{{ route('properties.destroy',$property->id,false) }}">
+                                <td><form class="inline" method="post" action="{{ route('categories.destroy',$category->id,false) }}">
                                 @csrf
                                 @method('DELETE')
                                 <button class="btn" type="submit" id="button"><i class="fas fa-trash-alt" id="trash"></i></button>
@@ -40,7 +44,7 @@
                 </a>
 
                 <div class="text-right" id="text-right">
-                    <a href="{{ route('properties.create') }}" id="link">
+                    <a href="{{ route('categories.create') }}" id="link">
                         Categorie toevoegen
                         <i class="fas fa-arrow-right"></i>
                     </a>

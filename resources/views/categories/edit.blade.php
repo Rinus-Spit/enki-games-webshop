@@ -22,7 +22,23 @@
                     @enderror
                     </div>
                 </div>
-
+                <br>
+                <div class="row" id="property">Eigenschap
+                    <div class="control" id="control">
+                        <select id="property_id" name="property_id" class="form-control">
+                            @foreach ($properties as $property)
+                            <option value="{{ $property->id }}" {{ ($category->property_id == $property->id) ? 'selected' : '' }}>{{ $property->name }}</option>
+                            @endforeach
+                        </select>
+                        <p class="help-block"></p>
+                        @if($errors->has('property_id'))
+                        <p class="help-block">
+                            {{ $errors->first('property_id') }}
+                        </p>
+                        @endif
+                    </div>
+                </div>
+                <br>
                 <div class="field is-grouped">
                     <div class="control">
                         <button class="btn btn-success is-link" type="submit">Pas categorie aan</button>
@@ -30,5 +46,12 @@
                 </div>
 
             </form>
+            <br>
+
+            <div class="footer">
+                <a href="{{ route('admin') }}" id="link">
+                    <i class="fas fa-arrow-left"></i> Terug naar admin</a>
+                </div>
+            </div>
 
 @endsection

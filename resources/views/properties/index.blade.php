@@ -7,14 +7,18 @@
         <div class="card-body">
             <table class="table table-hover">
                 <thead>
+                <tr>
                     <th>Eigenschap</th>
                     <th></th>
                     <th>Delete</th>
+                    </tr>
                     <tbody class="table table-hover">
 
                         @foreach ($properties as $property)
                             <tr>
-                                <td><a href="{{ route('properties.show', $property) }}" id="link"> {{ $property->name }}</a></td>
+                                <td><a href="{{ route('properties.show', $property) }}" id="link"> {{ $property->name }}</a>
+                                <a href="{{ route('properties.edit', $property) }}"><i class="fas fa-edit"></i></a>
+                                </td>
 
                                 <td></td>
                                 <td><form class="inline" method="post" action="{{ route('properties.destroy',$property->id,false) }}">
