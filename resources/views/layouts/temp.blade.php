@@ -22,6 +22,7 @@
     <link href="/css/custom.css" rel="stylesheet">
 </head>
 <body>
+    <x-topnav></x-topnav>
     @yield('content')
 
     <!-- <script>

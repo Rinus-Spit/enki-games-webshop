@@ -461,3 +461,56 @@ background-image: url("/images/right_blue.svg");
 .prev_arrow:hover{
     background-image: url("/images/left_blue.svg");
 }
+
+.topnav{
+    position: sticky;
+    height: 55px;
+    width: 100vw;
+    background-color: rgb(34, 34, 34);
+    top: 0px;
+    z-index: 20;
+    overflow: hidden;
+}
+
+.topnav > .navlogo{
+    float: left;
+    height: 100%;
+    
+    margin-left: 7%;
+    background-image: url("/images/enki_logo.svg");
+    background-repeat: no-repeat;
+    background-position: -10% 20%;
+    background-size: 50%;
+
+    padding-top: 14px;
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+    padding-left: 80px;
+}
+
+.topnav > .navlogo:hover{
+    color: #00a1f7;
+}
+.topnav > .homeless{
+    float: left;
+    margin-left: 40px;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.homeless > a{
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    margin-left: 25px;
+}
+
+.homeless > a:hover{
+    color: #00a1f7;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
