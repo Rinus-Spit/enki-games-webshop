@@ -14,7 +14,7 @@ body{
     background-image: linear-gradient(180deg, rgba(219, 129, 68, 0),rgb(170, 141, 97), rgb(170, 141, 97) );
     height: min-content;
     background-image: linear-gradient(180deg, rgba(255, 255, 255, 0),#b4b4b4 60%, #b4b4b4);
-    padding-top: 80px;
+    padding-top: 60px;
     padding-bottom: 80px;
 }
 
