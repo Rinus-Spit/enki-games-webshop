@@ -24,10 +24,13 @@
         <x-barproduct :list="$list"> Test 4 </x-barproduct>
     </div>
     <div class="featured">
-        <div class="featured_window"></div>
-        <div class="featured_options_a"></div>
-        <div class="featured_options_b"></div>
-        <div class="featured_options_c"></div>
+        <a href="#nothing" class="featured_window">
+            <h1>Kaldheim spoilers</h1>
+            <div class="background_filter"></div>
+        </a>
+        <a href="#nothing" class="featured_options_a"><h1>link1</h1><div class="background_filter"></div></a>
+        <a href="#nothing" class="featured_options_b"><h1>link2</h1><div class="background_filter"></div></a>
+        <a href="#nothing" class="featured_options_c"><h1>link3</h1><div class="background_filter"></div></a>
     </div>
 
     <x-slider :list="$listTwo">Nieuwe producten</x-slider>

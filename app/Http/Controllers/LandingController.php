@@ -11,7 +11,6 @@ class PayloadClass
     public $listThree =["Pandemic", "30", "pandemic.jpg"];
     public $listFour = ["Uitgever", "Genre", "Spelsoort", "Random"];
     public $listFive = [["Days of wonder","/images/background_dow.png"],["999 Games","/images/background_999.jpg"],["White goblin games","/images/background_wgg.jpg"],["wgg","/images/background_wgg.jpg"]];
-
 }
 
 

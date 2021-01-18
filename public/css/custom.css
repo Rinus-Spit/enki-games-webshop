@@ -30,6 +30,7 @@ body{
     background-color: hsl(25, 95%, 45%);
     margin-bottom: 20px;
     border-radius: 5px;
+    z-index: 4;
 }
 
 .bar_product{
@@ -121,6 +122,22 @@ body{
     background-repeat: no-repeat;
     background-size: 100%;
     border-radius: 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-decoration: none;
+    position: relative;
+}
+.featured_options_a h1{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    margin-bottom: 10px;
+    z-index: 2;
+}
+.featured_options_a:hover{
+    background-size: 120%;
+    transition: background-size 1s;
 }
 
 .featured_options_b{
@@ -132,6 +149,22 @@ body{
     background-repeat: no-repeat;
     background-size: 100%;
     border-radius: 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-decoration: none;
+    position: relative;
+}
+.featured_options_b h1{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    margin-bottom: 10px;
+    z-index: 2;
+}
+.featured_options_b:hover{
+    background-size: 120%;
+    transition: background-size 1s;
 }
 
 .featured_options_c{
@@ -143,6 +176,30 @@ body{
     background-repeat: no-repeat;
     background-size: 100%;
     border-radius: 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-decoration: none;
+    position: relative;
+}
+.featured_options_c h1{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    margin-bottom: 10px;
+    z-index: 2;
+}
+.featured_options_c:hover{
+    background-size: 120%;
+    transition: background-size 1s;
+}
+
+.background_filter{
+    position: absolute;
+
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.185);
 }
 
 .featured_window{
@@ -154,6 +211,24 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-decoration: none;
+    position: relative;
+}
+
+.featured_window h1{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    z-index: 2;
+}
+
+.featured_window:hover{
+    background-size: 160%;
+    background-position: 80% 50%;
+    transition: background-position 1s;
 }
 
 .bestof{
