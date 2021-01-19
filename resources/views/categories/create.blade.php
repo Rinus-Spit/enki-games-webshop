@@ -40,6 +40,22 @@
                     </div>
                 </div>
                 <br>
+
+                <div class="field">Afbeelding
+                    <div class="control">
+                        <input class="form-control"
+                        class="input @error('image') alert-danger @enderror"
+                        type="text"
+                        name="image"
+                        id="product_image"
+                        value="{{ old('image') }}">
+                        @error('image')
+                        <p class="help alert-danger">{{ $errors->first('image') }}</p>
+                        @enderror
+                    </div>
+                </div>
+
+                <br>
                 <div class="field is-grouped">
                     <div class="control">
 

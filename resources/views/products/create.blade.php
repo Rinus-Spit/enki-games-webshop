@@ -149,7 +149,28 @@
                         @endif
                     </div>
                 </div>
+                @foreach($properties as $property)
                 <br>
+                <div class="row">
+                    <div class="col-xs-12 form-group">
+                    
+                        <label class="control-label" for="category">Categorie {{$property->name}}</label>
+                        <select id="category" multiple name="category[]">
+                            @foreach ($property->categories as $category)
+                            <option value="{{ $category->id }}">{{ $category->name }}</option>
+                            @endforeach
+                        </select>
+
+                        <p class="help-block"></p>
+                        @if($errors->has('category'))
+                            <p class="help-block">
+                                {{ $errors->first('category') }}
+                            </p>
+                        @endif
+                    </div>
+                </div>
+                @endforeach
+
 
                 <div class="field is-grouped">
                     <div class="control">

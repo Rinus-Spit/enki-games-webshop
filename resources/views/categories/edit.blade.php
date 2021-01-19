@@ -23,6 +23,21 @@
                     </div>
                 </div>
                 <br>
+                <div class="field">
+                    <label class="label" for="image">Afbeelding</label>
+                    <div class="control">
+                        <input  class="form-control"
+                        class="input @error('image') alert-danger @enderror"
+                        type="text"
+                        name="image"
+                        id="product_image"
+                        value="{{ $category->image }}">
+                        @error('image')
+                        <p class="help alert-danger">{{ $errors->first('image') }}</p>
+                        @enderror
+                    </div>
+                </div>
+                <br>
                 <div class="row" id="property">Eigenschap
                     <div class="control" id="control">
                         <select id="property_id" name="property_id" class="form-control">
