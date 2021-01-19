@@ -17,6 +17,7 @@ class CreateCategoriesTable extends Migration
             $table->id();
             $table->timestamps();
             $table->string('name');
+            $table->string('image');
             $table->bigInteger('property_id')->unsigned();
             $table->foreign('property_id')->references('id')->on('properties')->onDelete('cascade');
             $table->unique(['property_id', 'name']);
