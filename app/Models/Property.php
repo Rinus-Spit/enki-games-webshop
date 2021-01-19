@@ -12,4 +12,10 @@ class Property extends Model
     protected $fillable = [
         'name', 'multiple'
     ];
+
+    public function categories()
+    {
+        return $this->hasMany(Category::class);
+    }
+
 }

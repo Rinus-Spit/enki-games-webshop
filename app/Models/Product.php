@@ -18,4 +18,9 @@ class Product extends Model
         return $this->belongsToMany(Category::class, 'category_product');
     }
     
+    public function age_category()
+    {
+        return $this->belongsTo(Age_category::class);
+    }
+    
 }
