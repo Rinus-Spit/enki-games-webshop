@@ -11,7 +11,35 @@ class PayloadClass
     public $listThree =["Pandemic", "30", "pandemic.jpg"];
     public $listFour = ["Uitgever", "Genre", "Spelsoort", "Random"];
     public $listFive = [["Days of wonder","/images/background_dow.png"],["999 Games","/images/background_999.jpg"],["White goblin games","/images/background_wgg.jpg"],["wgg","/images/background_wgg.jpg"]];
+
+/* actions: 
+
+    - add a request to get all products
+    - the products should have a for each option
+        >> 
+            $users = DB::table('users')->get();
+
+            foreach ($users as $user) {
+                echo $user->name;
+            }
+        <<   
+    - the products should have the standard options:
+        + Price
+        + Excerpt
+        + Image location (should only be edditable by uploading an image. Just as a backend reminder)
+        + Name
+    - the properties should have the following options:
+        + Categories
+        + Name
+    - the categories should have the following options:
+        + property(id?)
+        + Name
+        + Image location
+    
+*/
+
 }
+
 
 
 
