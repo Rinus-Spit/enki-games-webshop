@@ -5,17 +5,17 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Age_category extends Model
+class Property extends Model
 {
     use HasFactory;
 
     protected $fillable = [
-        'description'
+        'name', 'multiple'
     ];
 
-    public function products()
+    public function categories()
     {
-        return $this->hasMany(Product::class);
+        return $this->hasMany(Category::class);
     }
 
 }

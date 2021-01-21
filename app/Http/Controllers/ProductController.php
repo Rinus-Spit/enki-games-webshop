@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Product;
 use App\Models\Age_category;
+use App\Models\Property;
+use App\Models\Category;
 use Illuminate\Http\Request;
 
 class ProductController extends Controller
@@ -29,7 +31,9 @@ class ProductController extends Controller
     public function create()
     {
         $age_categories = Age_category::all();
-        return view('products.create',['age_categories' => $age_categories]);
+        $properties = Property::all();
+        $categories = Category::all();
+        return view('products.create',['age_categories' => $age_categories,'categories' => $categories,'properties' => $properties]);
     }
 
     /**
@@ -41,6 +45,7 @@ class ProductController extends Controller
     public function store(Request $request)
     {
         $product = Product::create($this->validateProduct());
+        $product->categories()->sync((array)$request->input('category'));
 
         return redirect(route('products.index'));
     }
@@ -65,7 +70,9 @@ class ProductController extends Controller
     public function edit(Product $product)
     {
         $age_categories = Age_category::all();
-        return view('products.edit', ['product' => $product, 'age_categories' => $age_categories]);
+        $properties = Property::all();
+        //$categories = Category::all();
+        return view('products.edit', ['product' => $product, 'age_categories' => $age_categories, 'properties' => $properties]);
     }
 
     /**
@@ -78,9 +85,7 @@ class ProductController extends Controller
     public function update(Request $request, Product $product)
     {
         $update_array = $this->validateProduct();
-        //dd($request->input('age_category'));
-        //$update_array['age_category_id'] = $request->input('age_category')[0];
-        //dd($update_array);
+        $product->categories()->sync((array)$request->input('category'));
         $product->update($update_array);
 
         return redirect(route('products.index'));

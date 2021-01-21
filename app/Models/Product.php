@@ -13,4 +13,18 @@ class Product extends Model
         'name', 'excerpt', 'body', 'price', 'stock', 'image', 'min_players', 'max_players', 'age_category_id'
     ];
 
+    public function categories()
+    {
+        return $this->belongsToMany(Category::class, 'category_product');
+    }
+    
+    public function hasCategory($category) {
+        return $this->categories->contains($category);
+    }
+
+    public function age_category()
+    {
+        return $this->belongsTo(Age_category::class);
+    }
+    
 }
