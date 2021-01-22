@@ -10,7 +10,7 @@
     $listTwo = $landingContent->listTwo;
     $listThree =$landingContent->listThree;
     $listFour = $landingContent->listFour;
-    $listFive = $landingContent->listFive;
+    $listFive = $landingContent->listFive;   
 @endphp
 
 @extends('layouts.temp')
@@ -34,7 +34,7 @@
     </div>
 
     <x-slider :list="$listTwo">Nieuwe producten</x-slider>
-    <x-slider :list="$listTwo">Best verkocht</x-slider>
+    <x-slider :list="$test">Best verkocht</x-slider>
 
     <div class="searchpathlinks">
         <h1>Assortiment</h1>
