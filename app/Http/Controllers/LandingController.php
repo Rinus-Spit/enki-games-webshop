@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use App\Models\Property;
+
 
 
 
@@ -74,8 +76,21 @@ class LandingController extends Controller{
         
         $productsInput = DB::table('products')->get();
         $landingContent = new PayloadClass($productsInput);
-        $testB = json_encode(DB::table('products')->get());
+        $testB = json_encode(Property::get()[1]->categories[0]);
+        $properties = Property::get();
+        $propertyCategories = array();
+        $propertyNames = array();
+        foreach($properties as $property){
+            array_push($propertyNames, $property->name);
+            foreach($property->categories as $category){
+                array_push($propertyCategories, array($category->name, $category->image));
+            }
+        }
         $test = $landingContent->productArrayOne;
-        return view('testview', ["landingContent"=>$landingContent, "test"=>$test]);
+        return view('testview', ["landingContent"=>$landingContent, "test"=>$test, "testB"=>json_encode($propertyCategories)]);
     }
 }
+
+// [properties]
+// foreach(properties as property)
+// property (search database for category as part of property)

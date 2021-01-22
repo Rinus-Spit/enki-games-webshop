@@ -16,6 +16,7 @@
 @extends('layouts.temp')
 
 @section('content')
+<div>{{$testB}}</div>
 <div class="midcontent">
     <div class="productbar">
         <x-barproduct :list="$list"> Test 1 </x-barproduct>
