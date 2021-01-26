@@ -1,6 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Category;
+
 
 use Illuminate\Http\Request;
 
@@ -25,4 +27,9 @@ class HomeController extends Controller
     {
         return view('home');
     }
+    public function about()
+    {
+        return view('about');
+    }
+
 }

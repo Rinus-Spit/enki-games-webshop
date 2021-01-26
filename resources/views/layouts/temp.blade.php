@@ -10,7 +10,7 @@
     <title>Gameshop</title>
 
     <!-- Scripts -->
-    <!-- <script src="/js/app.js" defer></script> -->
+    <script src="/js/pagecontrolls.js" defer></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -22,5 +22,12 @@
     <link href="/css/custom.css" rel="stylesheet">
 </head>
 <body>
+    <x-topnav></x-topnav>
     @yield('content')
+
+    <!-- <script>
+        @yield('scriptDeclarations')
+        @yield('scriptEventListeners')
+        @yield('scriptFunctions')
+    </script> -->
 </body>

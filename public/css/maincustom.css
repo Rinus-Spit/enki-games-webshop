@@ -1,0 +1,75 @@
+
+
+#card {
+    margin-top: 55px;
+}
+
+#link {
+    text-decoration: none;
+}
+
+#button {
+    margin-left: -10px;
+}
+
+#trash {
+    color:rgb(230, 54, 54);
+}
+
+#footer {
+    margin-left: 35px;
+}
+
+#text-right {
+    margin-top:-22px;
+    margin-right: 25px;
+}
+
+#text {
+    margin-top: -22px;
+}
+
+#col {
+    margin-top: -25px;
+}
+
+#create {
+    margin-top: 55px;
+    margin-bottom: 55px;
+}
+
+#age {
+    padding-left: 15px;
+}
+
+#image {
+    width: 100%;
+}
+
+#control {
+    margin-left: 15px;
+}
+
+#card-body{
+    overflow: hidden;
+}
+
+#edit {
+    margin-bottom: -60px
+}
+
+#destroy {
+    min-width: 100px;
+    margin-left: 60%;
+}
+
+#destroy2 {
+    margin-bottom: -35px;
+    min-width: 100px;
+    margin-left: 60%;
+}
+
+#select {
+    margin-left: 15px;
+    }
+

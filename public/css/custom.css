@@ -14,7 +14,7 @@ body{
     background-image: linear-gradient(180deg, rgba(219, 129, 68, 0),rgb(170, 141, 97), rgb(170, 141, 97) );
     height: min-content;
     background-image: linear-gradient(180deg, rgba(255, 255, 255, 0),#b4b4b4 60%, #b4b4b4);
-    padding-top: 80px;
+    padding-top: 60px;
     padding-bottom: 80px;
 }
 
@@ -30,6 +30,7 @@ body{
     background-color: hsl(25, 95%, 45%);
     margin-bottom: 20px;
     border-radius: 5px;
+    z-index: 4;
 }
 
 .bar_product{
@@ -58,6 +59,7 @@ body{
     position: absolute;
     top: 45px;
     left: 0px;
+    padding-left: 20px;
     width: 300px;
     height: 300px;
     background-color: rgb(0, 195, 255);
@@ -80,6 +82,18 @@ body{
     font-size: 18px;
     font-weight: bold;
 }
+
+.bar_product a{
+    text-decoration: none;
+    font-size: 14px;
+    color:black;
+    font-weight: bold;
+}
+
+.bar_product a:hover{
+    color:green;
+}
+
 
 .featured{
     background-color: lightpink;
@@ -108,6 +122,22 @@ body{
     background-repeat: no-repeat;
     background-size: 100%;
     border-radius: 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-decoration: none;
+    position: relative;
+}
+.featured_options_a h1{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    margin-bottom: 10px;
+    z-index: 2;
+}
+.featured_options_a:hover{
+    background-size: 120%;
+    transition: background-size 1s;
 }
 
 .featured_options_b{
@@ -119,6 +149,22 @@ body{
     background-repeat: no-repeat;
     background-size: 100%;
     border-radius: 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-decoration: none;
+    position: relative;
+}
+.featured_options_b h1{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    margin-bottom: 10px;
+    z-index: 2;
+}
+.featured_options_b:hover{
+    background-size: 120%;
+    transition: background-size 1s;
 }
 
 .featured_options_c{
@@ -130,6 +176,30 @@ body{
     background-repeat: no-repeat;
     background-size: 100%;
     border-radius: 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-decoration: none;
+    position: relative;
+}
+.featured_options_c h1{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    margin-bottom: 10px;
+    z-index: 2;
+}
+.featured_options_c:hover{
+    background-size: 120%;
+    transition: background-size 1s;
+}
+
+.background_filter{
+    position: absolute;
+
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.185);
 }
 
 .featured_window{
@@ -141,6 +211,24 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-decoration: none;
+    position: relative;
+}
+
+.featured_window h1{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    z-index: 2;
+}
+
+.featured_window:hover{
+    background-size: 160%;
+    background-position: 80% 50%;
+    transition: background-position 1s;
 }
 
 .bestof{
@@ -201,28 +289,38 @@ body{
     background-color: rgb(0, 161, 247);
 }
 
-.linkoptions > div{
+.linkoptions > figure{
     border-radius: 10px;
     overflow: hidden;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.linkoptions > div > img{
+.linkoptions > figure > figcaption > h1{
+    color: black;
+    font-size: 20px;
+    margin: 0px;
+    margin-top: 10px;
+}
+
+.linkoptions > figure > img{
     /* object-position: center; */
-    height: 100%;
-    width: 100%;
+    height: 150px;
+    width: 150px;
     overflow: hidden;
     object-fit: cover;
     object-position: center;
+    border-radius: 20px;
     
 }
 
-.linkoptions > div:hover > img{
+.linkoptions > figure:hover > img{
     /* object-position: center; */
-    height: 80%;
-    width: 80%;
-    margin-left: 10%;
-    margin-top: 10%;
-    border-radius: 10px;
+    height: 130px;
+    width: 130px;
+    border-radius: 20px;
     
 }
 
@@ -230,7 +328,7 @@ body{
 
     align-items: center;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    grid-auto-rows: 150px;
+    grid-auto-rows: 200px;
     column-gap: 20px;
     row-gap: 20px;
     justify-items: stretch;
@@ -282,7 +380,7 @@ body{
     padding-right: 10px;
 }
 
-figure{
+.slidecontent > ul > li > figure{
     height: 250px;
     width: 160px;
     margin: 0px;
@@ -291,27 +389,27 @@ figure{
     /* background-color: lightgrey; */
 }
 
-figure img{
+.slidecontent > ul > li > figure > img{
     grid-column: 2;
     height: 160px;
     width: auto;
     margin-top: 10px;
 }
 
-figcaption{
+.slidecontent > ul > li > figure > figcaption{
     grid-column: 1/ span 3;
     height: 90px;
     width: 100%;
 }
 
-figcaption h1{
+.slidecontent > ul > li > figure > figcaption h1{
     font-size: 20px;
     color: black;
     margin: 0px;
     margin-top: 25px;
     margin-bottom: 10px;
 }
-figcaption h4{
+.slidecontent > ul > li > figure > figcaption h4{
     font-size: 18px;
     color: red;
     margin: 0px;
@@ -566,4 +664,57 @@ input[type=range]::-webkit-slider-thumb {
     text-align: center;
     margin: 0px;
     margin-top: 3.5px
+}
+
+.topnav{
+    position: sticky;
+    height: 55px;
+    width: 100vw;
+    background-color: rgb(34, 34, 34);
+    top: 0px;
+    z-index: 20;
+    overflow: hidden;
+}
+
+.topnav > .navlogo{
+    float: left;
+    height: 100%;
+    
+    margin-left: 7%;
+    background-image: url("/images/enki_logo.svg");
+    background-repeat: no-repeat;
+    background-position: -10% 20%;
+    background-size: 50%;
+
+    padding-top: 14px;
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+    padding-left: 80px;
+}
+
+.topnav > .navlogo:hover{
+    color: #00a1f7;
+}
+.topnav > .homeless{
+    float: left;
+    margin-left: 40px;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.homeless > a{
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    margin-left: 25px;
+}
+
+.homeless > a:hover{
+    color: #00a1f7;
+    text-decoration: underline;
+    text-underline-offset: 5px;
 }
