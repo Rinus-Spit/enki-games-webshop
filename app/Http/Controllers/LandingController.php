@@ -18,39 +18,22 @@ class PayloadClass
     public $listFour = ["Uitgever", "Genre", "Spelsoort", "Random"];
     public $listFive = [["Days of wonder","/images/background_dow.png"],["999 Games","/images/background_999.jpg"],["White goblin games","/images/background_wgg.jpg"],["wgg","/images/background_wgg.jpg"]];
     public $productArrayOne = array();
-    public function __construct($products){ foreach($products as $product){
-        array_push($this->productArrayOne, array($product->name, $product->price, $product->image));
-    }}
-
-/* actions: 
-
-    - add a request to get all products
-    - the products should have a for each option
-        >> 
-            $users = DB::table('users')->get();
-
-            foreach ($users as $user) {
-                echo $user->name;
+    public $propertyCategories = array();
+    public $propertyNames = array();
+    public function __construct($products, $properties){ 
+        foreach($products as $product){
+            array_push($this->productArrayOne, array($product->name, $product->price, $product->image));
+        }
+        foreach($properties as $key => $property){
+            array_push($this->propertyNames, $property->name);
+            array_push($this->propertyCategories, array());
+            foreach($property->categories as $category){
+                array_push($this->propertyCategories[$key], array($category->name, $category->image));
             }
-        <<   
-    - the products should have the standard options:
-        + Price
-        + Excerpt
-        + Image location (should only be edditable by uploading an image. Just as a backend reminder)
-        + Name
-    - the properties should have the following options:
-        + Categories
-        + Name
-    - the categories should have the following options:
-        + property(id?)
-        + Name
-        + Image location
+        }
+    }
     
-*/
-
 }
-
-
 
 
 class LandingController extends Controller{
@@ -75,22 +58,9 @@ class LandingController extends Controller{
     {
         
         $productsInput = DB::table('products')->get();
-        $landingContent = new PayloadClass($productsInput);
-        $testB = json_encode(Property::get()[1]->categories[0]);
-        $properties = Property::get();
-        $propertyCategories = array();
-        $propertyNames = array();
-        foreach($properties as $property){
-            array_push($propertyNames, $property->name);
-            foreach($property->categories as $category){
-                array_push($propertyCategories, array($category->name, $category->image));
-            }
-        }
-        $test = $landingContent->productArrayOne;
-        return view('testview', ["landingContent"=>$landingContent, "test"=>$test, "testB"=>json_encode($propertyCategories)]);
+        $propertiesInput = Property::get();
+        $landingContent = new PayloadClass($productsInput, $propertiesInput);
+
+        return view('testview', ["landingContent"=>$landingContent]);
     }
 }
-
-// [properties]
-// foreach(properties as property)
-// property (search database for category as part of property)

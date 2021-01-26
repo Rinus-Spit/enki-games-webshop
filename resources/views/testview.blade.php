@@ -10,13 +10,17 @@
     $listTwo = $landingContent->listTwo;
     $listThree =$landingContent->listThree;
     $listFour = $landingContent->listFour;
-    $listFive = $landingContent->listFive;   
+    $listFive = $landingContent->listFive;
+    
+    $sliderproducts = $landingContent->productArrayOne;
+    $propertyNames = $landingContent->propertyNames;
+    $propertyCategories = $landingContent->propertyCategories;
+
 @endphp
 
 @extends('layouts.temp')
 
 @section('content')
-<div>{{$testB}}</div>
 <div class="midcontent">
     <div class="productbar">
         <x-barproduct :list="$list"> Test 1 </x-barproduct>
@@ -35,12 +39,12 @@
     </div>
 
     <x-slider :list="$listTwo">Nieuwe producten</x-slider>
-    <x-slider :list="$test">Best verkocht</x-slider>
+    <x-slider :list="$sliderproducts">Best verkocht</x-slider>
 
     <div class="searchpathlinks">
         <h1>Assortiment</h1>
-        <x-linktab :list="$listFour"></x-linktab> <!-- List needs to correspond to the size of the category list (under construction)-->
-        <x-linkoptions :list="$listFour" :cards="$listFive"></x-linkoptions>
+        <x-linktab :list="$propertyNames"></x-linktab> <!-- List needs to correspond to the size of the category list (under construction)-->
+        <x-linkoptions :list="$propertyNames" :cards="$propertyCategories"></x-linkoptions>
     </div>
 </div>
 

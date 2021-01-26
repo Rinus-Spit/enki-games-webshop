@@ -1,7 +1,7 @@
-@foreach($list as $linkoption)
+@foreach($list as $propertyname)
     <div class="linkoptions nvis">
-        <p>{{$linkoption}}</p>
-        @foreach($cards as $card)
+        <p>{{$propertyname}}</p>
+        @foreach($cards[$loop->index] as $card)
             <x-catcard :catcard="$card"></x-catcard>
         @endforeach
     </div>
