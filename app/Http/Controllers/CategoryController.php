@@ -100,7 +100,8 @@ class CategoryController extends Controller
     {
         return request()->validate([
             'name' => 'required',
-            'property_id' => 'required'
+            'property_id' => 'required',
+            'image' => 'required'
         ]);
     }
 

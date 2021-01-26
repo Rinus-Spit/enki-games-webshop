@@ -35,6 +35,12 @@
             <div class="stock">
                 Voorraad: {{ $product->stock }} stuks
             </div>
+            @foreach($product->categories as $category)
+            <br>
+            <div class="row">
+                Categorie {{ $category->name }}
+            </div>
+                @endforeach
 
             <br>
 

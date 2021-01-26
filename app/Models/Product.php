@@ -27,4 +27,13 @@ class Product extends Model
         return $this->belongsTo(Age_category::class);
     }
     
+    public function toplists()
+    {
+        return $this->belongsToMany(Toplist::class, 'product_toplists');
+    }
+    
+    public function hasToplist($toplist) {
+        return $this->toplists->contains($toplist);
+    }
+    
 }
