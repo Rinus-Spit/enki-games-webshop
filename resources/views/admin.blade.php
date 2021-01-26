@@ -98,6 +98,24 @@
                 </a>
             </div>
         </div>
+
+        <div class="column col-md-6">
+                <a href="{{ route('toplists.index') }}" id="link">
+                <div class="card card-body" id="card-create">
+                    <div class="card-header text-center" id="card-border">Lijsten                        {{-- <i class="fas fa-sort-amount-up"></i> --}}
+                    </div>
+                </a>
+            </div>
+        </div>
+
+            <div class="column col-md-6">
+                <a href="{{ route('toplists.create') }}" id="link">
+                <div class="card card-body" id="card-create">
+                    <div class="card-header text-center" id="card-border">Lijst Toevoegen
+                    </div>
+                </a>
+            </div>
+        </div>
     </div>
 <br>
 

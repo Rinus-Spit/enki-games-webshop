@@ -28,6 +28,7 @@ Route::resource('products', App\Http\Controllers\ProductController::class);
 Route::resource('age_categories', App\Http\Controllers\AgeCategoryController::class);
 Route::resource('categories', App\Http\Controllers\CategoryController::class);
 Route::resource('properties', App\Http\Controllers\PropertyController::class);
+Route::resource('toplists', App\Http\Controllers\ToplistController::class);
 /*
 Route::get('/products', [App\Http\Controllers\ProductController::class, 'index'])
 ->name('products.index');

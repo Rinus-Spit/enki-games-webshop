@@ -6,6 +6,7 @@ use App\Models\Product;
 use App\Models\Age_category;
 use App\Models\Property;
 use App\Models\Category;
+use App\Models\Toplist;
 use Illuminate\Http\Request;
 
 class ProductController extends Controller
@@ -33,7 +34,8 @@ class ProductController extends Controller
         $age_categories = Age_category::all();
         $properties = Property::all();
         $categories = Category::all();
-        return view('products.create',['age_categories' => $age_categories,'categories' => $categories,'properties' => $properties]);
+        $toplists = Toplist::all();
+        return view('products.create',['age_categories' => $age_categories,'categories' => $categories,'properties' => $properties,'toplists' => $toplists]);
     }
 
     /**
@@ -71,8 +73,9 @@ class ProductController extends Controller
     {
         $age_categories = Age_category::all();
         $properties = Property::all();
+        $toplists = Toplist::all();
         //$categories = Category::all();
-        return view('products.edit', ['product' => $product, 'age_categories' => $age_categories, 'properties' => $properties]);
+        return view('products.edit', ['product' => $product, 'age_categories' => $age_categories, 'properties' => $properties, 'toplists' => $toplists]);
     }
 
     /**
@@ -86,6 +89,15 @@ class ProductController extends Controller
     {
         $update_array = $this->validateProduct();
         $product->categories()->sync((array)$request->input('category'));
+        $toplist_order = (array) $request->input('toplist_order');
+        $toplist_id = (array) $request->input('toplist_id');
+        $toplist = array();
+        foreach ($toplist_id as $key => $value) {
+            $toplist[$key] = array('order' => $toplist_order[$key]);
+        }
+        //print_r($toplist);
+        //dd($request);
+        $product->toplists()->sync($toplist);
         $product->update($update_array);
 
         return redirect(route('products.index'));

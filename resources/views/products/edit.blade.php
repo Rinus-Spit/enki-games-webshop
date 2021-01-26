@@ -165,28 +165,59 @@
             @foreach($properties as $property)
             <br>
             <div class="row">
-                    <div class="col-xs-12 form-group">
+                <div class="col-xs-12 form-group">
                     
-                        <label class="control-label" for="category">Categorie {{$property->name}}</label>
-                        <select id="category" multiple name="category[]">
-                            @foreach ($property->categories as $category)
-                            <option value="{{ $category->id }}" {{ ($product->hasCategory($category->id)) ? 'selected' : '' }}>{{ $category->name }}</option>
-                            @endforeach
-                        </select>
+                    <label class="control-label" for="category">Categorie {{$property->name}}</label>
+                    <select id="category" multiple name="category[]">
+                        @foreach ($property->categories as $category)
+                        <option value="{{ $category->id }}" {{ ($product->hasCategory($category->id)) ? 'selected' : '' }}>{{ $category->name }}</option>
+                        @endforeach
+                    </select>
 
-                        <p class="help-block"></p>
-                        @if($errors->has('category'))
-                            <p class="help-block">
-                                {{ $errors->first('category') }}
-                            </p>
-                        @endif
-                    </div>
+                    <p class="help-block"></p>
+                    @if($errors->has('category'))
+                        <p class="help-block">
+                        {{ $errors->first('category') }}
+                        </p>
+                    @endif
                 </div>
-                <?php
-                //dd($product);
-                ?>
-                @endforeach
+            </div>
+            @endforeach
 
+            @foreach($toplists as $toplist)
+            <br>
+            Lijst {{$toplist->name}}
+            <div class="field">
+                <label class="control-label" for="toplist_id[{{$toplist->id}}]">In lijst</label>
+                <div class="control">
+                    <input class="form-control"
+                    class="input @error('toplist_id[{{$toplist->id}}]') alert-danger @enderror"
+                    type="checkbox"
+                    name="toplist_id[{{$toplist->id}}]"
+                    id="toplist__id[{{$toplist->id}}]"
+                    {{ $product->hasToplist($toplist->id) ? 'checked' : '' }}
+                    value="1">
+                    @error('toplist_id['.$toplist->id.']')
+                    <p class="help alert-danger">{{ $errors->first('toplist_['.$toplist->id.']') }}</p>
+                    @enderror
+                </div>
+            </div>
+            <br>
+            <div class="field">
+                <label class="control-label" for="toplist_order[{{$toplist->id}}]">Volgorde</label>
+                <div class="control">
+                    <input class="form-control"
+                    class="input @error('toplist_order[{{$toplist->id}}]') alert-danger @enderror"
+                    type="text"
+                    name="toplist_order[{{$toplist->id}}]"
+                    id="toplist_order[{{$toplist->id}}]"
+                    value="1">
+                    @error('toplist_order['.$toplist->id.']')
+                    <p class="help alert-danger">{{ $errors->first('toplist_order['.$toplist->id.']') }}</p>
+                    @enderror
+                </div>
+            </div>
+            @endforeach
 
 
             <div class="field is-grouped">
