@@ -11,6 +11,7 @@
 
     <!-- Scripts -->
     <script src="/js/pagecontrolls.js" defer></script>
+    @yield('scriptLink')
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
