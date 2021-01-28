@@ -603,7 +603,7 @@ background-image: url("/images/right_blue.svg");
     margin-top: 55px;
 }
 
-.slider {
+.sliderbox .slider {
 	position: relative;
 	z-index: 1;
 	height: 10px;
