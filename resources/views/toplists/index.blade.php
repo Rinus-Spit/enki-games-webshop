@@ -33,6 +33,7 @@
                 </thead>
             </table>
         </div>
+        {{$toplists->links()}}
 
         <br>
 

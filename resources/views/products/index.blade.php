@@ -4,7 +4,6 @@
 
 <div class="card card-default" id="create">
     <div class="card-body">
-        <table class="table table-hover">
             <h1>Producten</h1>
             @if(count($products) > 0)
             @foreach($products as $product)
@@ -40,7 +39,6 @@
                 </div>
             </div>
         </div>
-    </a>
     @endforeach
     {{$products->links()}}
     @else

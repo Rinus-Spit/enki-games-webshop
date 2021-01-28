@@ -30,6 +30,7 @@
                 </thead>
             </table>
         </div>
+        {{$age_categories->links()}}
 
         <br>
 

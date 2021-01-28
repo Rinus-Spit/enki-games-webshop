@@ -33,6 +33,7 @@
                     </tbody>
                 </thead>
             </table>
+            {{$categories->links()}}
         </div>
 
         <br>

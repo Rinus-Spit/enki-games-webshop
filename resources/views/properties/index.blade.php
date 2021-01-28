@@ -34,6 +34,7 @@
                 </thead>
             </table>
         </div>
+        {{$properties->links()}}
 
         <br>
 
