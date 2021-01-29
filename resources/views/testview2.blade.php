@@ -9,7 +9,6 @@
 @endsection
 
 @section('content')
-
 <div class="catbar">
     <div class="cattop"></div>
     <div class="catbottom"></div>
@@ -17,12 +16,12 @@
 <div class="midcontent">
     
     <div class="searchsection">
-        <div class="filterspace">
+        <form action="/search.php" method="get" class="filterspace">
             <x-priceinput></x-priceinput>
             <x-choicefilter :test="$landingContent"></x-choicefilter>
             <x-choicefilter :test="$landingContent"></x-choicefilter>
             <button type="button">Filter</button>
-        </div>
+    </form>
         <x-resultpage :results="$test"></x-resultpage>
     </div>
 </div>
