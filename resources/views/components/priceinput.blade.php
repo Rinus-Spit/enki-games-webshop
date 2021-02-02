@@ -11,8 +11,12 @@
                 <div class="thumb right"></div>
             </div>
         </div>
-        <div id="minval"><p id="minvaltext">Min</p></div>
-        <div id="maxval"><p id="maxvaltext">Max</p></div>
+        <div class="flexcontainer">
+            <div id="maxval"><p id="maxvaltext">Max</p></div>
+            <div id="valseperator"><p id="valseperatortext">-</p></div>
+            <div id="minval"><p id="minvaltext">Min</p></div>
+            <button type="button">Filter</button>
+        </div>
     </div>
-    <button type="button">Filter</button>
+    
 </div>

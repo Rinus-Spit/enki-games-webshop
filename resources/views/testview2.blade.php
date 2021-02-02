@@ -17,6 +17,7 @@
     
     <div class="searchsection">
         <form action="/search.php" method="get" class="filterspace">
+
             <x-priceinput></x-priceinput>
             <x-choicefilter :test="$landingContent"></x-choicefilter>
             <x-choicefilter :test="$landingContent"></x-choicefilter>

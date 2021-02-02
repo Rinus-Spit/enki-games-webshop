@@ -16,7 +16,7 @@ class MyInputOption{
 class PayloadClass
 {
     
-    public $inputClass = "minimaal aantal spelers";
+    public $inputClass = "Aantal spelers (min)";
     public $inputOptions = array();
     public function __construct(){
         $this->inputA =  new MyInputOption("2");

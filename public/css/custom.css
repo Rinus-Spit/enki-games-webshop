@@ -516,10 +516,20 @@ background-image: url("/images/right_blue.svg");
 }
 
 .searchresultspace>h1{
-    font-size: 50px;
+    font-size: 40px;
     color: rgb(99, 3, 208);
     font-weight: bolder;
     margin-left: 5%;
+    color: rgb(2, 58, 126);
+    margin: 0px;
+    padding: 25px;
+    padding-left: 40px;
+    background-color: rgb(243, 124, 0);
+    background-color: hsl(25, 95%, 45%);
+    background-color: #4b4b4b;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .resulttab{
@@ -563,6 +573,7 @@ background-image: url("/images/right_blue.svg");
     border-radius: 10px;
     border-bottom: 2px solid gray;
     border-right: 2px solid gray;
+    overflow: hidden;
 }
 
 .resultblock{
@@ -643,14 +654,16 @@ background-image: url("/images/right_blue.svg");
 	top: 0;
 	bottom: 0;
 	border-radius: 5px;
-	background-color: #6200ee;
+    background-color: #00a1f7;
+    background-color: rgb(239, 123, 40); 
 }
 .slider > .thumb {
 	position: absolute;
 	z-index: 3;
 	width: 30px;
 	height: 30px;
-	background-color: #6200ee;
+    background-color: #00a1f7;
+    background-color: rgb(239, 123, 40);
 	border-radius: 50%;
 	box-shadow: 0 0 0 0 rgba(98,0,238,.1);
 	transition: box-shadow .3s ease-in-out;
@@ -691,24 +704,33 @@ input[type=range]::-webkit-slider-thumb {
 
 #minval{
     display: block;
-    width: 30%;
+    width: 50px;
     height: 30px;
-    background-color: white;
-    float: left;
-    margin-top: 20px;
+    /* background-color: white; */
+    /* float: right; */
+    /* margin-top: 36px; */
 }
 #maxval{
     display: block;
-    width: 30%;
+    width: 50px;
     height: 30px;
-    background-color: white;
-    float: right;
-    margin-top: 20px;
+    /* background-color: white; */
+    /* float: right; */
+    /* margin-top: 36px; */
 }
 
-#minvaltext, #maxvaltext{
+#valseperator{
+    display: block;
+    width: 20px;
+    height: 30px;
+    /* background-color: white; */
+    /* float: right; */
+    /* margin-top: 36px;  */
+}
+
+#minvaltext, #maxvaltext, #valseperatortext{
     font-size: 20px;
-    color: red;
+    color: rgb(73, 0, 0);;
     justify-content: center;
     text-align: center;
     margin: 0px;
@@ -777,13 +799,16 @@ nav{
     display:flex;
     align-items: center;
     align-content: center;
-    justify-content: flex-end;
+    justify-content: space-between;
     max-width: 100%;
     height: max-content;
     padding: 10px;
-    border-bottom: 1px dotted black;
+    /* border-bottom: 1px dotted black; */
+    padding-left: 40px;
     padding-bottom: 15px;
     margin-bottom: 40px;
+    background-color: rgba(0, 0, 0, 0.13);
+    /* background-color: rgba(224, 97, 6, 0.144); */
     /* background-color: black; */
 }
 
@@ -804,4 +829,77 @@ nav span{
     align-items: center;
     color: black;
     margin-left: 20px;
+}
+
+.filterfiller{
+    font-size: 40px;
+    color: rgb(99, 3, 208);
+    font-weight: bolder;
+    margin-left: 5%;
+    color: rgb(2, 58, 126);
+    margin: 0px;
+    padding: 25px;
+    padding-left: 40px;
+    background-color: rgb(243, 124, 0);
+    background-color: hsl(25, 95%, 45%);
+    background-color: #4b4b4b;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.filterlist{
+    height: 33px;
+    padding: 10px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.091);
+    background-color: rgba(224, 97, 6, 0.114);
+}
+
+.filterspace h1, .filterspace > button, .choicefilter input{
+    margin-left: 40px;
+    color: rgb(73, 0, 0);
+    font-size: 28px
+
+}
+
+.choicefilter{
+    margin-bottom: 40px;
+}
+
+.prijsfilter{
+    margin: 0px;
+    margin-bottom: 60px;
+    padding-top: 20px;
+}
+
+.filterspace button{
+    padding: 6px 15px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-bottom: 2px solid rgb(73, 40, 29);
+    border-right: 2px solid rgb(73, 40, 29);
+    border-radius: 10px;
+    background-color: darkorange;
+    background-color: rgb(239, 123, 40);
+    /* margin-top: 32px; */
+}
+
+.filterspace{
+    background-color: rgb(238, 220, 209);
+    background-color: rgb(248, 234, 227);
+    color: rgb(73, 0, 0); 
+    margin-top: 22px;
+    align-self: start;
+    padding-bottom: 20px;
+}
+
+.flexcontainer{
+    display:flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-top: 30px;
+    align-items: center;
 }
