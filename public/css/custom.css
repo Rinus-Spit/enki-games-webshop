@@ -474,10 +474,13 @@ nav .next_arrow{
 .pagelink{
     display: inline-block;
     text-decoration: none;
-    padding: 10px 20px;
-    font-size: 12px;
+    padding: 3px 13px;
+    font-size: 20px;
     margin-left: 3px;
-    background-color: white;
+    border-radius: 5px;
+    border: 2px outset rgb(184, 106, 12);
+    color: black;
+    background-color: rgb(255, 149, 19);
 }
 
 .searchpathlinks h1{
@@ -506,7 +509,17 @@ background-image: url("/images/right_blue.svg");
 .searchresultspace{
     grid-column: 3;
     height: 1000px;
-    background-color: green;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    border-bottom: 2px solid gray;
+    border-right: 2px solid gray;
+}
+
+.searchresultspace>h1{
+    font-size: 50px;
+    color: rgb(99, 3, 208);
+    font-weight: bolder;
+    margin-left: 5%;
 }
 
 .resulttab{
@@ -519,7 +532,7 @@ background-image: url("/images/right_blue.svg");
 
 .resulttab > .optionsfield{
     grid-column: 2;
-    background-color: black;
+    /* background-color: black; */
 }
 
 .resulttab > .resultpages{
@@ -546,7 +559,10 @@ background-image: url("/images/right_blue.svg");
 
 .filterspace{
     grid-column: 1;
-    background-color: #e0e0e0;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    border-bottom: 2px solid gray;
+    border-right: 2px solid gray;
 }
 
 .resultblock{
@@ -761,11 +777,14 @@ nav{
     display:flex;
     align-items: center;
     align-content: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     max-width: 100%;
     height: max-content;
     padding: 10px;
-    background-color: black;
+    border-bottom: 1px dotted black;
+    padding-bottom: 15px;
+    margin-bottom: 40px;
+    /* background-color: black; */
 }
 
 nav a{
@@ -783,5 +802,6 @@ nav span{
 .resultstab_index{
     display: flex;
     align-items: center;
-    color: white;
+    color: black;
+    margin-left: 20px;
 }

@@ -21,8 +21,8 @@
             <x-choicefilter :test="$landingContent"></x-choicefilter>
             <x-choicefilter :test="$landingContent"></x-choicefilter>
             <button type="button">Filter</button>
-    </form>
-        <x-resultpage :results="$test"></x-resultpage>
+        </form>
+        <x-resultpage :results="$test">Kaartspellen</x-resultpage>
     </div>
 </div>
 
