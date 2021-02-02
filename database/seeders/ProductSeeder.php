@@ -572,7 +572,7 @@ class ProductSeeder extends Seeder
         $categories = Category::whereIn('name',['City Building','Economic','Industry / Manufacturing','Nautical']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
-            'name' => 'Tzolk'in: The Mayan Calendar',
+            'name' => 'Tzolk\'in: The Mayan Calendar',
             'excerpt' => 'Set Collection, Worker Placement',
             'body' => 'Set Collection, Worker Placement',
             'price' => 30,
@@ -1787,7 +1787,7 @@ class ProductSeeder extends Seeder
         $categories = Category::whereIn('name',['Economic','Trains','Transportation']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
-            'name' => 'Memoir '44',
+            'name' => 'Memoir \'44',
             'excerpt' => 'Area Control / Area Influence, Campaign / Battle Card Driven, Dice Rolling, Grid Movement, Hand Management, Modular Board, Simulation',
             'body' => 'Area Control / Area Influence, Campaign / Battle Card Driven, Dice Rolling, Grid Movement, Hand Management, Modular Board, Simulation',
             'price' => 30,
@@ -2567,7 +2567,7 @@ class ProductSeeder extends Seeder
         $categories = Category::whereIn('name',['Negotiation','Political','Religious','Renaissance','Wargame']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
-            'name' => 'Aeon's End',
+            'name' => 'Aeon\'s End',
             'excerpt' => 'Card Drafting, Co-operative Play, Deck / Pool Building, Hand Management, Variable Phase Order, Variable Player Powers',
             'body' => 'Card Drafting, Co-operative Play, Deck / Pool Building, Hand Management, Variable Phase Order, Variable Player Powers',
             'price' => 30,
@@ -2642,7 +2642,7 @@ class ProductSeeder extends Seeder
         $categories = Category::whereIn('name',['none']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
-            'name' => 'Sid Meier's Civilization: The Board Game',
+            'name' => 'Sid Meier\'s Civilization: The Board Game',
             'excerpt' => 'Card Drafting, Deck / Pool Building, Grid Movement, Hand Management, Modular Board, Rock-Paper-Scissors, Trading, Variable Player Powers',
             'body' => 'Card Drafting, Deck / Pool Building, Grid Movement, Hand Management, Modular Board, Rock-Paper-Scissors, Trading, Variable Player Powers',
             'price' => 30,
@@ -3347,7 +3347,7 @@ class ProductSeeder extends Seeder
         $categories = Category::whereIn('name',['Fantasy','Fighting','Horror','Miniatures']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
-            'name' => 'Kanban: Driver's Edition',
+            'name' => 'Kanban: Driver\'s Edition',
             'excerpt' => 'Action Point Allowance System, Commodity Speculation, Variable Phase Order, Worker Placement',
             'body' => 'Action Point Allowance System, Commodity Speculation, Variable Phase Order, Worker Placement',
             'price' => 30,
@@ -4397,7 +4397,7 @@ class ProductSeeder extends Seeder
         $categories = Category::whereIn('name',['Card Game','Exploration']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
-            'name' => 'Time's Up! Title Recall!',
+            'name' => 'Time\'s Up! Title Recall!',
             'excerpt' => 'Acting, Memory, Partnerships',
             'body' => 'Acting, Memory, Partnerships',
             'price' => 30,
@@ -4754,7 +4754,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Action / Dexterity','Children's Game','Party Game','Racing','Sports']);
+        $categories = Category::whereIn('name',['Action / Dexterity','Children\'s Game','Party Game','Racing','Sports']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Elysium',
@@ -5717,7 +5717,7 @@ class ProductSeeder extends Seeder
         $categories = Category::whereIn('name',['Ancient','Exploration','Travel']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
-            'name' => 'The Godfather: Corleone's Empire',
+            'name' => 'The Godfather: Corleone\'s Empire',
             'excerpt' => 'Area Control / Area Influence, Auction/Bidding, Card Drafting, Hand Management, Variable Player Powers, Worker Placement',
             'body' => 'Area Control / Area Influence, Auction/Bidding, Card Drafting, Hand Management, Variable Player Powers, Worker Placement',
             'price' => 30,
@@ -5822,7 +5822,7 @@ class ProductSeeder extends Seeder
         $categories = Category::whereIn('name',['Deduction','Fighting','Miniatures','Science Fiction','Spies/Secret Agents']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
-            'name' => 'Time's Up!',
+            'name' => 'Time\'s Up!',
             'excerpt' => 'Acting, Memory, Partnerships',
             'body' => 'Acting, Memory, Partnerships',
             'price' => 30,
@@ -5837,7 +5837,7 @@ class ProductSeeder extends Seeder
         $categories = Category::whereIn('name',['Humor','Party Game']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
-            'name' => 'Napoleon's Triumph',
+            'name' => 'Napoleon\'s Triumph',
             'excerpt' => 'Area Movement, Secret Unit Deployment, Simulation',
             'body' => 'Area Movement, Secret Unit Deployment, Simulation',
             'price' => 30,
@@ -6482,7 +6482,7 @@ class ProductSeeder extends Seeder
         $categories = Category::whereIn('name',['Fighting','Miniatures','Science Fiction']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
-            'name' => 'Washington's War',
+            'name' => 'Washington\'s War',
             'excerpt' => 'Area Control / Area Influence, Campaign / Battle Card Driven, Dice Rolling, Point to Point Movement, Variable Player Powers',
             'body' => 'Area Control / Area Influence, Campaign / Battle Card Driven, Dice Rolling, Point to Point Movement, Variable Player Powers',
             'price' => 30,
@@ -6917,7 +6917,7 @@ class ProductSeeder extends Seeder
         $categories = Category::whereIn('name',['Negotiation','Pike and Shot','Political','Religious','Renaissance','Wargame']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
-            'name' => 'Tinners' Trail',
+            'name' => 'Tinners\' Trail',
             'excerpt' => 'Action Point Allowance System, Auction/Bidding, Dice Rolling, Time Track',
             'body' => 'Action Point Allowance System, Auction/Bidding, Dice Rolling, Time Track',
             'price' => 30,
@@ -7622,7 +7622,7 @@ class ProductSeeder extends Seeder
         $categories = Category::whereIn('name',['Bluffing','Party Game','Trivia']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
-            'name' => 'Ca$h 'n Guns (Second Edition)',
+            'name' => 'Ca$h \'n Guns (Second Edition)',
             'excerpt' => 'Player Elimination, Simultaneous Action Selection, Take That, Variable Player Powers',
             'body' => 'Player Elimination, Simultaneous Action Selection, Take That, Variable Player Powers',
             'price' => 30,
@@ -7832,7 +7832,7 @@ class ProductSeeder extends Seeder
         $categories = Category::whereIn('name',['Farming']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
-            'name' => 'Exit: The Game – The Pharaoh's Tomb',
+            'name' => 'Exit: The Game – The Pharaoh\'s Tomb',
             'excerpt' => 'Co-operative Play',
             'body' => 'Co-operative Play',
             'price' => 30,
@@ -7907,7 +7907,7 @@ class ProductSeeder extends Seeder
         $categories = Category::whereIn('name',['Card Game','Fighting','Science Fiction']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
-            'name' => 'Flick 'em Up!',
+            'name' => 'Flick \'em Up!',
             'excerpt' => 'Partnerships, Pick-up and Deliver',
             'body' => 'Partnerships, Pick-up and Deliver',
             'price' => 30,
@@ -8192,7 +8192,7 @@ class ProductSeeder extends Seeder
         $categories = Category::whereIn('name',['Civilization','Medieval','Wargame']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
-            'name' => 'Aeon's End: War Eternal',
+            'name' => 'Aeon\'s End: War Eternal',
             'excerpt' => 'Card Drafting, Co-operative Play, Deck / Pool Building, Hand Management, Variable Phase Order, Variable Player Powers',
             'body' => 'Card Drafting, Co-operative Play, Deck / Pool Building, Hand Management, Variable Phase Order, Variable Player Powers',
             'price' => 30,
@@ -8327,7 +8327,7 @@ class ProductSeeder extends Seeder
         $categories = Category::whereIn('name',['Economic','Movies / TV / Radio theme']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
-            'name' => 'Star Wars: The Queen's Gambit',
+            'name' => 'Star Wars: The Queen\'s Gambit',
             'excerpt' => 'Campaign / Battle Card Driven, Simultaneous Action Selection',
             'body' => 'Campaign / Battle Card Driven, Simultaneous Action Selection',
             'price' => 30,
@@ -8492,7 +8492,7 @@ class ProductSeeder extends Seeder
         $categories = Category::whereIn('name',['Card Game']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
-            'name' => 'Liar's Dice',
+            'name' => 'Liar\'s Dice',
             'excerpt' => 'Betting/Wagering, Dice Rolling, Player Elimination',
             'body' => 'Betting/Wagering, Dice Rolling, Player Elimination',
             'price' => 30,
@@ -9134,7 +9134,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Action / Dexterity','Animals','Children's Game','Party Game']);
+        $categories = Category::whereIn('name',['Action / Dexterity','Animals','Children\'s Game','Party Game']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Mr. Jack Pocket',
@@ -9332,7 +9332,7 @@ class ProductSeeder extends Seeder
         $categories = Category::whereIn('name',['Racing','Sports','Transportation']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
-            'name' => 'Nemo's War (second edition)',
+            'name' => 'Nemo\'s War (second edition)',
             'excerpt' => 'Action Point Allowance System, Area Control / Area Influence, Area Movement, Dice Rolling, Press Your Luck, Simulation, Time Track',
             'body' => 'Action Point Allowance System, Area Control / Area Influence, Area Movement, Dice Rolling, Press Your Luck, Simulation, Time Track',
             'price' => 30,
@@ -9497,7 +9497,7 @@ class ProductSeeder extends Seeder
         $categories = Category::whereIn('name',['American Civil War','Wargame']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
-            'name' => 'Can't Stop',
+            'name' => 'Can\'t Stop',
             'excerpt' => 'Dice Rolling, Press Your Luck',
             'body' => 'Dice Rolling, Press Your Luck',
             'price' => 30,
@@ -9782,7 +9782,7 @@ class ProductSeeder extends Seeder
         $categories = Category::whereIn('name',['Action / Dexterity','Fantasy','Real-time']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
-            'name' => 'World's Fair 1893',
+            'name' => 'World\'s Fair 1893',
             'excerpt' => 'Area Control / Area Influence, Card Drafting, Set Collection',
             'body' => 'Area Control / Area Influence, Card Drafting, Set Collection',
             'price' => 30,
@@ -10004,7 +10004,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Animals','Card Game','Children's Game','Novel-based','Racing']);
+        $categories = Category::whereIn('name',['Animals','Card Game','Children\'s Game','Novel-based','Racing']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Yggdrasil',
@@ -10142,7 +10142,7 @@ class ProductSeeder extends Seeder
         $categories = Category::whereIn('name',['Dice']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
-            'name' => 'Hey, That's My Fish!',
+            'name' => 'Hey, That\'s My Fish!',
             'excerpt' => 'Area Enclosure, Grid Movement, Modular Board',
             'body' => 'Area Enclosure, Grid Movement, Modular Board',
             'price' => 30,
@@ -10187,7 +10187,7 @@ class ProductSeeder extends Seeder
         $categories = Category::whereIn('name',['Bluffing','Card Game','Deduction','Horror','Murder/Mystery','Negotiation','Party Game']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
-            'name' => 'Winner's Circle',
+            'name' => 'Winner\'s Circle',
             'excerpt' => 'Betting/Wagering, Roll / Spin and Move',
             'body' => 'Betting/Wagering, Roll / Spin and Move',
             'price' => 30,
@@ -10232,7 +10232,7 @@ class ProductSeeder extends Seeder
         $categories = Category::whereIn('name',['Prehistoric']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
-            'name' => 'Witch's Brew',
+            'name' => 'Witch\'s Brew',
             'excerpt' => 'Hand Management, Simultaneous Action Selection',
             'body' => 'Hand Management, Simultaneous Action Selection',
             'price' => 30,
@@ -10307,7 +10307,7 @@ class ProductSeeder extends Seeder
         $categories = Category::whereIn('name',['Card Game']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
-            'name' => 'Loopin' Louie',
+            'name' => 'Loopin\' Louie',
             'excerpt' => 'Player Elimination',
             'body' => 'Player Elimination',
             'price' => 30,
@@ -10319,7 +10319,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Action / Dexterity','Animals','Aviation / Flight','Children's Game','Electronic','Movies / TV / Radio theme','Real-time']);
+        $categories = Category::whereIn('name',['Action / Dexterity','Animals','Aviation / Flight','Children\'s Game','Electronic','Movies / TV / Radio theme','Real-time']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Parade',
@@ -10949,7 +10949,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Action / Dexterity','Animals','Children's Game']);
+        $categories = Category::whereIn('name',['Action / Dexterity','Animals','Children\'s Game']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'GIPF',
@@ -11102,7 +11102,7 @@ class ProductSeeder extends Seeder
         $categories = Category::whereIn('name',['Adventure','Fighting','Horror','Murder/Mystery']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
-            'name' => 'The Werewolves of Miller's Hollow',
+            'name' => 'The Werewolves of Miller\'s Hollow',
             'excerpt' => 'Partnerships, Player Elimination, Role Playing, Variable Player Powers, Voting',
             'body' => 'Partnerships, Player Elimination, Role Playing, Variable Player Powers, Voting',
             'price' => 30,
@@ -11267,7 +11267,7 @@ class ProductSeeder extends Seeder
         $categories = Category::whereIn('name',['Spies/Secret Agents','World War II']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
-            'name' => 'Smash Up: It's Your Fault!',
+            'name' => 'Smash Up: It\'s Your Fault!',
             'excerpt' => 'Area Control / Area Influence, Hand Management, Take That, Variable Phase Order, Worker Placement',
             'body' => 'Area Control / Area Influence, Hand Management, Take That, Variable Phase Order, Worker Placement',
             'price' => 30,
@@ -11324,7 +11324,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Action / Dexterity','Children's Game']);
+        $categories = Category::whereIn('name',['Action / Dexterity','Children\'s Game']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Colossal Arena',
@@ -11549,7 +11549,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Action / Dexterity','Animals','Children's Game']);
+        $categories = Category::whereIn('name',['Action / Dexterity','Animals','Children\'s Game']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Nothing Personal',
@@ -12692,7 +12692,7 @@ class ProductSeeder extends Seeder
         $categories = Category::whereIn('name',['Bluffing','Deduction','Party Game']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
-            'name' => 'Aladdin's Dragons',
+            'name' => 'Aladdin\'s Dragons',
             'excerpt' => 'Auction/Bidding, Set Collection, Worker Placement',
             'body' => 'Auction/Bidding, Set Collection, Worker Placement',
             'price' => 30,
@@ -12809,7 +12809,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Children's Game','Fantasy','Maze','Memory']);
+        $categories = Category::whereIn('name',['Children\'s Game','Fantasy','Maze','Memory']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Wars of the Roses: Lancaster vs. York',
@@ -12962,7 +12962,7 @@ class ProductSeeder extends Seeder
         $categories = Category::whereIn('name',['Ancient','Political','Territory Building','Wargame']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
-            'name' => 'Sid Meier's Civilization: A New Dawn',
+            'name' => 'Sid Meier\'s Civilization: A New Dawn',
             'excerpt' => 'Area Control / Area Influence, Modular Board, Variable Player Powers',
             'body' => 'Area Control / Area Influence, Modular Board, Variable Player Powers',
             'price' => 30,
@@ -13019,7 +13019,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Card Game','Children's Game','Educational','Party Game','Real-time','Sports']);
+        $categories = Category::whereIn('name',['Card Game','Children\'s Game','Educational','Party Game','Real-time','Sports']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Poker',
@@ -13229,7 +13229,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Action / Dexterity','Card Game','Children's Game','Real-time']);
+        $categories = Category::whereIn('name',['Action / Dexterity','Card Game','Children\'s Game','Real-time']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Dead Men Tell No Tales',
@@ -13412,7 +13412,7 @@ class ProductSeeder extends Seeder
         $categories = Category::whereIn('name',['Transportation']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
-            'name' => 'Ca$h 'n Gun$',
+            'name' => 'Ca$h \'n Gun$',
             'excerpt' => 'Player Elimination, Simultaneous Action Selection, Variable Player Powers',
             'body' => 'Player Elimination, Simultaneous Action Selection, Variable Player Powers',
             'price' => 30,
@@ -13982,7 +13982,7 @@ class ProductSeeder extends Seeder
         $categories = Category::whereIn('name',['Card Game','Number']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
-            'name' => 'Dead Man's Draw',
+            'name' => 'Dead Man\'s Draw',
             'excerpt' => 'Press Your Luck',
             'body' => 'Press Your Luck',
             'price' => 30,
@@ -14072,7 +14072,7 @@ class ProductSeeder extends Seeder
         $categories = Category::whereIn('name',['Adventure','Exploration','Fantasy']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
-            'name' => 'I'm the Boss!',
+            'name' => 'I\'m the Boss!',
             'excerpt' => 'Dice Rolling, Hand Management, Roll / Spin and Move, Set Collection, Take That',
             'body' => 'Dice Rolling, Hand Management, Roll / Spin and Move, Set Collection, Take That',
             'price' => 30,
@@ -14369,7 +14369,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Action / Dexterity','Animals','Children's Game','Humor']);
+        $categories = Category::whereIn('name',['Action / Dexterity','Animals','Children\'s Game','Humor']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Jump Drive',
@@ -14474,7 +14474,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Action / Dexterity','Animals','Children's Game']);
+        $categories = Category::whereIn('name',['Action / Dexterity','Animals','Children\'s Game']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Masmorra: Dungeons of Arcadia',
@@ -15254,7 +15254,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Animals','Children's Game','Party Game','Real-time']);
+        $categories = Category::whereIn('name',['Animals','Children\'s Game','Party Game','Real-time']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Nefertiti',
@@ -15482,7 +15482,7 @@ class ProductSeeder extends Seeder
         $categories = Category::whereIn('name',['Economic','Medieval']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
-            'name' => 'Pirate's Cove',
+            'name' => 'Pirate\'s Cove',
             'excerpt' => 'Dice Rolling, Hand Management, Pick-up and Deliver, Simultaneous Action Selection',
             'body' => 'Dice Rolling, Hand Management, Pick-up and Deliver, Simultaneous Action Selection',
             'price' => 30,
@@ -15512,7 +15512,7 @@ class ProductSeeder extends Seeder
         $categories = Category::whereIn('name',['Abstract Strategy']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
-            'name' => 'Stephenson's Rocket',
+            'name' => 'Stephenson\'s Rocket',
             'excerpt' => 'Area Control / Area Influence, Grid Movement, Route/Network Building, Set Collection, Stock Holding, Tile Placement',
             'body' => 'Area Control / Area Influence, Grid Movement, Route/Network Building, Set Collection, Stock Holding, Tile Placement',
             'price' => 30,
@@ -16157,7 +16157,7 @@ class ProductSeeder extends Seeder
         $categories = Category::whereIn('name',['Wargame','World War II']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
-            'name' => 'Time's Up! Deluxe',
+            'name' => 'Time\'s Up! Deluxe',
             'excerpt' => 'Acting, Memory, Partnerships',
             'body' => 'Acting, Memory, Partnerships',
             'price' => 30,
@@ -16187,7 +16187,7 @@ class ProductSeeder extends Seeder
         $categories = Category::whereIn('name',['Animals','Dice']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
-            'name' => 'Odin's Ravens',
+            'name' => 'Odin\'s Ravens',
             'excerpt' => 'Hand Management',
             'body' => 'Hand Management',
             'price' => 30,
@@ -16409,7 +16409,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Animals','Children's Game','Maze','Memory']);
+        $categories = Category::whereIn('name',['Animals','Children\'s Game','Maze','Memory']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Agents of SMERSH',
@@ -16517,7 +16517,7 @@ class ProductSeeder extends Seeder
         $categories = Category::whereIn('name',['Aviation / Flight','Card Game','Wargame','World War I']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
-            'name' => 'Odin's Ravens (second edition)',
+            'name' => 'Odin\'s Ravens (second edition)',
             'excerpt' => 'Hand Management',
             'body' => 'Hand Management',
             'price' => 30,
@@ -17669,7 +17669,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Children's Game','Educational','Party Game','Trivia']);
+        $categories = Category::whereIn('name',['Children\'s Game','Educational','Party Game','Trivia']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Trans Europa',
@@ -18059,7 +18059,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Children's Game','Medieval']);
+        $categories = Category::whereIn('name',['Children\'s Game','Medieval']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Zombie 15'',
@@ -18854,7 +18854,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Adventure','Children's Game','Fantasy']);
+        $categories = Category::whereIn('name',['Adventure','Children\'s Game','Fantasy']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Alea Iacta Est',
@@ -19514,7 +19514,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Action / Dexterity','Children's Game','Puzzle','Real-time']);
+        $categories = Category::whereIn('name',['Action / Dexterity','Children\'s Game','Puzzle','Real-time']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Warmachine',
@@ -20369,7 +20369,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Animals','Bluffing','Card Game','Children's Game','Racing']);
+        $categories = Category::whereIn('name',['Animals','Bluffing','Card Game','Children\'s Game','Racing']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Helios',
@@ -20774,7 +20774,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Children's Game','Deduction','Dice']);
+        $categories = Category::whereIn('name',['Children\'s Game','Deduction','Dice']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Deep Space D-6',
@@ -20984,7 +20984,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Animals','Children's Game','Memory']);
+        $categories = Category::whereIn('name',['Animals','Children\'s Game','Memory']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Capitol',
@@ -21104,7 +21104,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Action / Dexterity','Children's Game','Party Game']);
+        $categories = Category::whereIn('name',['Action / Dexterity','Children\'s Game','Party Game']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'O Zoo le Mio',
@@ -21494,7 +21494,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Children's Game','Maze','Puzzle']);
+        $categories = Category::whereIn('name',['Children\'s Game','Maze','Puzzle']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Fantastiqa',
@@ -21704,7 +21704,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Animals','Bluffing','Card Game','Children's Game','Negotiation']);
+        $categories = Category::whereIn('name',['Animals','Bluffing','Card Game','Children\'s Game','Negotiation']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Famiglia',
@@ -21839,7 +21839,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Action / Dexterity','Children's Game']);
+        $categories = Category::whereIn('name',['Action / Dexterity','Children\'s Game']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Noblemen',
@@ -22019,7 +22019,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Children's Game','Nautical','Pirates']);
+        $categories = Category::whereIn('name',['Children\'s Game','Nautical','Pirates']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Inhabit the Earth',
@@ -22499,7 +22499,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Action / Dexterity','Children's Game']);
+        $categories = Category::whereIn('name',['Action / Dexterity','Children\'s Game']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Istanbul: The Dice Game',
@@ -23984,7 +23984,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Action / Dexterity','Card Game','Children's Game','Party Game','Real-time']);
+        $categories = Category::whereIn('name',['Action / Dexterity','Card Game','Children\'s Game','Party Game','Real-time']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Circus Maximus',
@@ -24659,7 +24659,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Animals','Children's Game','Dice']);
+        $categories = Category::whereIn('name',['Animals','Children\'s Game','Dice']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Africana',
@@ -24719,7 +24719,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Children's Game','Deduction']);
+        $categories = Category::whereIn('name',['Children\'s Game','Deduction']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Joking Hazard',
@@ -26564,7 +26564,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Children's Game','Memory','Prehistoric']);
+        $categories = Category::whereIn('name',['Children\'s Game','Memory','Prehistoric']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Battlefleet Gothic',
@@ -26759,7 +26759,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Action / Dexterity','Children's Game','Dice','Humor','Party Game']);
+        $categories = Category::whereIn('name',['Action / Dexterity','Children\'s Game','Dice','Humor','Party Game']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Hannibal & Hamilcar',
@@ -28139,7 +28139,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Animals','Children's Game','Dice','Novel-based']);
+        $categories = Category::whereIn('name',['Animals','Children\'s Game','Dice','Novel-based']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Santa Fe Rails',
@@ -28229,7 +28229,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Children's Game','Dice','Racing','Sports']);
+        $categories = Category::whereIn('name',['Children\'s Game','Dice','Racing','Sports']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Raj',
@@ -28349,7 +28349,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Action / Dexterity','Children's Game','Fantasy']);
+        $categories = Category::whereIn('name',['Action / Dexterity','Children\'s Game','Fantasy']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Leader 1: Hell of the North',
@@ -29204,7 +29204,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Bluffing','Card Game','Children's Game','Deduction','Educational','Fantasy','Math','Memory','Mythology','Number']);
+        $categories = Category::whereIn('name',['Bluffing','Card Game','Children\'s Game','Deduction','Educational','Fantasy','Math','Memory','Mythology','Number']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Abraca...what?',
@@ -30239,7 +30239,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Children's Game','Trains']);
+        $categories = Category::whereIn('name',['Children\'s Game','Trains']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Pixel Tactics 3',
@@ -30734,7 +30734,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Children's Game','Racing']);
+        $categories = Category::whereIn('name',['Children\'s Game','Racing']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Fische Fluppen Frikadellen',
@@ -31484,7 +31484,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Children's Game','Fantasy','Maze','Puzzle']);
+        $categories = Category::whereIn('name',['Children\'s Game','Fantasy','Maze','Puzzle']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Asking for Trobils',
@@ -31664,7 +31664,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Action / Dexterity','Animals','Children's Game','Fighting']);
+        $categories = Category::whereIn('name',['Action / Dexterity','Animals','Children\'s Game','Fighting']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Municipium',
@@ -32069,7 +32069,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Bluffing','Children's Game','Dice','Fantasy']);
+        $categories = Category::whereIn('name',['Bluffing','Children\'s Game','Dice','Fantasy']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Cheeky Monkey',
@@ -32084,7 +32084,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Animals','Children's Game']);
+        $categories = Category::whereIn('name',['Animals','Children\'s Game']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Dice Stars',
@@ -32744,7 +32744,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Children's Game','Fantasy','Memory']);
+        $categories = Category::whereIn('name',['Children\'s Game','Fantasy','Memory']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Dungeons & Dragons Dice Masters: Faerûn Under Siege',
@@ -32864,7 +32864,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Action / Dexterity','Aviation / Flight','Children's Game','Electronic','Movies / TV / Radio theme','Real-time','Space Exploration']);
+        $categories = Category::whereIn('name',['Action / Dexterity','Aviation / Flight','Children\'s Game','Electronic','Movies / TV / Radio theme','Real-time','Space Exploration']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Lignum (second edition)',
@@ -33149,7 +33149,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Animals','Children's Game','Deduction','Electronic','Fantasy']);
+        $categories = Category::whereIn('name',['Animals','Children\'s Game','Deduction','Electronic','Fantasy']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'The Agents',
@@ -33434,7 +33434,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Action / Dexterity','Children's Game']);
+        $categories = Category::whereIn('name',['Action / Dexterity','Children\'s Game']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => '12 Days',
@@ -33974,7 +33974,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Bluffing','Children's Game','Horror']);
+        $categories = Category::whereIn('name',['Bluffing','Children\'s Game','Horror']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Excape',
@@ -35174,7 +35174,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Action / Dexterity','Animals','Children's Game','Racing']);
+        $categories = Category::whereIn('name',['Action / Dexterity','Animals','Children\'s Game','Racing']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Cubist',
@@ -35624,7 +35624,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Action / Dexterity','Children's Game','Party Game']);
+        $categories = Category::whereIn('name',['Action / Dexterity','Children\'s Game','Party Game']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Advanced Third Reich',
@@ -35834,7 +35834,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Action / Dexterity','Adventure','Children's Game','Racing']);
+        $categories = Category::whereIn('name',['Action / Dexterity','Adventure','Children\'s Game','Racing']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Camel Up Cards',
@@ -36419,7 +36419,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Animals','Children's Game','Dice','Racing']);
+        $categories = Category::whereIn('name',['Animals','Children\'s Game','Dice','Racing']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Thirty Years War: Europe in Agony, 1618-1648',
@@ -36719,7 +36719,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Animals','Card Game','Children's Game','Memory']);
+        $categories = Category::whereIn('name',['Animals','Card Game','Children\'s Game','Memory']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'PIX',
@@ -37064,7 +37064,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Children's Game','Dice','Educational','Humor','Party Game','Puzzle']);
+        $categories = Category::whereIn('name',['Children\'s Game','Dice','Educational','Humor','Party Game','Puzzle']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Warmaster',
@@ -37469,7 +37469,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Children's Game']);
+        $categories = Category::whereIn('name',['Children\'s Game']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Bugs in the Kitchen',
@@ -37484,7 +37484,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Action / Dexterity','Children's Game','Electronic']);
+        $categories = Category::whereIn('name',['Action / Dexterity','Children\'s Game','Electronic']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Lunar Rails',
@@ -37754,7 +37754,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Action / Dexterity','Animals','Children's Game']);
+        $categories = Category::whereIn('name',['Action / Dexterity','Animals','Children\'s Game']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Alchemist',
@@ -38684,7 +38684,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Action / Dexterity','Children's Game']);
+        $categories = Category::whereIn('name',['Action / Dexterity','Children\'s Game']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Exoplanets',
@@ -38954,7 +38954,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Animals','Children's Game','Racing']);
+        $categories = Category::whereIn('name',['Animals','Children\'s Game','Racing']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => '1936: Guerra Civil',
@@ -39074,7 +39074,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Animals','Children's Game']);
+        $categories = Category::whereIn('name',['Animals','Children\'s Game']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Quartermaster General: Victory or Death – The Peloponnesian War',
@@ -39179,7 +39179,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Children's Game','Educational']);
+        $categories = Category::whereIn('name',['Children\'s Game','Educational']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Vs System 2PCG: The Marvel Battles',
@@ -39659,7 +39659,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Action / Dexterity','Children's Game','Nautical','Pirates']);
+        $categories = Category::whereIn('name',['Action / Dexterity','Children\'s Game','Nautical','Pirates']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'It's Alive!',
@@ -40979,7 +40979,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Animals','Card Game','Children's Game']);
+        $categories = Category::whereIn('name',['Animals','Card Game','Children\'s Game']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Cthulhu Fluxx',
@@ -41654,7 +41654,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Children's Game','Puzzle']);
+        $categories = Category::whereIn('name',['Children\'s Game','Puzzle']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Federation Commander:  Romulan Border',
@@ -41774,7 +41774,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Children's Game','Party Game','Real-time']);
+        $categories = Category::whereIn('name',['Children\'s Game','Party Game','Real-time']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => '1805: Sea of Glory',
@@ -42209,7 +42209,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Children's Game','Horror','Memory']);
+        $categories = Category::whereIn('name',['Children\'s Game','Horror','Memory']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Sellswords',
@@ -42359,7 +42359,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Action / Dexterity','Children's Game','Medieval']);
+        $categories = Category::whereIn('name',['Action / Dexterity','Children\'s Game','Medieval']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Dragonland',
@@ -43889,7 +43889,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Action / Dexterity','Children's Game','Party Game']);
+        $categories = Category::whereIn('name',['Action / Dexterity','Children\'s Game','Party Game']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Nemo's War',
@@ -43934,7 +43934,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Abstract Strategy','Animals','Children's Game']);
+        $categories = Category::whereIn('name',['Abstract Strategy','Animals','Children\'s Game']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Darklight: Memento Mori',
@@ -44324,7 +44324,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Action / Dexterity','Animals','Card Game','Children's Game','Party Game','Puzzle','Real-time']);
+        $categories = Category::whereIn('name',['Action / Dexterity','Animals','Card Game','Children\'s Game','Party Game','Puzzle','Real-time']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Robber Knights',
@@ -44594,7 +44594,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Animals','Card Game','Children's Game','Music']);
+        $categories = Category::whereIn('name',['Animals','Card Game','Children\'s Game','Music']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Wizard's Quest',
@@ -44969,7 +44969,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Action / Dexterity','Children's Game']);
+        $categories = Category::whereIn('name',['Action / Dexterity','Children\'s Game']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Exceed: Red Horizon – Reese & Heidi vs. Vincent & Nehtali',
@@ -45119,7 +45119,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Children's Game']);
+        $categories = Category::whereIn('name',['Children\'s Game']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'World of Yo-Ho',
@@ -46424,7 +46424,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Action / Dexterity','Children's Game','Fantasy','Fighting','Medieval','Wargame']);
+        $categories = Category::whereIn('name',['Action / Dexterity','Children\'s Game','Fantasy','Fighting','Medieval','Wargame']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Nations at War: White Star Rising',
@@ -46754,7 +46754,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Animals','Card Game','Children's Game','Farming']);
+        $categories = Category::whereIn('name',['Animals','Card Game','Children\'s Game','Farming']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Conquest of the Empire',
@@ -48104,7 +48104,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Children's Game','Dice']);
+        $categories = Category::whereIn('name',['Children\'s Game','Dice']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Spectaculum',
@@ -48569,7 +48569,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Action / Dexterity','Animals','Children's Game']);
+        $categories = Category::whereIn('name',['Action / Dexterity','Animals','Children\'s Game']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Aliens: This Time It's War',
@@ -49124,7 +49124,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Abstract Strategy','Animals','Bluffing','Children's Game','Racing']);
+        $categories = Category::whereIn('name',['Abstract Strategy','Animals','Bluffing','Children\'s Game','Racing']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Quarantine',
@@ -49454,7 +49454,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Action / Dexterity','Children's Game','Real-time']);
+        $categories = Category::whereIn('name',['Action / Dexterity','Children\'s Game','Real-time']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'High Treason: The Trial of Louis Riel',
@@ -50084,7 +50084,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Action / Dexterity','Children's Game','Racing']);
+        $categories = Category::whereIn('name',['Action / Dexterity','Children\'s Game','Racing']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Enemy in Sight',
@@ -50414,7 +50414,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Action / Dexterity','Children's Game']);
+        $categories = Category::whereIn('name',['Action / Dexterity','Children\'s Game']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Santy Anno',
@@ -50804,7 +50804,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Action / Dexterity','Children's Game']);
+        $categories = Category::whereIn('name',['Action / Dexterity','Children\'s Game']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Savage Worlds',
@@ -51269,7 +51269,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Children's Game','Memory']);
+        $categories = Category::whereIn('name',['Children\'s Game','Memory']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Devil's Horsemen',
@@ -52709,7 +52709,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Children's Game','Trains']);
+        $categories = Category::whereIn('name',['Children\'s Game','Trains']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Yu-Gi-Oh! Dice Masters',
@@ -52874,7 +52874,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Abstract Strategy','Action / Dexterity','Children's Game','Puzzle']);
+        $categories = Category::whereIn('name',['Abstract Strategy','Action / Dexterity','Children\'s Game','Puzzle']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Unanimo',
@@ -52964,7 +52964,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Animals','Children's Game','Dice']);
+        $categories = Category::whereIn('name',['Animals','Children\'s Game','Dice']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => '4 Gods',
@@ -53144,7 +53144,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Children's Game','Racing']);
+        $categories = Category::whereIn('name',['Children\'s Game','Racing']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Brandywine',
@@ -53354,7 +53354,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Card Game','Children's Game','Deduction','Memory','Novel-based']);
+        $categories = Category::whereIn('name',['Card Game','Children\'s Game','Deduction','Memory','Novel-based']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Lord of the Fries',
@@ -53384,7 +53384,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Children's Game','Maze']);
+        $categories = Category::whereIn('name',['Children\'s Game','Maze']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Gladiator',
@@ -54074,7 +54074,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Action / Dexterity','Card Game','Children's Game','Real-time']);
+        $categories = Category::whereIn('name',['Action / Dexterity','Card Game','Children\'s Game','Real-time']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Draconis Invasion',
@@ -54614,7 +54614,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Children's Game']);
+        $categories = Category::whereIn('name',['Children\'s Game']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Pick-a-Polar Bear',
@@ -54989,7 +54989,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Animals','Children's Game','Racing']);
+        $categories = Category::whereIn('name',['Animals','Children\'s Game','Racing']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => '18NEB',
@@ -55229,7 +55229,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Action / Dexterity','Adventure','Children's Game']);
+        $categories = Category::whereIn('name',['Action / Dexterity','Adventure','Children\'s Game']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Hero of Weehawken',
@@ -55484,7 +55484,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Action / Dexterity','Children's Game']);
+        $categories = Category::whereIn('name',['Action / Dexterity','Children\'s Game']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Bohn To Be Wild!',
@@ -55919,7 +55919,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Children's Game']);
+        $categories = Category::whereIn('name',['Children\'s Game']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Dungeoneer: Dragons of the Forsaken Desert',
@@ -56204,7 +56204,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Children's Game','Negotiation','Pirates']);
+        $categories = Category::whereIn('name',['Children\'s Game','Negotiation','Pirates']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'City Hall',
@@ -57029,7 +57029,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Card Game','Children's Game','Educational','Fantasy','Humor']);
+        $categories = Category::whereIn('name',['Card Game','Children\'s Game','Educational','Fantasy','Humor']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Clash for a Continent:  Battles of the American Revolution and French & Indian War',
@@ -57299,7 +57299,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Animals','Card Game','Children's Game']);
+        $categories = Category::whereIn('name',['Animals','Card Game','Children\'s Game']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Einstein: His Amazing Life and Incomparable Science',
@@ -57824,7 +57824,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Action / Dexterity','Animals','Children's Game','Nautical','Real-time']);
+        $categories = Category::whereIn('name',['Action / Dexterity','Animals','Children\'s Game','Nautical','Real-time']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Air Assault On Crete/Invasion of Malta: 1942',
@@ -58049,7 +58049,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Animals','Children's Game','Dice']);
+        $categories = Category::whereIn('name',['Animals','Children\'s Game','Dice']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Rory's Story Cubes: Enchanted',
@@ -58289,7 +58289,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Children's Game','Deduction','Fantasy','Movies / TV / Radio theme','Murder/Mystery','Novel-based']);
+        $categories = Category::whereIn('name',['Children\'s Game','Deduction','Fantasy','Movies / TV / Radio theme','Murder/Mystery','Novel-based']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Metropolis',
@@ -58769,7 +58769,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Action / Dexterity','Children's Game','Dice']);
+        $categories = Category::whereIn('name',['Action / Dexterity','Children\'s Game','Dice']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Die Säulen der Erde: das Kartenspiel',
@@ -58889,7 +58889,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Action / Dexterity','Children's Game','Party Game']);
+        $categories = Category::whereIn('name',['Action / Dexterity','Children\'s Game','Party Game']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Samurai',
@@ -58994,7 +58994,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Children's Game','Deduction','Dice','Memory']);
+        $categories = Category::whereIn('name',['Children\'s Game','Deduction','Dice','Memory']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Gettysburg: Badges of Courage',
@@ -59489,7 +59489,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Animals','Card Game','Children's Game']);
+        $categories = Category::whereIn('name',['Animals','Card Game','Children\'s Game']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Voyage of the B.S.M. Pandora',
@@ -59639,7 +59639,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Animals','Children's Game','Dice']);
+        $categories = Category::whereIn('name',['Animals','Children\'s Game','Dice']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Afrika: The Northern African Campaign, 1940-1942 (1st edition)',
@@ -59714,7 +59714,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Action / Dexterity','Bluffing','Children's Game']);
+        $categories = Category::whereIn('name',['Action / Dexterity','Bluffing','Children\'s Game']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Resistor_',
@@ -59789,7 +59789,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Animals','Card Game','Children's Game']);
+        $categories = Category::whereIn('name',['Animals','Card Game','Children\'s Game']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'The Thing',
@@ -60674,7 +60674,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Action / Dexterity','Animals','Children's Game','Dice']);
+        $categories = Category::whereIn('name',['Action / Dexterity','Animals','Children\'s Game','Dice']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Samurai: The Card Game',
@@ -60929,7 +60929,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Children's Game','Deduction','Electronic','Maze']);
+        $categories = Category::whereIn('name',['Children\'s Game','Deduction','Electronic','Maze']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Maskenball der Käfer',
@@ -60944,7 +60944,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Animals','Children's Game','Puzzle']);
+        $categories = Category::whereIn('name',['Animals','Children\'s Game','Puzzle']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Warhammer Quest: Shadows Over Hammerhal',
@@ -61199,7 +61199,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Action / Dexterity','Animals','Children's Game']);
+        $categories = Category::whereIn('name',['Action / Dexterity','Animals','Children\'s Game']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Ilôs',
@@ -62339,7 +62339,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Card Game','Children's Game','Pirates']);
+        $categories = Category::whereIn('name',['Card Game','Children\'s Game','Pirates']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Groves',
@@ -63659,7 +63659,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Action / Dexterity','Children's Game','Medieval']);
+        $categories = Category::whereIn('name',['Action / Dexterity','Children\'s Game','Medieval']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Munchkin Panic',
@@ -63719,7 +63719,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Action / Dexterity','Adventure','Children's Game','Exploration','Memory']);
+        $categories = Category::whereIn('name',['Action / Dexterity','Adventure','Children\'s Game','Exploration','Memory']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Carnac',
@@ -64064,7 +64064,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Action / Dexterity','Animals','Children's Game']);
+        $categories = Category::whereIn('name',['Action / Dexterity','Animals','Children\'s Game']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Villages',
@@ -64124,7 +64124,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Children's Game','Deduction','Exploration']);
+        $categories = Category::whereIn('name',['Children\'s Game','Deduction','Exploration']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Panzer Grenadier: Battle of the Bulge',
@@ -64604,7 +64604,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Action / Dexterity','Children's Game','Real-time']);
+        $categories = Category::whereIn('name',['Action / Dexterity','Children\'s Game','Real-time']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Fun Farm',
@@ -64619,7 +64619,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Action / Dexterity','Animals','Children's Game']);
+        $categories = Category::whereIn('name',['Action / Dexterity','Animals','Children\'s Game']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Bowl Bound',
@@ -64754,7 +64754,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Action / Dexterity','Animals','Card Game','Children's Game','Real-time']);
+        $categories = Category::whereIn('name',['Action / Dexterity','Animals','Card Game','Children\'s Game','Real-time']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Wizards',
@@ -64889,7 +64889,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Animals','Children's Game','Dice','Racing']);
+        $categories = Category::whereIn('name',['Animals','Children\'s Game','Dice','Racing']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Abaddon',
@@ -65324,7 +65324,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Children's Game','Fantasy','Party Game']);
+        $categories = Category::whereIn('name',['Children\'s Game','Fantasy','Party Game']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Swish',
@@ -65819,7 +65819,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Action / Dexterity','Animals','Children's Game']);
+        $categories = Category::whereIn('name',['Action / Dexterity','Animals','Children\'s Game']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'What's It To Ya?',
@@ -66389,7 +66389,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Animals','Card Game','Children's Game']);
+        $categories = Category::whereIn('name',['Animals','Card Game','Children\'s Game']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Alexander the Great',
@@ -66449,7 +66449,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Action / Dexterity','Card Game','Children's Game','Party Game','Real-time']);
+        $categories = Category::whereIn('name',['Action / Dexterity','Card Game','Children\'s Game','Party Game','Real-time']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Bacchus' Banquet',
@@ -66794,7 +66794,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Abstract Strategy','Children's Game','Memory']);
+        $categories = Category::whereIn('name',['Abstract Strategy','Children\'s Game','Memory']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Soccer City',
@@ -66944,7 +66944,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Action / Dexterity','Children's Game','Racing','Real-time']);
+        $categories = Category::whereIn('name',['Action / Dexterity','Children\'s Game','Racing','Real-time']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Totemo',
@@ -66959,7 +66959,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Abstract Strategy','Children's Game','Educational']);
+        $categories = Category::whereIn('name',['Abstract Strategy','Children\'s Game','Educational']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Food Fight',
@@ -67004,7 +67004,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Action / Dexterity','Animals','Children's Game']);
+        $categories = Category::whereIn('name',['Action / Dexterity','Animals','Children\'s Game']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Heights of Courage',
@@ -67079,7 +67079,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Animals','Children's Game']);
+        $categories = Category::whereIn('name',['Animals','Children\'s Game']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Filipino Fruit Market',
@@ -68249,7 +68249,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Action / Dexterity','Arabian','Children's Game','Real-time']);
+        $categories = Category::whereIn('name',['Action / Dexterity','Arabian','Children\'s Game','Real-time']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Chariot Race',
@@ -68339,7 +68339,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Action / Dexterity','Children's Game','Real-time']);
+        $categories = Category::whereIn('name',['Action / Dexterity','Children\'s Game','Real-time']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Bangkok Klongs',
@@ -68564,7 +68564,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Children's Game']);
+        $categories = Category::whereIn('name',['Children\'s Game']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Dungeon Heroes',
@@ -69194,7 +69194,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Action / Dexterity','Animals','Children's Game']);
+        $categories = Category::whereIn('name',['Action / Dexterity','Animals','Children\'s Game']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'DragonFlame',
@@ -69479,7 +69479,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Action / Dexterity','Children's Game','Party Game']);
+        $categories = Category::whereIn('name',['Action / Dexterity','Children\'s Game','Party Game']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'The Western Front: 1914 to 1918',
@@ -69944,7 +69944,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Action / Dexterity','Children's Game']);
+        $categories = Category::whereIn('name',['Action / Dexterity','Children\'s Game']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Kasserine',
@@ -70499,7 +70499,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Animals','Children's Game','Racing']);
+        $categories = Category::whereIn('name',['Animals','Children\'s Game','Racing']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Waterloo 200',
@@ -70769,7 +70769,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Children's Game','Nautical','Transportation']);
+        $categories = Category::whereIn('name',['Children\'s Game','Nautical','Transportation']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Karelia '44',
@@ -71189,7 +71189,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Card Game','Children's Game']);
+        $categories = Category::whereIn('name',['Card Game','Children\'s Game']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Gunrunners',
@@ -71654,7 +71654,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Action / Dexterity','Animals','Card Game','Children's Game','Party Game']);
+        $categories = Category::whereIn('name',['Action / Dexterity','Animals','Card Game','Children\'s Game','Party Game']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Zauberschwert & Drachenei',
@@ -71804,7 +71804,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Card Game','Children's Game','Memory','Pirates']);
+        $categories = Category::whereIn('name',['Card Game','Children\'s Game','Memory','Pirates']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Cat Box',
@@ -71849,7 +71849,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Children's Game','Nautical','Pirates']);
+        $categories = Category::whereIn('name',['Children\'s Game','Nautical','Pirates']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Los Mampfos',
@@ -71864,7 +71864,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Animals','Children's Game','Memory']);
+        $categories = Category::whereIn('name',['Animals','Children\'s Game','Memory']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => '11',
@@ -71894,7 +71894,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Children's Game']);
+        $categories = Category::whereIn('name',['Children\'s Game']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'For Crown & Kingdom',
@@ -71954,7 +71954,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Action / Dexterity','Children's Game']);
+        $categories = Category::whereIn('name',['Action / Dexterity','Children\'s Game']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'FAB: Golan '73',
@@ -72209,7 +72209,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Animals','Children's Game','Science Fiction']);
+        $categories = Category::whereIn('name',['Animals','Children\'s Game','Science Fiction']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'NHL Ice Breaker: The Card Hockey Board Game',
@@ -72419,7 +72419,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Children's Game']);
+        $categories = Category::whereIn('name',['Children\'s Game']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Master of Economy',
@@ -72914,7 +72914,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Action / Dexterity','Animals','Children's Game']);
+        $categories = Category::whereIn('name',['Action / Dexterity','Animals','Children\'s Game']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'South African Railroads',
@@ -73184,7 +73184,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Card Game','Children's Game','Humor','Party Game','Word Game']);
+        $categories = Category::whereIn('name',['Card Game','Children\'s Game','Humor','Party Game','Word Game']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'KINMO',
@@ -73244,7 +73244,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Action / Dexterity','Animals','Card Game','Children's Game','Real-time']);
+        $categories = Category::whereIn('name',['Action / Dexterity','Animals','Card Game','Children\'s Game','Real-time']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Lawless',
@@ -73799,7 +73799,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Action / Dexterity','Animals','Children's Game']);
+        $categories = Category::whereIn('name',['Action / Dexterity','Animals','Children\'s Game']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Activity',
@@ -73964,7 +73964,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Action / Dexterity','Animals','Children's Game']);
+        $categories = Category::whereIn('name',['Action / Dexterity','Animals','Children\'s Game']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Next War: Poland',
@@ -74369,7 +74369,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Card Game','Children's Game','Humor','Party Game','Word Game']);
+        $categories = Category::whereIn('name',['Card Game','Children\'s Game','Humor','Party Game','Word Game']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Cranium Whoonu',
@@ -74474,7 +74474,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Action / Dexterity','Card Game','Children's Game']);
+        $categories = Category::whereIn('name',['Action / Dexterity','Card Game','Children\'s Game']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Snapshot',
@@ -74849,7 +74849,7 @@ class ProductSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
-        $categories = Category::whereIn('name',['Action / Dexterity','Children's Game','Memory']);
+        $categories = Category::whereIn('name',['Action / Dexterity','Children\'s Game','Memory']);
         $product->categories()->sync((array)$request->$categories);
         $product = Product::create([
             'name' => 'Trigger!',
