@@ -22,9 +22,9 @@ class CreateShoppingcartLinesTable extends Migration
             $table->integer('quantity');
             $table->float('price');
             $table->float('tax_amount')->default(0);
-            $table->foreign('order_id')
+            $table->foreign('shoppingcart_id')
                 ->references('id')
-                ->on('orders')
+                ->on('shoppingcarts')
                 ->onDelete('cascade');
             $table->foreign('user_id')
                 ->references('id')
