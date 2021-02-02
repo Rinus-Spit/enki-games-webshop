@@ -3,16 +3,17 @@
 /public/storage
 /storage/*.key
 
-/vendor/*
-!/vendor/laravel
-/vendor/laravel/*
-!/vendor/laravel/framework
-/vendor/laravel/framework/*
-!/vendor/laravel/framework/src/
-/vendor/laravel/framework/src/*
-!/vendor/laravel/framework/src/Illuminate/
-/vendor/laravel/framework/src/Illuminate/*
-!/vendor/laravel/framework/src/Illuminate/Pagination
+/vendor
+#/vendor/*
+#!/vendor/laravel
+#/vendor/laravel/*
+#!/vendor/laravel/framework
+#/vendor/laravel/framework/*
+#!/vendor/laravel/framework/src/
+#/vendor/laravel/framework/src/*
+#!/vendor/laravel/framework/src/Illuminate/
+#/vendor/laravel/framework/src/Illuminate/*
+#!/vendor/laravel/framework/src/Illuminate/Pagination
 
 .env
 .env.backup
