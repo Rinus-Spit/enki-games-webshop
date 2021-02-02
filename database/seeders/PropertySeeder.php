@@ -13,6 +13,10 @@ class PropertySeeder extends Seeder
      */
     public function run()
     {
-        //
+        $product = Property::create([
+            'name' => 'Genre',
+            'created_at' => now(),
+            'updated_at' => now()
+        ]);
     }
 }
