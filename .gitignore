@@ -3,7 +3,7 @@
 /public/storage
 /storage/*.key
 /vendor
-!/vendor/laravel/framework/src/Illuminate/Pagination/*
+!*/vendor/laravel/framework/src/Illuminate/Pagination/*
 .env
 .env.backup
 .phpunit.result.cache
