@@ -10,8 +10,9 @@
 
 @section('content')
 <div class="catbar">
-    <div class="cattop"></div>
-    <div class="catbottom"></div>
+    <div class="catbar_item">
+        <div class="catbottom"></div>
+    </div>
  </div>
 <div class="midcontent">
     

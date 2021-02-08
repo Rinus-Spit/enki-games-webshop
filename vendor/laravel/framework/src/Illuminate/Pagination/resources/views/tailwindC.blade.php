@@ -14,7 +14,7 @@
                 @foreach ($element as $page => $url)
                     @if ($page == $paginator->currentPage())
                         <span aria-current="page">
-                            <span class="pagelink">{{ $page }}</span>
+                            <span class="pagelink_inactive">{{ $page }}</span>
                         </span>
                     @else
                         <a href="{{ $url }}" class="pagelink" aria-label="{{ __('Go to page :page', ['page' => $page]) }}">
@@ -39,7 +39,7 @@
         </div>
 
         @if ($paginator->onFirstPage())
-            <span class="prev_arrow"></span>
+            <span class="prev_arrow inactive_prev"></span>
         @else
             <a href="{{ $paginator->previousPageUrl() }}" class="prev_arrow"></a>
         @endif
@@ -47,7 +47,7 @@
         @if ($paginator->hasMorePages())
             <a href="{{ $paginator->nextPageUrl() }}" class="next_arrow"></a>
         @else
-            <span class="next_arrow"></span>
+            <span class="next_arrow inactive_next"></span>
         @endif 
     </div> 
     </nav>
