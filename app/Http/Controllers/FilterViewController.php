@@ -15,7 +15,6 @@ class MyInputOption{
 
 class PayloadClass
 {
-    
     public $inputClass = "Aantal spelers (min)";
     public $inputOptions = array();
     public function __construct(){
@@ -32,41 +31,6 @@ class PayloadClass
         array_push($this->inputOptions, $this->inputE);
     }
 }
-
-
-class Filteroptions{
-
-    public function __construct($attribute, $value){
-        $this->searchAttribute = $attribute;
-        $this->searchValue = $value;
-        $this->searchOperator = "equals";
-    }
-
-}
-
-class Filters{
-    public $searchoptions = array();
-
-    public function __construct(){
-        
-    }
-
-    public function addOption($attribute, $value){
-        $newOption = new Filteroptions($attribute, $value);
-        array_push($this->searchoptions, $newOption);
-    }
-
-    public function getWhere(){
-        $mysearchoptions = $this->searchoptions;
-        $tempArray = array();
-        foreach ($mysearchoptions as $searchoption){
-            array_push($tempArray, array($searchoption->searchAttribute, "=", $searchoption->searchValue));
-        }
-        return $tempArray;
-    }
-}
-
-
 
 class FilterViewController extends Controller{
 
@@ -90,14 +54,9 @@ class FilterViewController extends Controller{
 
     public function index()
     {
-        $myFilters = new Filters();
-        $myFilters->addOption("price", "21");
         $test = new PayloadClass();
         $testB = DB::table("Products")->paginate(2);
 
         return view('testview2', ["landingContent"=>$test, "test"=>$testB]);
-    }
-
-    public function search($inputVariables){
     }
 }
