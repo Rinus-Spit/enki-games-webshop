@@ -14,12 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('testview');
-// });
-
 Route::get('/', [App\Http\Controllers\LandingController::class, 'index']);
-
+Route::get('/search', [App\Http\Controllers\FilterViewController::class, 'index']);
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

@@ -7,7 +7,7 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   sodipodi:docname="left_blue.svg"
+   sodipodi:docname="left_red.svg"
    inkscape:version="1.0beta2 (2b71d25, 2019-12-03)"
    id="svg8"
    version="1.1"
@@ -55,9 +55,9 @@
     <g
        transform="rotate(-90,13.176476,13.235361)"
        id="g16"
-       style="fill:#0055d4;fill-opacity:1">
+       style="fill:#aa0000">
       <rect
-         style="fill:#0055d4;fill-rule:evenodd;stroke-width:0.989588;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:7.55907;fill-opacity:1"
+         style="fill:#aa0000;fill-rule:evenodd;stroke-width:0.989588;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:7.55907"
          id="rect10"
          width="8.5968895"
          height="13.171354"
@@ -65,7 +65,7 @@
          y="13.173949" />
       <path
          sodipodi:type="star"
-         style="fill:#0055d4;fill-rule:evenodd;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:7.55907;fill-opacity:1"
+         style="fill:#aa0000;fill-rule:evenodd;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:7.55907"
          id="path12"
          sodipodi:sides="3"
          sodipodi:cx="12.340696"
