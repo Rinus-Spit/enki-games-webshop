@@ -27,6 +27,10 @@
     --pricetag-hvr-text-color: #1d1e1e;
   }
 
+  h1, h2, h3, h4, h5, h6{
+    font-family: 'Josefin Sans', sans-serif;
+  }
+
 body{
     padding: 0px;
     margin: 0px;
@@ -432,6 +436,7 @@ body{
 .slider{
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-bottom: 20px;
 
 }
@@ -439,21 +444,21 @@ body{
 .bestof h2{
     font-size: 50px;
     /* margin-left: 5%; */
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     text-align: center;
 }
 
 .slider > .slidecontent{
     display: block;
-    width: 80%;
+    width: 90%;
     overflow-x: scroll;
     scroll-behavior: smooth;
 }
 
 .slider> .slidecontent > ul{
     min-width: max-content;
-    max-height: min-content;
-    white-space: nowrap;
+    min-height: max-content;
+    /* white-space: nowrap; */
     margin: 0px;
     padding:0px;
 }
@@ -467,16 +472,16 @@ body{
     margin: 10px;
     margin-left: 10px;
     margin-right: 10px;
-    height: 250px;
-    width: 160px;
+    height: max-content;
+    width: max-content;
     padding-left: 10px;
     padding-right: 10px;
 }
 
 .slidecontent > ul > li > figure{
-    height: 250px;
+    height: 300px;
     width: 160px;
-    margin: 0px;
+    margin: 0px 20px;
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
     position: relative;
@@ -495,16 +500,20 @@ body{
     height: 90px;
     width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
 .slidecontent > ul > li > figure > figcaption h1{
-    font-size: 20px;
+    font-size: 22px;
     color: black;
     margin: 0px;
     margin-top: 25px;
     margin-bottom: 10px;
+    max-width: 80%;
+    text-align: center;
+    word-wrap: break-word;
 }
 
 .slidecontent > ul > li > figure > h4{
@@ -537,7 +546,7 @@ body{
 }
 
 .slidecontent > ul > li > figure > figcaption h4{
-    font-size: 18px;
+    font-size: 16px;
     color: red;
     margin: 0px;
 }
@@ -551,27 +560,35 @@ body{
 }
 
 .next_arrow{
-    height:70px;
-    width: 70px;
+    height:50px;
+    width: 50px;
     /* background-color: blue; */
     background-image: url("/images/right_red.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 90%;
-    margin-left: 10px;
-    margin-right: 5%;
+    margin-left: -49px;
+    background-color: gainsboro;
+    /* margin-right: 5%; */
+    z-index: 4;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
 }
 
 .prev_arrow{
-    height:70px;
-    width: 70px;
+    height:50px;
+    width: 50px;
     /* background-color: blue; */
     background-image: url("/images/left_red.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 90%;
-    margin-left: 5%;
-    margin-right: 10px;
+    /* margin-left: 5%; */
+    margin-right: -49px;
+    background-color: gainsboro;
+    z-index: 4;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 nav .prev_arrow{
