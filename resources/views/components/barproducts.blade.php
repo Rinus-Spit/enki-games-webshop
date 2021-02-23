@@ -5,7 +5,7 @@
     <div class="drop_menu">
         <h4>{{$list->name}}</h4>
         @foreach ($list->products as $product)
-            <a href="/products/{{$product->id}}"> {{$product->name}} </a><br>
+            <a href="/products/{{$product->id}}"> {{$product->name}} </a>
         @endforeach
     </div>
 </div>

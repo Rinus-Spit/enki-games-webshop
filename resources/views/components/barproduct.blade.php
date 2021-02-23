@@ -6,7 +6,7 @@
     <div class="drop_menu">
         <h4>{{$slot}}</h4>
         @foreach ($list as $task)
-            <a href={{$task[1]}}> {{$task[0]}} </a><br>
+            <a href={{$task[1]}}> {{$task[0]}} </a>
         @endforeach
     </div>
 </div>

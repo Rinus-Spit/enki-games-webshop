@@ -1,4 +1,5 @@
 <figure>
+    <a href="/"></a>
     <img src="{{$catcard[1]}}" alt="{{$catcard[0]}}">
     <figcaption>
         <h1>
