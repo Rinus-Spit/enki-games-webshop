@@ -31,6 +31,6 @@ class LandingController extends Controller{
         $newProducts = DB::table('toplists')->where('name', 'new')->get();
         $properties = Property::get();
 
-        return view('testview', ["popularProducts"=>$popularProducts, "newProducts"=>$newProducts, "properties"=>$properties]);
+        return view('landing', ["popularProducts"=>$popularProducts, "newProducts"=>$newProducts, "properties"=>$properties]);
     }
 }
