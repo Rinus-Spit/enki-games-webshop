@@ -14,5 +14,15 @@ class ToplistSeeder extends Seeder
     public function run()
     {
         //
+    $product = Toplists::create([
+        'name' => 'new',
+        'created_at' => now(),
+        'updated_at' => now()
+        ]);
+    $product = Toplists::create([
+        'name' => 'popular',
+        'created_at' => now(),
+        'updated_at' => now()
+        ]);
     }
 }
