@@ -776,12 +776,16 @@ Search section
 
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    
-    font-size: 40px;
-    font-weight: bolder;
 
-    background-color: #4b4b4b;
-    color: white;
+    background-color: rgb(187, 35, 35);
+    background-image: url(/images/title_image.svg);
+    background-repeat: no-repeat;
+    background-size: auto 120%;
+    background-position: 100% bottom;
+
+    font-size: 45px;
+    font-weight: bold;
+    color: #1d1b1b;
 }
 
 .resulttab{
@@ -874,7 +878,83 @@ Search section
     margin-top: 80px;
 }
 
-/*////////////////////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////////////
+Filter section
+////////////////////////////////////////////////////////*/
+
+.filterspace{
+    grid-column: 1;
+    overflow: hidden;
+    align-self: start;
+    margin-top: 22px;
+    padding-bottom: 20px;
+
+    border-bottom: 2px solid var(--sect-bord-color);
+    border-right: 2px solid var(--sect-bord-color);
+    border-radius: 10px;
+
+    background-color: var(--filter-spc-bcolor);
+    color: var(--filter-spc-text-color); 
+}
+
+.filterfiller{
+    margin: 0px;
+    padding: 25px;
+    padding-left: 40px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    font-size: 40px;
+    font-weight: bolder;
+
+    background-color: #4b4b4b;
+    color: white;
+
+}
+
+.filterlist{
+    height: 33px;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(224, 97, 6, 0.114);
+}
+
+.filterspace h1, .filterspace > button, .choicefilter input{
+    margin-left: 40px;
+    font-size: 28px;
+    color: var(--filter-spc-text-color);
+}
+
+.choicefilter{
+    margin-bottom: 40px;
+}
+
+.prijsfilter{
+    margin: 0px;
+    margin-bottom: 60px;
+    padding-top: 20px;
+}
+
+.filterspace button{
+    padding: 6px 15px;
+    margin-right: 10px;
+
+    border: none;
+    border-bottom: 2px solid;
+    border-right: 2px solid;
+    border-radius: 10px;
+    border-color: var(--btn-bord-color);
+
+    font-size: 20px;
+    font-weight: bold;
+
+    background-color: var(--btn-bcolor);
+    color: var(--main-btn-tcolor);
+}
+
+/*////////////////////////////////////////////////////////
+Price slider
+////////////////////////////////////////////////////////*/
 
 .sliderbox {
 	position: relative;
@@ -989,7 +1069,9 @@ input[type=range]::-webkit-slider-thumb {
     color: var(--filter-spc-text-color);
 }
 
-/*//////////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////////////
+Top navbar
+////////////////////////////////////////////////////////*/
 
 .topnav{
     position: sticky;
@@ -1053,6 +1135,10 @@ input[type=range]::-webkit-slider-thumb {
     width: max-content;
 }
 
+/*////////////////////////////////////////////////////////
+Resultpage page navigation
+////////////////////////////////////////////////////////*/
+
 nav{
     display:flex;
     align-items: center;
@@ -1088,69 +1174,9 @@ nav span{
     color: black;
 }
 
-.filterfiller{
-    margin: 0px;
-    padding: 25px;
-    padding-left: 40px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-
-    font-size: 40px;
-    font-weight: bolder;
-
-    background-color: #4b4b4b;
-    color: white;
-
-}
-
-.filterlist{
-    height: 33px;
-    width: 100%;
-    padding: 10px;
-    background-color: rgba(224, 97, 6, 0.114);
-}
-
-.filterspace h1, .filterspace > button, .choicefilter input{
-    margin-left: 40px;
-    font-size: 28px;
-    color: var(--filter-spc-text-color);
-}
-
-.choicefilter{
-    margin-bottom: 40px;
-}
-
-.prijsfilter{
-    margin: 0px;
-    margin-bottom: 60px;
-    padding-top: 20px;
-}
-
-.filterspace button{
-    padding: 6px 15px;
-    margin-right: 10px;
-
-    border: none;
-    border-bottom: 2px solid;
-    border-right: 2px solid;
-    border-radius: 10px;
-    border-color: var(--btn-bord-color);
-
-    font-size: 20px;
-    font-weight: bold;
-
-    background-color: var(--btn-bcolor);
-    color: var(--main-btn-tcolor);
-}
-
-.filterspace{
-    align-self: start;
-    margin-top: 22px;
-    padding-bottom: 20px;
-
-    background-color: var(--filter-spc-bcolor);
-    color: var(--filter-spc-text-color); 
-}
+/*////////////////////////////////////////////////////////
+Other
+////////////////////////////////////////////////////////*/
 
 .flexcontainer{
     display:flex;
@@ -1185,21 +1211,4 @@ nav span{
     top: 50px;
     left: 0px;
     background-color: crimson;
-}
-
-
-
-/*Color testing*/
-
-.searchresultspace>h1{
-    background-color: rgb(187, 35, 35);
-    background-image: url(/images/title_image.svg);
-    background-repeat: no-repeat;
-    background-size: auto 120%;
-    background-position: 100% bottom;
-
-    font-family: 'Rubik', sans-serif;
-    font-size: 45px;
-    font-weight: bold;
-    color: #1d1b1b;
 }
