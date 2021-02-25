@@ -61,6 +61,6 @@ class LandingController extends Controller{
         $propertiesInput = Property::get();
         $landingContent = new PayloadClass($productsInput, $propertiesInput);
 
-        return view('testview', ["landingContent"=>$landingContent]);
+        return view('landing', ["landingContent"=>$landingContent]);
     }
 }

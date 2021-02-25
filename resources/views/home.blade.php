@@ -1,4 +1,4 @@
-@extends ('layouts.temp')
+@extends ('layouts.webshop')
 
 @section('content')
 <div class="midcontent">
