@@ -1,6 +1,9 @@
 <?php
 
 namespace Database\Seeders;
+use App\Models\Toplist;
+use App\Models\Product;
+use App\Models\ProductToplist;
 
 use Illuminate\Database\Seeder;
 
@@ -13,16 +16,23 @@ class ToplistSeeder extends Seeder
      */
     public function run()
     {
-        //
-    $product = Toplists::create([
+
+
+        
+    $newList = Toplist::create([
         'name' => 'new',
         'created_at' => now(),
         'updated_at' => now()
         ]);
-    $product = Toplists::create([
+    $popularList = Toplist::create([
         'name' => 'popular',
         'created_at' => now(),
         'updated_at' => now()
         ]);
+
+    $newProducts = Product::latest()->limit(20)->pluck('id')->toArray();
+    $newList->products()->sync((array)$newProducts);
+    $popularProducts = Product::inRandomOrder()->limit(20)->pluck('id')->toArray();
+    $popularList->products()->sync((array)$popularProducts);
     }
 }

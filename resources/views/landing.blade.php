@@ -1,33 +1,8 @@
-<!-- /*header*/
-/*navbar*/
-/*body container*/
-    /*product bar*/
-    /*uitgelicht section*/
-    /*best verkocht en nieuw*/
-    /*product thema's */ -->
-@php
-    $list = $landingContent->list;
-    $listTwo = $landingContent->listTwo;
-    $listThree =$landingContent->listThree;
-    $listFour = $landingContent->listFour;
-    $listFive = $landingContent->listFive;
-    
-    $sliderproducts = $landingContent->productArrayOne;
-    $propertyNames = $landingContent->propertyNames;
-    $propertyCategories = $landingContent->propertyCategories;
-
-@endphp
-
 @extends('layouts.webshop')
 
 @section('content')
 <div class="midcontent">
-    <div class="productbar">
-        <x-barproduct :list="$list"> Test 1 </x-barproduct>
-        <x-barproduct :list="$list"> Test 2 </x-barproduct>
-        <x-barproduct :list="$list"> Test 3 </x-barproduct>
-        <x-barproduct :list="$list"> Test 4 </x-barproduct>
-    </div>
+    <x-productbar :properties="$properties"></x-productbar>
     <div class="featured">
         <a href="#nothing" class="featured_window">
             <h1>Kaldheim spoilers</h1>
@@ -38,14 +13,10 @@
         <a href="#nothing" class="featured_options_c"><h1>link3</h1><div class="background_filter"></div></a>
     </div>
 
-    <x-slider :list="$listTwo">Nieuwe producten</x-slider>
-    <x-slider :list="$sliderproducts">Best verkocht</x-slider>
+    <x-productslider :list="$newProducts->products">Nieuwe producten</x-productslider>
+    <x-productslider :list="$popularProducts->products">Populaire producten</x-productslider>
 
-    <div class="searchpathlinks">
-        <h1>Assortiment</h1>
-        <x-linktab :list="$propertyNames"></x-linktab> <!-- List needs to correspond to the size of the category list (under construction)-->
-        <x-linkoptions :list="$propertyNames" :cards="$propertyCategories"></x-linkoptions>
-    </div>
+    <x-category_section :properties="$properties">Assortiment</x-category_section>
 </div>
 
 @endsection

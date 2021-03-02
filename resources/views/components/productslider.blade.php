@@ -5,8 +5,8 @@
         <div class="prev_arrow"></div>    
         <div class="slidecontent">
             <ul>
-                @foreach($products as $product)
-                    <li><x-productsliderfigure :product="$product"></x-sliderfigure></li>
+                @foreach($list as $figure)
+                    <li><x-productsliderfigure :product="$figure"></x-productsliderfigure></li>
                 @endforeach
             </ul>
         </div>

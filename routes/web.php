@@ -18,7 +18,7 @@ Route::get('/', [App\Http\Controllers\LandingController::class, 'index']);
 Route::get('/search', [App\Http\Controllers\FilterViewController::class, 'index']);
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [App\Http\Controllers\LandingController::class, 'index'])->name('home');
 Route::get('/admin', [App\Http\Controllers\AdminController::class, 'index'])->name('admin');
 Route::resource('products', App\Http\Controllers\ProductController::class);
 Route::resource('age_categories', App\Http\Controllers\AgeCategoryController::class);

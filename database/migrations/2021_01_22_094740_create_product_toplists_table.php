@@ -18,7 +18,7 @@ class CreateProductToplistsTable extends Migration
             $table->timestamps();
             $table->unsignedBigInteger('product_id');
             $table->unsignedBigInteger('toplist_id');
-            $table->integer('order');
+            // $table->integer('order');
             $table->foreign('product_id')
                 ->references('id')
                 ->on('products')

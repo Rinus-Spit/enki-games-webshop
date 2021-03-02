@@ -1,9 +1,9 @@
 <figure>
     <a href="/"></a>
-    <img src="{{$catcard[1]}}" alt="{{$catcard[0]}}">
+    <img src="{{$catcard->image}}" alt="{{$catcard->name}}">
     <figcaption>
         <h1>
-            {{$catcard[0]}}
+            {{$catcard->name}}
         </h1>
     </figcaption>
 </figure>

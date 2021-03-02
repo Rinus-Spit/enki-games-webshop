@@ -145,10 +145,17 @@ Productbar
 }
 
 .bar_product:hover .drop_menu{
-    display: block;
-    height: 200px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: max-content;
+    grid-auto-rows: min-content;
+    height: var(--custom-height);
     transition-delay: height 0ms;
-    transition: height 1s;
+    transition: height 1.3s;
+}
+
+.drop_menu > h4{
+    grid-column: 1/ span 2;
 }
 
 .fake_border{
@@ -424,8 +431,9 @@ Best of section
     grid-template-columns: 1fr min-content 1fr;
     position: relative;
     overflow: hidden;
-    height: 300px;
-    width: 160px;
+    height: 350px;
+    width: 200px;
+    max-width: 200px;
     margin: 0px 5px;
     padding: 10px 25px;
     border: 2px dotted black;
@@ -437,13 +445,14 @@ Best of section
     grid-column: 2;
     height: 160px;
     width: auto;
+    max-width: 190px;
     margin-top: 10px;
 }
 
 .slidecontent > ul > li > figure > figcaption{
     grid-column: 1/ span 3;
-    height: 90px;
-    width: 100%;
+    height: 140px;
+    width: 200px;
 
     display: flex;
     flex-direction: column;
@@ -458,6 +467,8 @@ Best of section
 }
 
 .slidecontent > ul > li > figure > figcaption h1{
+    overflow: hidden;
+    max-height: 2.5em;
     max-width: 80%;
     margin: 0px;
     margin-top: 25px;
@@ -759,7 +770,7 @@ Search section
 
 .searchresultspace{
     grid-column: 3;
-    height: 1000px;
+    min-height: 1000px;
 
     border-bottom: 2px solid var(--sect-bord-color);
     border-right: 2px solid var(--sect-bord-color);
@@ -838,9 +849,10 @@ Search section
 
 .resultblock{
     display: grid;
-    grid-template-columns: 200px 20px 1fr;
+    grid-template-columns: 200px 40px 1fr;
     min-height: 200px;
     width: 100%;
+    padding: 10px 0px;
 }
 
 .resultblock img{
@@ -848,10 +860,17 @@ Search section
     height: 180px;
     width: 180px;
     overflow: hidden;
-    object-fit: cover;
+    object-fit: contain;
     object-position: center;
     margin-left: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+
+.searchresultspace .resultblock:nth-child(2n){
+    background-color: rgba(0, 0, 0, 0.127);
 }
 
 .resultblock .resultdescription{
@@ -1150,7 +1169,7 @@ nav{
     padding: 10px;
     padding-left: 40px;
     padding-bottom: 15px;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
     background-color: rgba(0, 0, 0, 0.13);
 }
 

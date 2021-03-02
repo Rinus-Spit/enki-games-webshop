@@ -55,7 +55,7 @@ class FilterViewController extends Controller{
     public function index()
     {
         $test = new PayloadClass();
-        $testB = DB::table("Products")->paginate(2);
+        $testB = DB::table("Products")->paginate(10);
 
         return view('searchresults', ["landingContent"=>$test, "test"=>$testB]);
     }
