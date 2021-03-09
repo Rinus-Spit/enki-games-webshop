@@ -15,7 +15,7 @@ class MyInputOption{
 
 class PayloadClass
 {
-    public $inputClass = "Aantal spelers (min)";
+    public $inputClass = "min_players";
     public $inputOptions = array();
     public function __construct(){
         $this->inputA =  new MyInputOption("2");
@@ -56,7 +56,18 @@ class FilterViewController extends Controller{
     {
         $test = new PayloadClass();
         $testB = DB::table("Products")->paginate(10);
+        return view('searchresults', ["landingContent"=>$test, "test"=>$testB, "searchResults"=>"nothing"]);
+    }
 
-        return view('searchresults', ["landingContent"=>$test, "test"=>$testB]);
+    public function show()
+    {
+        $test = new PayloadClass();
+        $priceMin=request("min_price")/100*200;
+        $priceMax=request("max_price")/100*200;
+        $searchRequest = request("min_players");
+        $searchResult = DB::table("Products")->whereIn('min_players', $searchRequest)->whereBetween('price', [$priceMin, $priceMax])->paginate(6);
+
+        return view('searchresults', ["landingContent"=>$test, "test"=>$searchResult, "searchResults"=>$searchResult, "priceMin"=>$priceMin]);
+        // dump($searchRequest);
     }
 }
