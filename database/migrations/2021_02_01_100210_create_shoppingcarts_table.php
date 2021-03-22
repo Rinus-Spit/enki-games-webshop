@@ -24,6 +24,7 @@ class CreateShoppingcartsTable extends Migration
                 ->references('id')
                 ->on('users')
                 ->onDelete('cascade');
+            $table->unique('user_id');
         });
     }
 

@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Shoppingcart;
+use App\Models\Product;
+use Auth;
 use Illuminate\Http\Request;
 
 class ShoppingcartController extends Controller
@@ -44,9 +46,13 @@ class ShoppingcartController extends Controller
      * @param  \App\Models\Shoppingcart  $shoppingcart
      * @return \Illuminate\Http\Response
      */
-    public function show(Shoppingcart $shoppingcart)
+    public function show()
     {
-        //
+        $shoppingcart = Shoppingcart::firstOrNew(array('user_id' => Auth::user()->id));
+        $shoppingcart->save();
+
+        return view('shoppingcart.show', ['shoppingcart' => $shoppingcart]);
+
     }
 
     /**
@@ -82,4 +88,5 @@ class ShoppingcartController extends Controller
     {
         //
     }
+
 }

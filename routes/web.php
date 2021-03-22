@@ -26,6 +26,9 @@ Route::resource('age_categories', App\Http\Controllers\AgeCategoryController::cl
 Route::resource('categories', App\Http\Controllers\CategoryController::class);
 Route::resource('properties', App\Http\Controllers\PropertyController::class);
 Route::resource('toplists', App\Http\Controllers\ToplistController::class);
+Route::get('/bestel/{product}', [App\Http\Controllers\ShoppingcartLineController::class, 'bestel'])
+->name('products.bestel');
+Route::get('/winkelmand', [App\Http\Controllers\ShoppingcartController::class, 'show'])->name('winkelmand');
 /*
 Route::get('/products', [App\Http\Controllers\ProductController::class, 'index'])
 ->name('products.index');
