@@ -1,9 +1,40 @@
 .cartbutton{
-    
+    display: grid;
+    grid-template-columns: 25px 60px;
+    grid-template-rows: 50px;
+    justify-items: stretch;
+    align-items: stretch;
+    height: max-content;
+    width: max-content;
 }
 .add_cart{
+    display: block;
+    border: none;
+    margin: 0px;
+    border-top: 1px solid brown;
+    border-right: 1px solid brown;
+    border-bottom: 1px solid brown;
 
+    background-color: orange;
 }
 .remove_cart{
+    display: block;
+    border: none;
+    margin: 0px;
+    border-top: 1px solid rgb(126, 0, 0);
+    border-left: 1px solid rgb(126, 0, 0);
+    border-bottom: 1px solid rgb(126, 0, 0);
 
+    background-color: orange;
+}
+.cartbutton:hover .remove_cart{
+    background-color: red;
+}
+
+.remove_cart:hover{
+    background-color: rgb(139, 49, 0);
+}
+
+.add_cart:hover{
+    background-color: darkred;
 }
