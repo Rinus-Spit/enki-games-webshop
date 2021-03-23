@@ -108,6 +108,7 @@ class ShoppingcartLineController extends Controller
         );
         $shoppingcartline->quantity = $shoppingcartline->quantity + 1;
         $shoppingcartline->save();
+        return redirect(route('winkelwagen'));
     }
 
 }
