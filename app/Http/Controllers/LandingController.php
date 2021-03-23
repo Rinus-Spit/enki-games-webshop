@@ -33,4 +33,10 @@ class LandingController extends Controller{
 
         return view('landing', ["properties"=>$properties, "popularProducts"=>$popularProducts, "newProducts"=>$newProducts]);
     }
+
+    public function ajax(){
+        $newProducts = Toplist::where("name","new")->get()[0];
+        $payload = $newProducts->products;
+        return view('ajaxresp', ["products"=>$payload]);
+    }
 }

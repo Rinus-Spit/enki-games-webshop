@@ -1,4 +1,5 @@
 <div class="cartbutton">
-    <button class="remove_cart"></button>
-    <button class="add_cart"></button>
+    <button type="button" id="ajaxDecr" class="remove_cart"></button>
+    <button type="button" id="ajaxIncr"></button>
 </div>
+
