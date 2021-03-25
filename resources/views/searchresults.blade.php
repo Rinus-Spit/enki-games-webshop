@@ -9,7 +9,6 @@
 @endsection
 
 @section('content')
-{{$priceMin}}
 <div class="catbar">
     <div class="catbar_item">
         <div class="catbottom"></div>
