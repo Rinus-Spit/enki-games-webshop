@@ -39,4 +39,14 @@ class LandingController extends Controller{
         $payload = $newProducts->products;
         return view('ajaxresp', ["products"=>$payload]);
     }
+
+    // Testfunctions below ,rewrite later 
+
+    public function ajaxB(){
+        $myinput = json_decode(file_get_contents("php://input"));
+        // Add an increment function and return the total cost
+        $myinputJSON = json_encode($myinput);
+        
+        return response($myinputJSON);
+    }
 }
