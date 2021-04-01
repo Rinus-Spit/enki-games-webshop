@@ -18,9 +18,7 @@ Route::get('/', [App\Http\Controllers\LandingController::class, 'index']);
 Route::get('/search', [App\Http\Controllers\FilterViewController::class, 'index']);
 Route::get('/search/show', [App\Http\Controllers\FilterViewController::class, 'show'])->name('testing');
 Auth::routes();
-Route::get('/test', function () {
-    return Response::json("hallo, dit is een response");
-});
+Route::post('/test', [App\Http\Controllers\LandingController::class, 'ajaxB']);
 Route::get('/testb',[App\Http\Controllers\LandingController::class, 'ajax']);
 
 Route::get('/home', [App\Http\Controllers\LandingController::class, 'index'])->name('home');
