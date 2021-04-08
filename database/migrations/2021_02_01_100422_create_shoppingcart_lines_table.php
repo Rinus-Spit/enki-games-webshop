@@ -34,7 +34,8 @@ class CreateShoppingcartLinesTable extends Migration
                 ->references('id')
                 ->on('products')
                 ->onDelete('cascade');
-        });
+            $table->unique(array('shoppingcart_id','user_id','product_id'));
+            });
     }
 
     /**

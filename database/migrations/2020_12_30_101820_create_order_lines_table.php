@@ -34,6 +34,7 @@ class CreateOrderLinesTable extends Migration
                 ->references('id')
                 ->on('products')
                 ->onDelete('cascade');
+            $table->unique(array('order_id','user_id','product_id'));
         });
     }
 

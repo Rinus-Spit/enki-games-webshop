@@ -35,6 +35,7 @@
                         <button class="btn btn-danger" type="submit" id="destroy">Delete <i class="fas fa-trash-alt"></i></button>
                     </form>
 
+                    <x-bestel :product="$product">Bestel</x-bestel>
 
                 </div>
             </div>
