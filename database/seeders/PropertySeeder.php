@@ -19,5 +19,29 @@ class PropertySeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now()
         ]);
+
+        $product = Property::create([
+            'name' => 'Thema',
+            'created_at' => now(),
+            'updated_at' => now()
+        ]);
+
+        $product = Property::create([
+            'name' => 'Gametype',
+            'created_at' => now(),
+            'updated_at' => now()
+        ]);
+
+        $product = Property::create([
+            'name' => 'Wargames',
+            'created_at' => now(),
+            'updated_at' => now()
+        ]);
+
+        $product = Property::create([
+            'name' => 'Overig',
+            'created_at' => now(),
+            'updated_at' => now()
+        ]);
     }
 }

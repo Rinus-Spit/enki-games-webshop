@@ -1,0 +1,1 @@
+<button type="button" class="cartbutton_simple" onclick="requestSetup('{{$productID}}','{{$productName}}','decrement')">Buy</button>
